@@ -1,0 +1,183 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/user/Labs_user/chipw7
+T_opt
+!s110 1492504753
+VF79feS@P@6cUmAfKKm89Q2
+04 6 3 work reg_tb beh 1
+=1-00101819b423-58f5d0ac-f252e-518d
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OE;O;10.4c_5;61
+R0
+Ecomb_logic
+Z1 w1492503409
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 d/user/Labs_user/chipw7/vhdlLab/exercise_1
+Z6 8/user/Labs_user/chipw7/vhdlLab/exercise_1/comb_logic/comb_logic.vhd
+Z7 F/user/Labs_user/chipw7/vhdlLab/exercise_1/comb_logic/comb_logic.vhd
+l0
+L5
+V;YDUDFHfE:1_0g27>53O61
+!s100 SPhRRc;=nm?cZV8EChZ8N2
+Z8 OE;C;10.4c_5;61
+32
+Z9 !s110 1492505720
+!i10b 1
+Z10 !s108 1492505720.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_1/comb_logic/comb_logic.vhd|
+Z12 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_1/comb_logic/comb_logic.vhd|
+!i113 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1
+Artl
+R2
+R3
+R4
+DEx4 work 10 comb_logic 0 22 ;YDUDFHfE:1_0g27>53O61
+32
+R9
+l17
+L13
+VWf5^hKmS`RgDhOX<@3ljL3
+!s100 5h?2Q8>zOFgjPZUY[_:J81
+R8
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ecomb_logic_tb
+Z15 w1491906623
+R2
+R3
+R4
+R5
+Z16 8/user/Labs_user/chipw7/vhdlLab/exercise_1/comb_logic/comb_logic_tb.vhd
+Z17 F/user/Labs_user/chipw7/vhdlLab/exercise_1/comb_logic/comb_logic_tb.vhd
+l0
+L5
+Vb]1c]1Af4hHR=HG?I8CQD2
+!s100 OU]?k;Bb7b]C[c9dc^MF_1
+R8
+32
+Z18 !s110 1492505721
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_1/comb_logic/comb_logic_tb.vhd|
+Z20 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_1/comb_logic/comb_logic_tb.vhd|
+!i113 0
+R13
+R14
+Abeh
+R2
+R3
+R4
+DEx4 work 13 comb_logic_tb 0 22 b]1c]1Af4hHR=HG?I8CQD2
+32
+R18
+l28
+L10
+VTi[O??XiBF?L85P5d`l2N3
+!s100 D4J@BZXKA?l`J^i=>jfk@3
+R8
+!i10b 1
+R10
+R19
+R20
+!i113 0
+R13
+R14
+Ereg
+Z21 w1492504534
+R2
+R3
+R4
+R5
+Z22 8/user/Labs_user/chipw7/vhdlLab/exercise_1/reg/reg.vhd
+Z23 F/user/Labs_user/chipw7/vhdlLab/exercise_1/reg/reg.vhd
+l0
+L5
+VeAc]8LR4`E<0f6kF7JM<a0
+!s100 gJDQNdGOOAFHo7CYLjlLR2
+R8
+32
+Z24 !s110 1492504537
+!i10b 1
+Z25 !s108 1492504537.000000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_1/reg/reg.vhd|
+Z27 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_1/reg/reg.vhd|
+!i113 0
+R13
+R14
+Artl
+R2
+R3
+R4
+DEx4 work 3 reg 0 22 eAc]8LR4`E<0f6kF7JM<a0
+l21
+L16
+VLG@D2ae7fPG]YPVMEhkJK0
+!s100 RE37254E8JHAd1W:Y0mDT2
+R8
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 0
+R13
+R14
+Ereg_tb
+R15
+R2
+R3
+R4
+R5
+Z28 8/user/Labs_user/chipw7/vhdlLab/exercise_1/reg/reg_tb.vhd
+Z29 F/user/Labs_user/chipw7/vhdlLab/exercise_1/reg/reg_tb.vhd
+l0
+L5
+V3F7W_HM1^>MLM6ZXBChM=3
+!s100 TA_=9NCD?;^Nm3]O@5i]V2
+R8
+32
+R24
+!i10b 1
+R25
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_1/reg/reg_tb.vhd|
+Z31 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_1/reg/reg_tb.vhd|
+!i113 0
+R13
+R14
+Abeh
+R2
+R3
+R4
+DEx4 work 6 reg_tb 0 22 3F7W_HM1^>MLM6ZXBChM=3
+l32
+L10
+Va]]z?F0;=:nfO^MnlQe3_2
+!s100 GiZl?6RY`4n@B>b?aX=GS0
+R8
+32
+R24
+!i10b 1
+R25
+R30
+R31
+!i113 0
+R13
+R14

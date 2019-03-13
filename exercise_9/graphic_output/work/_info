@@ -1,0 +1,231 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/user/Labs_user/chipw7
+Egraphic_buffer
+Z0 w1496740656
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output
+Z5 8../../exercise_7/graphic_buffer/graphic_buffer.vhd
+Z6 F../../exercise_7/graphic_buffer/graphic_buffer.vhd
+l0
+L10
+Vd@;Xjm`jbN7YJ]X4abbG=3
+!s100 ;Z?H806YRMCAc6[6Ui?682
+Z7 OE;C;10.4c_5;61
+32
+Z8 !s110 1497342353
+!i10b 1
+Z9 !s108 1497342353.000000
+Z10 !s90 -reportprogress|300|../../exercise_7/graphic_buffer/graphic_buffer.vhd|
+Z11 !s107 ../../exercise_7/graphic_buffer/graphic_buffer.vhd|
+!i113 0
+Z12 tExplicit 1
+Artl
+R1
+R2
+R3
+DEx4 work 14 graphic_buffer 0 22 d@;Xjm`jbN7YJ]X4abbG=3
+32
+R8
+l43
+L37
+Vg[@S2DU]BobaUzmbDc1Ec3
+!s100 zNkY[8lV9R?BV^Zg<SLN`3
+R7
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Egraphic_buffer_controller
+Z13 w1497342337
+R1
+R2
+R3
+R4
+Z14 8../../exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd
+Z15 F../../exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd
+l0
+L15
+V:0bGYglKNCcUcNU;7hidE3
+!s100 S]WeCTIdGBWYG0ZZGc>B83
+R7
+32
+R8
+!i10b 1
+R9
+Z16 !s90 -reportprogress|300|../../exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd|
+Z17 !s107 ../../exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd|
+!i113 0
+R12
+Artl
+R1
+R2
+R3
+DEx4 work 25 graphic_buffer_controller 0 22 :0bGYglKNCcUcNU;7hidE3
+32
+R8
+l66
+L56
+VMO_z3^fAIj:LE;O@7Aa>B1
+!s100 zzkK3TRbQmj6@QmeJ@R;;3
+R7
+!i10b 1
+R9
+R16
+R17
+!i113 0
+R12
+Egraphic_output
+Z18 w1496140640
+Z19 DPx4 work 22 graphic_output_package 0 22 gNNA0S_2[CQYbnAd08kKG1
+R1
+R2
+R3
+R4
+Z20 8graphic_output.vhd
+Z21 Fgraphic_output.vhd
+l0
+L5
+V`TKkb1PYgSBe=FRmaCUj90
+!s100 G^SNhz2`Sz1FoM@=oMZ=_0
+R7
+32
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|graphic_output.vhd|
+Z23 !s107 graphic_output.vhd|
+!i113 0
+R12
+Artl
+R19
+R1
+R2
+R3
+DEx4 work 14 graphic_output 0 22 `TKkb1PYgSBe=FRmaCUj90
+32
+R8
+l50
+L40
+V?cc8E=id1C52k46A_7X=U0
+!s100 6e@a5UR<X@FFK4nYDTBbc3
+R7
+!i10b 1
+R9
+R22
+R23
+!i113 0
+R12
+Pgraphic_output_package
+R2
+R3
+32
+R8
+w1495532021
+R4
+8graphic_output_package.vhd
+Fgraphic_output_package.vhd
+l0
+L4
+VgNNA0S_2[CQYbnAd08kKG1
+!s100 Y6a6LmK<^[i>6j]^hH3<C1
+R7
+!i10b 1
+R9
+!s90 -reportprogress|300|graphic_output_package.vhd|
+!s107 graphic_output_package.vhd|
+!i113 0
+R12
+Egraphic_output_tb
+Z24 w1496738651
+R19
+Z25 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R1
+R2
+R3
+R4
+Z26 8graphic_output_tb.vhd
+Z27 Fgraphic_output_tb.vhd
+l0
+L8
+V8^fNVB<M99MHoM8@Vc7dL1
+!s100 g11Rc2RA`YBiegGf?PW3c3
+R7
+32
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|graphic_output_tb.vhd|
+Z29 !s107 graphic_output_tb.vhd|
+!i113 0
+R12
+Abeh
+R19
+R25
+R1
+R2
+R3
+DEx4 work 17 graphic_output_tb 0 22 8^fNVB<M99MHoM8@Vc7dL1
+32
+R8
+l68
+L13
+VVdNf_d@WogIhJCDfTB80E2
+!s100 XG3MhRFYX1NTWTMmgQR_F3
+R7
+!i10b 1
+R9
+R28
+R29
+!i113 0
+R12
+Esync_pulse_generator
+Z30 w1493720528
+R1
+R2
+R3
+R4
+Z31 8../../exercise_6/sync_pulse_generator/sync_pulse_generator.vhd
+Z32 F../../exercise_6/sync_pulse_generator/sync_pulse_generator.vhd
+l0
+L16
+V_IJo6HZfNMCckWTjgn5Ue2
+!s100 DGfbzSfa_P2<[l>]I^0?S1
+R7
+32
+R8
+!i10b 1
+R9
+Z33 !s90 -reportprogress|300|../../exercise_6/sync_pulse_generator/sync_pulse_generator.vhd|
+Z34 !s107 ../../exercise_6/sync_pulse_generator/sync_pulse_generator.vhd|
+!i113 0
+R12
+Artl
+R1
+R2
+R3
+DEx4 work 20 sync_pulse_generator 0 22 _IJo6HZfNMCckWTjgn5Ue2
+32
+R8
+l63
+L55
+Vb4Dj5Kn7P=MH@5hKaPz?]1
+!s100 9Lal]_lVD8Db5l5dBdCL10
+R7
+!i10b 1
+R9
+R33
+R34
+!i113 0
+R12

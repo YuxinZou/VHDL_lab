@@ -1,0 +1,21 @@
+Tue Apr 25 11:52:57 CEST 2017
+Trace back: could not set owner for file "/user/Labs_user/chipw7/vhdlLab/exercise_4/state_machines/state_machines.mpf": user "chipw7" does not exist
+    while executing
+"file attributes $projfilename -owner $env(USER)"
+    (procedure "Project::create" line 133)
+    invoked from within
+"Project::create $Project(dlg_proj_location) $Project(CurProj_NewName) $Project(dlg_proj_libname) $Project(dlg_initial_ini) $Project(dlg_ini_copy)"
+    (procedure "Project::applyCreate" line 3)
+    invoked from within
+"Project::applyCreate .pcd"
+    invoked from within
+".pcd.bb.button0 invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "tk::ButtonUp" line 22)
+    invoked from within
+"tk::ButtonUp .pcd.bb.button0"
+    (command bound to event)
+  <2:/tools/modeltech/mentor/2015-16/RHELx86/QUESTA-SV-AFV_10.4c-5/questasim/linux/tk8.5/bgerror.tcl:92: ::tkerror {could not set owner for file "/user/Labs_user/chipw7/vhdlLab/exercise_4/state_machines/state_machines.mpf": user "chipw7" does not exist}
+  <1:eval:1: ::tk::dialog::error::bgerror {could not set owner for file "/user/Labs_user/chipw7/vhdlLab/exercise_4/state_machines/state_machines.mpf": user "chipw7" does not exist}

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.ncd
+OUTFILE=/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth
+LICENSE=ISE
+USER_INFO=206445712_210292216_210656094_943

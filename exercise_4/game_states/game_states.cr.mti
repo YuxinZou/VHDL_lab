@@ -1,0 +1,22 @@
+/user/Labs_user/chipw7/vhdlLab/exercise_4/game_states/game_states.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_4/game_states/game_states.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity game_states
+-- Compiling architecture rtl of game_states
+
+} {} {}} /user/Labs_user/chipw7/vhdlLab/exercise_4/game_states/game_states_tb.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_4/game_states/game_states_tb.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity game_states_tb
+-- Compiling architecture beh of game_states_tb
+** Warning: /user/Labs_user/chipw7/vhdlLab/exercise_4/game_states/game_states_tb.vhd(82): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+** Warning: /user/Labs_user/chipw7/vhdlLab/exercise_4/game_states/game_states_tb.vhd(104): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
+} {} {}}

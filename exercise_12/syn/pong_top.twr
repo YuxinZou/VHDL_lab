@@ -1,0 +1,550 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/tools/xilinx/ise_14.7/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise
+-v 3 -s 3 -n 3 -fastpaths -xml pong_top.twx pong_top.ncd -o pong_top.twr
+pong_top.pcf
+
+Design file:              pong_top.ncd
+Physical constraint file: pong_top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 65212 paths analyzed, 3714 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.474ns.
+--------------------------------------------------------------------------------
+
+Paths for end point graphic_engine_inst/ram_controller_1/o_read_data_249 (SLICE_X2Y2.CE), 37 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.526ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphic_engine_inst/ram_controller_1/s_ram_counter_22 (FF)
+  Destination:          graphic_engine_inst/ram_controller_1/o_read_data_249 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.472ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.466 - 0.433)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: graphic_engine_inst/ram_controller_1/s_ram_counter_22 to graphic_engine_inst/ram_controller_1/o_read_data_249
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y39.DMUX    Tshcko                0.461   graphic_engine_inst/ram_controller_1/s_ram_counter<23>
+                                                       graphic_engine_inst/ram_controller_1/s_ram_counter_22
+    SLICE_X21Y39.A1      net (fanout=2)        0.859   graphic_engine_inst/ram_controller_1/s_ram_counter<22>
+    SLICE_X21Y39.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>3
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>4
+    SLICE_X19Y38.A2      net (fanout=1)        0.814   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>3
+    SLICE_X19Y38.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>7
+    SLICE_X15Y28.D3      net (fanout=27)       1.502   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o
+    SLICE_X15Y28.D       Tilo                  0.259   graphic_engine_inst/ram_controller_1/o_read_data<63>
+                                                       graphic_engine_inst/ram_controller_1/_n0793_inv1
+    SLICE_X2Y2.CE        net (fanout=67)       3.728   graphic_engine_inst/ram_controller_1/_n0793_inv
+    SLICE_X2Y2.CLK       Tceck                 0.331   graphic_engine_inst/ram_controller_1/o_read_data<252>
+                                                       graphic_engine_inst/ram_controller_1/o_read_data_249
+    -------------------------------------------------  ---------------------------
+    Total                                      8.472ns (1.569ns logic, 6.903ns route)
+                                                       (18.5% logic, 81.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.619ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphic_engine_inst/ram_controller_1/s_ram_counter_24 (FF)
+  Destination:          graphic_engine_inst/ram_controller_1/o_read_data_249 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.374ns (Levels of Logic = 3)
+  Clock Path Skew:      0.028ns (0.466 - 0.438)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: graphic_engine_inst/ram_controller_1/s_ram_counter_24 to graphic_engine_inst/ram_controller_1/o_read_data_249
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y42.AMUX    Tshcko                0.461   graphic_engine_inst/ram_controller_1/s_ram_counter<31>
+                                                       graphic_engine_inst/ram_controller_1/s_ram_counter_24
+    SLICE_X19Y41.A2      net (fanout=2)        0.770   graphic_engine_inst/ram_controller_1/s_ram_counter<24>
+    SLICE_X19Y41.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>4
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+    SLICE_X19Y38.A1      net (fanout=1)        0.805   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>4
+    SLICE_X19Y38.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>7
+    SLICE_X15Y28.D3      net (fanout=27)       1.502   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o
+    SLICE_X15Y28.D       Tilo                  0.259   graphic_engine_inst/ram_controller_1/o_read_data<63>
+                                                       graphic_engine_inst/ram_controller_1/_n0793_inv1
+    SLICE_X2Y2.CE        net (fanout=67)       3.728   graphic_engine_inst/ram_controller_1/_n0793_inv
+    SLICE_X2Y2.CLK       Tceck                 0.331   graphic_engine_inst/ram_controller_1/o_read_data<252>
+                                                       graphic_engine_inst/ram_controller_1/o_read_data_249
+    -------------------------------------------------  ---------------------------
+    Total                                      8.374ns (1.569ns logic, 6.805ns route)
+                                                       (18.7% logic, 81.3% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.820ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphic_engine_inst/ram_controller_1/s_ram_counter_5 (FF)
+  Destination:          graphic_engine_inst/ram_controller_1/o_read_data_249 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.170ns (Levels of Logic = 3)
+  Clock Path Skew:      0.025ns (0.466 - 0.441)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: graphic_engine_inst/ram_controller_1/s_ram_counter_5 to graphic_engine_inst/ram_controller_1/o_read_data_249
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y36.CQ      Tcko                  0.391   graphic_engine_inst/ram_controller_1/s_ram_counter<7>
+                                                       graphic_engine_inst/ram_controller_1/s_ram_counter_5
+    SLICE_X19Y38.B2      net (fanout=2)        1.001   graphic_engine_inst/ram_controller_1/s_ram_counter<5>
+    SLICE_X19Y38.B       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>1
+    SLICE_X19Y38.A4      net (fanout=1)        0.440   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>
+    SLICE_X19Y38.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>7
+    SLICE_X15Y28.D3      net (fanout=27)       1.502   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o
+    SLICE_X15Y28.D       Tilo                  0.259   graphic_engine_inst/ram_controller_1/o_read_data<63>
+                                                       graphic_engine_inst/ram_controller_1/_n0793_inv1
+    SLICE_X2Y2.CE        net (fanout=67)       3.728   graphic_engine_inst/ram_controller_1/_n0793_inv
+    SLICE_X2Y2.CLK       Tceck                 0.331   graphic_engine_inst/ram_controller_1/o_read_data<252>
+                                                       graphic_engine_inst/ram_controller_1/o_read_data_249
+    -------------------------------------------------  ---------------------------
+    Total                                      8.170ns (1.499ns logic, 6.671ns route)
+                                                       (18.3% logic, 81.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point graphic_engine_inst/ram_controller_1/o_read_data_251 (SLICE_X2Y2.CE), 37 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.562ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphic_engine_inst/ram_controller_1/s_ram_counter_22 (FF)
+  Destination:          graphic_engine_inst/ram_controller_1/o_read_data_251 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.436ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.466 - 0.433)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: graphic_engine_inst/ram_controller_1/s_ram_counter_22 to graphic_engine_inst/ram_controller_1/o_read_data_251
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y39.DMUX    Tshcko                0.461   graphic_engine_inst/ram_controller_1/s_ram_counter<23>
+                                                       graphic_engine_inst/ram_controller_1/s_ram_counter_22
+    SLICE_X21Y39.A1      net (fanout=2)        0.859   graphic_engine_inst/ram_controller_1/s_ram_counter<22>
+    SLICE_X21Y39.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>3
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>4
+    SLICE_X19Y38.A2      net (fanout=1)        0.814   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>3
+    SLICE_X19Y38.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>7
+    SLICE_X15Y28.D3      net (fanout=27)       1.502   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o
+    SLICE_X15Y28.D       Tilo                  0.259   graphic_engine_inst/ram_controller_1/o_read_data<63>
+                                                       graphic_engine_inst/ram_controller_1/_n0793_inv1
+    SLICE_X2Y2.CE        net (fanout=67)       3.728   graphic_engine_inst/ram_controller_1/_n0793_inv
+    SLICE_X2Y2.CLK       Tceck                 0.295   graphic_engine_inst/ram_controller_1/o_read_data<252>
+                                                       graphic_engine_inst/ram_controller_1/o_read_data_251
+    -------------------------------------------------  ---------------------------
+    Total                                      8.436ns (1.533ns logic, 6.903ns route)
+                                                       (18.2% logic, 81.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.655ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphic_engine_inst/ram_controller_1/s_ram_counter_24 (FF)
+  Destination:          graphic_engine_inst/ram_controller_1/o_read_data_251 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.338ns (Levels of Logic = 3)
+  Clock Path Skew:      0.028ns (0.466 - 0.438)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: graphic_engine_inst/ram_controller_1/s_ram_counter_24 to graphic_engine_inst/ram_controller_1/o_read_data_251
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y42.AMUX    Tshcko                0.461   graphic_engine_inst/ram_controller_1/s_ram_counter<31>
+                                                       graphic_engine_inst/ram_controller_1/s_ram_counter_24
+    SLICE_X19Y41.A2      net (fanout=2)        0.770   graphic_engine_inst/ram_controller_1/s_ram_counter<24>
+    SLICE_X19Y41.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>4
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+    SLICE_X19Y38.A1      net (fanout=1)        0.805   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>4
+    SLICE_X19Y38.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>7
+    SLICE_X15Y28.D3      net (fanout=27)       1.502   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o
+    SLICE_X15Y28.D       Tilo                  0.259   graphic_engine_inst/ram_controller_1/o_read_data<63>
+                                                       graphic_engine_inst/ram_controller_1/_n0793_inv1
+    SLICE_X2Y2.CE        net (fanout=67)       3.728   graphic_engine_inst/ram_controller_1/_n0793_inv
+    SLICE_X2Y2.CLK       Tceck                 0.295   graphic_engine_inst/ram_controller_1/o_read_data<252>
+                                                       graphic_engine_inst/ram_controller_1/o_read_data_251
+    -------------------------------------------------  ---------------------------
+    Total                                      8.338ns (1.533ns logic, 6.805ns route)
+                                                       (18.4% logic, 81.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.856ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphic_engine_inst/ram_controller_1/s_ram_counter_5 (FF)
+  Destination:          graphic_engine_inst/ram_controller_1/o_read_data_251 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.134ns (Levels of Logic = 3)
+  Clock Path Skew:      0.025ns (0.466 - 0.441)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: graphic_engine_inst/ram_controller_1/s_ram_counter_5 to graphic_engine_inst/ram_controller_1/o_read_data_251
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y36.CQ      Tcko                  0.391   graphic_engine_inst/ram_controller_1/s_ram_counter<7>
+                                                       graphic_engine_inst/ram_controller_1/s_ram_counter_5
+    SLICE_X19Y38.B2      net (fanout=2)        1.001   graphic_engine_inst/ram_controller_1/s_ram_counter<5>
+    SLICE_X19Y38.B       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>1
+    SLICE_X19Y38.A4      net (fanout=1)        0.440   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>
+    SLICE_X19Y38.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>7
+    SLICE_X15Y28.D3      net (fanout=27)       1.502   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o
+    SLICE_X15Y28.D       Tilo                  0.259   graphic_engine_inst/ram_controller_1/o_read_data<63>
+                                                       graphic_engine_inst/ram_controller_1/_n0793_inv1
+    SLICE_X2Y2.CE        net (fanout=67)       3.728   graphic_engine_inst/ram_controller_1/_n0793_inv
+    SLICE_X2Y2.CLK       Tceck                 0.295   graphic_engine_inst/ram_controller_1/o_read_data<252>
+                                                       graphic_engine_inst/ram_controller_1/o_read_data_251
+    -------------------------------------------------  ---------------------------
+    Total                                      8.134ns (1.463ns logic, 6.671ns route)
+                                                       (18.0% logic, 82.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point graphic_engine_inst/ram_controller_1/o_read_data_252 (SLICE_X2Y2.CE), 37 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.566ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphic_engine_inst/ram_controller_1/s_ram_counter_22 (FF)
+  Destination:          graphic_engine_inst/ram_controller_1/o_read_data_252 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.432ns (Levels of Logic = 3)
+  Clock Path Skew:      0.033ns (0.466 - 0.433)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: graphic_engine_inst/ram_controller_1/s_ram_counter_22 to graphic_engine_inst/ram_controller_1/o_read_data_252
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y39.DMUX    Tshcko                0.461   graphic_engine_inst/ram_controller_1/s_ram_counter<23>
+                                                       graphic_engine_inst/ram_controller_1/s_ram_counter_22
+    SLICE_X21Y39.A1      net (fanout=2)        0.859   graphic_engine_inst/ram_controller_1/s_ram_counter<22>
+    SLICE_X21Y39.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>3
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>4
+    SLICE_X19Y38.A2      net (fanout=1)        0.814   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>3
+    SLICE_X19Y38.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>7
+    SLICE_X15Y28.D3      net (fanout=27)       1.502   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o
+    SLICE_X15Y28.D       Tilo                  0.259   graphic_engine_inst/ram_controller_1/o_read_data<63>
+                                                       graphic_engine_inst/ram_controller_1/_n0793_inv1
+    SLICE_X2Y2.CE        net (fanout=67)       3.728   graphic_engine_inst/ram_controller_1/_n0793_inv
+    SLICE_X2Y2.CLK       Tceck                 0.291   graphic_engine_inst/ram_controller_1/o_read_data<252>
+                                                       graphic_engine_inst/ram_controller_1/o_read_data_252
+    -------------------------------------------------  ---------------------------
+    Total                                      8.432ns (1.529ns logic, 6.903ns route)
+                                                       (18.1% logic, 81.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.659ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphic_engine_inst/ram_controller_1/s_ram_counter_24 (FF)
+  Destination:          graphic_engine_inst/ram_controller_1/o_read_data_252 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.334ns (Levels of Logic = 3)
+  Clock Path Skew:      0.028ns (0.466 - 0.438)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: graphic_engine_inst/ram_controller_1/s_ram_counter_24 to graphic_engine_inst/ram_controller_1/o_read_data_252
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y42.AMUX    Tshcko                0.461   graphic_engine_inst/ram_controller_1/s_ram_counter<31>
+                                                       graphic_engine_inst/ram_controller_1/s_ram_counter_24
+    SLICE_X19Y41.A2      net (fanout=2)        0.770   graphic_engine_inst/ram_controller_1/s_ram_counter<24>
+    SLICE_X19Y41.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>4
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+    SLICE_X19Y38.A1      net (fanout=1)        0.805   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>4
+    SLICE_X19Y38.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>7
+    SLICE_X15Y28.D3      net (fanout=27)       1.502   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o
+    SLICE_X15Y28.D       Tilo                  0.259   graphic_engine_inst/ram_controller_1/o_read_data<63>
+                                                       graphic_engine_inst/ram_controller_1/_n0793_inv1
+    SLICE_X2Y2.CE        net (fanout=67)       3.728   graphic_engine_inst/ram_controller_1/_n0793_inv
+    SLICE_X2Y2.CLK       Tceck                 0.291   graphic_engine_inst/ram_controller_1/o_read_data<252>
+                                                       graphic_engine_inst/ram_controller_1/o_read_data_252
+    -------------------------------------------------  ---------------------------
+    Total                                      8.334ns (1.529ns logic, 6.805ns route)
+                                                       (18.3% logic, 81.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.860ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               graphic_engine_inst/ram_controller_1/s_ram_counter_5 (FF)
+  Destination:          graphic_engine_inst/ram_controller_1/o_read_data_252 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      8.130ns (Levels of Logic = 3)
+  Clock Path Skew:      0.025ns (0.466 - 0.441)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: graphic_engine_inst/ram_controller_1/s_ram_counter_5 to graphic_engine_inst/ram_controller_1/o_read_data_252
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y36.CQ      Tcko                  0.391   graphic_engine_inst/ram_controller_1/s_ram_counter<7>
+                                                       graphic_engine_inst/ram_controller_1/s_ram_counter_5
+    SLICE_X19Y38.B2      net (fanout=2)        1.001   graphic_engine_inst/ram_controller_1/s_ram_counter<5>
+    SLICE_X19Y38.B       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>1
+    SLICE_X19Y38.A4      net (fanout=1)        0.440   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>
+    SLICE_X19Y38.A       Tilo                  0.259   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>5
+                                                       graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o<31>7
+    SLICE_X15Y28.D3      net (fanout=27)       1.502   graphic_engine_inst/ram_controller_1/GND_29_o_s_ram_counter[31]_equal_3_o
+    SLICE_X15Y28.D       Tilo                  0.259   graphic_engine_inst/ram_controller_1/o_read_data<63>
+                                                       graphic_engine_inst/ram_controller_1/_n0793_inv1
+    SLICE_X2Y2.CE        net (fanout=67)       3.728   graphic_engine_inst/ram_controller_1/_n0793_inv
+    SLICE_X2Y2.CLK       Tceck                 0.291   graphic_engine_inst/ram_controller_1/o_read_data<252>
+                                                       graphic_engine_inst/ram_controller_1/o_read_data_252
+    -------------------------------------------------  ---------------------------
+    Total                                      8.130ns (1.459ns logic, 6.671ns route)
+                                                       (17.9% logic, 82.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point game_engine_inst_rom_inst/Mram_o_rom_data (RAMB8_X1Y16.ADDRAWRADDR10), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.285ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               game_engine_inst/ball_movement_inst/ball_x_velocity_2 (FF)
+  Destination:          game_engine_inst_rom_inst/Mram_o_rom_data (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.291ns (Levels of Logic = 0)
+  Clock Path Skew:      0.006ns (0.125 - 0.119)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: game_engine_inst/ball_movement_inst/ball_x_velocity_2 to game_engine_inst_rom_inst/Mram_o_rom_data
+    Location                  Delay type         Delay(ns)  Physical Resource
+                                                            Logical Resource(s)
+    ------------------------------------------------------  -------------------
+    SLICE_X32Y33.CQ           Tcko                  0.200   game_engine_inst/ball_movement_inst/ball_x_velocity<2>
+                                                            game_engine_inst/ball_movement_inst/ball_x_velocity_2
+    RAMB8_X1Y16.ADDRAWRADDR10 net (fanout=6)        0.157   game_engine_inst/ball_movement_inst/ball_x_velocity<2>
+    RAMB8_X1Y16.CLKAWRCLK     Trckc_ADDRA (-Th)     0.066   game_engine_inst_rom_inst/Mram_o_rom_data
+                                                            game_engine_inst_rom_inst/Mram_o_rom_data
+    ------------------------------------------------------  ---------------------------
+    Total                                           0.291ns (0.134ns logic, 0.157ns route)
+                                                            (46.0% logic, 54.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_5 (SLICE_X24Y46.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.308ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address (FF)
+  Destination:          graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_5 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.317ns (Levels of Logic = 0)
+  Clock Path Skew:      0.009ns (0.164 - 0.155)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address to graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y46.CQ      Tcko                  0.368   graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address
+                                                       graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address
+    SLICE_X24Y46.CE      net (fanout=6)        0.138   graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address
+    SLICE_X24Y46.CLK     Tckce       (-Th)     0.189   graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block<7>
+                                                       graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_5
+    -------------------------------------------------  ---------------------------
+    Total                                      0.317ns (0.179ns logic, 0.138ns route)
+                                                       (56.5% logic, 43.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_6 (SLICE_X24Y46.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.325ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address (FF)
+  Destination:          graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_6 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.334ns (Levels of Logic = 0)
+  Clock Path Skew:      0.009ns (0.164 - 0.155)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Slow Process Corner: graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address to graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X25Y46.CQ      Tcko                  0.368   graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address
+                                                       graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address
+    SLICE_X24Y46.CE      net (fanout=6)        0.138   graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address
+    SLICE_X24Y46.CLK     Tckce       (-Th)     0.172   graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block<7>
+                                                       graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_6
+    -------------------------------------------------  ---------------------------
+    Total                                      0.334ns (0.196ns logic, 0.138ns route)
+                                                       (58.7% logic, 41.3% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 6.876ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 3.124ns (320.102MHz) (Trper_CLKA(Fmax))
+  Physical resource: game_engine_inst_rom_inst/Mram_o_rom_data/CLKAWRCLK
+  Logical resource: game_engine_inst_rom_inst/Mram_o_rom_data/CLKAWRCLK
+  Location pin: RAMB8_X1Y16.CLKAWRCLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 8.270ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.730ns (578.035MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGMUX_X3Y13.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 9.570ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 0.430ns (2325.581MHz) (Tcp)
+  Physical resource: graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column<3>/CLK
+  Logical resource: graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_0/CK
+  Location pin: SLICE_X4Y43.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.474|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 65212 paths, 0 nets, and 4732 connections
+
+Design statistics:
+   Minimum period:   8.474ns{1}   (Maximum frequency: 118.008MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Jun 27 11:56:21 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 427 MB
+
+
+

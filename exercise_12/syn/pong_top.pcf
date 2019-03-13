@@ -1,0 +1,997 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jun 27 11:56:03 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "io_ram_dq<0>" LOCATE = SITE "R13" LEVEL 1;
+COMP "io_ram_dq<1>" LOCATE = SITE "T14" LEVEL 1;
+COMP "io_ram_dq<2>" LOCATE = SITE "V14" LEVEL 1;
+COMP "io_ram_dq<3>" LOCATE = SITE "U5" LEVEL 1;
+COMP "io_ram_dq<4>" LOCATE = SITE "V5" LEVEL 1;
+COMP "io_ram_dq<5>" LOCATE = SITE "R3" LEVEL 1;
+COMP "io_ram_dq<6>" LOCATE = SITE "T3" LEVEL 1;
+COMP "io_ram_dq<7>" LOCATE = SITE "R5" LEVEL 1;
+COMP "io_ram_dq<8>" LOCATE = SITE "N5" LEVEL 1;
+COMP "io_ram_dq<9>" LOCATE = SITE "P6" LEVEL 1;
+COMP "o_player_1_up" LOCATE = SITE "U16" LEVEL 1;
+COMP "o_player_2_up" LOCATE = SITE "U15" LEVEL 1;
+COMP "i_ps2_clk" LOCATE = SITE "L12" LEVEL 1;
+COMP "o_ram_address<1>" LOCATE = SITE "K18" LEVEL 1;
+COMP "o_ram_address<2>" LOCATE = SITE "K17" LEVEL 1;
+COMP "o_ram_address<3>" LOCATE = SITE "J18" LEVEL 1;
+COMP "o_ram_address<4>" LOCATE = SITE "J16" LEVEL 1;
+COMP "o_ram_address<5>" LOCATE = SITE "G18" LEVEL 1;
+COMP "o_ram_address<6>" LOCATE = SITE "G16" LEVEL 1;
+COMP "o_ram_address<7>" LOCATE = SITE "H16" LEVEL 1;
+COMP "o_ram_address<8>" LOCATE = SITE "H15" LEVEL 1;
+COMP "o_ram_address<9>" LOCATE = SITE "H14" LEVEL 1;
+COMP "io_ram_dq<10>" LOCATE = SITE "P12" LEVEL 1;
+COMP "io_ram_dq<11>" LOCATE = SITE "U13" LEVEL 1;
+COMP "io_ram_dq<12>" LOCATE = SITE "V13" LEVEL 1;
+COMP "io_ram_dq<13>" LOCATE = SITE "U10" LEVEL 1;
+COMP "io_ram_dq<14>" LOCATE = SITE "R8" LEVEL 1;
+COMP "io_ram_dq<15>" LOCATE = SITE "T8" LEVEL 1;
+COMP "o_blue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "o_blue<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "reset" LOCATE = SITE "T10" LEVEL 1;
+COMP "o_serve" LOCATE = SITE "M11" LEVEL 1;
+COMP "o_ram_ce_neg" LOCATE = SITE "L15" LEVEL 1;
+COMP "o_ram_lb_neg" LOCATE = SITE "K16" LEVEL 1;
+COMP "o_ram_clk" LOCATE = SITE "R10" LEVEL 1;
+COMP "o_ram_cre" LOCATE = SITE "M18" LEVEL 1;
+COMP "o_ram_oe_neg" LOCATE = SITE "L18" LEVEL 1;
+COMP "o_anodes<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "o_anodes<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "o_anodes<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "o_anodes<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "i_ps2_data" LOCATE = SITE "J13" LEVEL 1;
+COMP "o_ram_ub_neg" LOCATE = SITE "K15" LEVEL 1;
+COMP "o_ram_we_neg" LOCATE = SITE "M16" LEVEL 1;
+COMP "o_ram_address<10>" LOCATE = SITE "H13" LEVEL 1;
+COMP "o_ram_address<11>" LOCATE = SITE "F18" LEVEL 1;
+COMP "o_ram_address<12>" LOCATE = SITE "F17" LEVEL 1;
+COMP "o_ram_address<20>" LOCATE = SITE "D17" LEVEL 1;
+COMP "o_ram_address<13>" LOCATE = SITE "K13" LEVEL 1;
+COMP "o_ram_address<21>" LOCATE = SITE "G14" LEVEL 1;
+COMP "o_ram_address<14>" LOCATE = SITE "K12" LEVEL 1;
+COMP "o_ram_address<22>" LOCATE = SITE "F14" LEVEL 1;
+COMP "o_ram_address<15>" LOCATE = SITE "E18" LEVEL 1;
+COMP "o_ram_address<23>" LOCATE = SITE "C18" LEVEL 1;
+COMP "o_ram_address<16>" LOCATE = SITE "E16" LEVEL 1;
+COMP "o_ram_address<17>" LOCATE = SITE "G13" LEVEL 1;
+COMP "o_ram_address<18>" LOCATE = SITE "H12" LEVEL 1;
+COMP "o_ram_address<19>" LOCATE = SITE "D18" LEVEL 1;
+COMP "o_cathodes<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "o_cathodes<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "o_cathodes<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "o_cathodes<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "o_cathodes<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "o_cathodes<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "o_cathodes<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "o_cathodes<7>" LOCATE = SITE "M13" LEVEL 1;
+COMP "o_red<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "o_red<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "o_red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "o_h_sync" LOCATE = SITE "N6" LEVEL 1;
+COMP "o_player_1_down" LOCATE = SITE "V16" LEVEL 1;
+COMP "o_player_2_down" LOCATE = SITE "V15" LEVEL 1;
+COMP "o_v_sync" LOCATE = SITE "P7" LEVEL 1;
+COMP "o_green<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "o_green<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "o_green<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "o_ram_adv_neg" LOCATE = SITE "H18" LEVEL 1;
+COMP "o_reset_key" LOCATE = SITE "N11" LEVEL 1;
+PIN game_engine_inst_rom_inst/Mram_o_rom_data_pins<10> = BEL
+        "game_engine_inst_rom_inst/Mram_o_rom_data" PINNAME CLKAWRCLK;
+TIMEGRP sys_clk_pin = BEL "reset_circuit_inst/o_reset" BEL
+        "reset_circuit_inst/cnt_cycle_counter_0" BEL
+        "reset_circuit_inst/cnt_cycle_counter_1" BEL
+        "reset_circuit_inst/cnt_cycle_counter_2" BEL
+        "reset_circuit_inst/cnt_cycle_counter_3" BEL
+        "reset_circuit_inst/cnt_cycle_counter_4" BEL
+        "reset_circuit_inst/cnt_cycle_counter_5" BEL
+        "reset_circuit_inst/cnt_cycle_counter_6" BEL
+        "reset_circuit_inst/cnt_cycle_counter_7" BEL
+        "reset_circuit_inst/cnt_cycle_counter_8" BEL
+        "reset_circuit_inst/cnt_cycle_counter_9" BEL
+        "graphic_engine_inst/pixel_clk_div_0" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_ctrl_state_FSM_FFd1" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_ctrl_state_FSM_FFd2" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_ctrl_state_FSM_FFd3" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_ctrl_state_FSM_FFd4" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_31" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_30" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_29" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_28" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_27" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_26" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_25" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_24" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_23" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_22" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_21" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_20" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_19" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_18" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_17" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_16" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_15" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_14" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_13" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_12" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_11" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_10" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_9" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_8" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_7" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_6" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_5" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_4" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_3" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_2" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_1" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_counter_0" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_done" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_22" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_21" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_20" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_19" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_18" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_17" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_16" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_15" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_14" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_13" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_12" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_11" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_10" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_9" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_8" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_7" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_6" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_5" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_4" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_address_3" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_ctrl_cnt_4" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_ctrl_cnt_3" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_ctrl_cnt_2" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_ctrl_cnt_1" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_ctrl_cnt_0" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_15" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_14" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_13" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_12" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_11" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_10" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_9" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_8" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_7" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_6" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_5" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_4" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_3" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_2" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_1" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_dq_out_0" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_255" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_254" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_253" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_252" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_251" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_250" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_249" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_248" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_247" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_246" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_245" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_244" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_243" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_242" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_241" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_240" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_239" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_238" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_237" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_236" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_235" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_234" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_233" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_232" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_231" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_230" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_229" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_228" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_227" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_226" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_225" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_224" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_223" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_222" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_221" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_220" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_219" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_218" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_217" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_216" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_215" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_214" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_213" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_212" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_211" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_210" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_209" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_208" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_207" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_206" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_205" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_204" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_203" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_202" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_201" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_200" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_199" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_198" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_197" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_196" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_195" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_194" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_193" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_192" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_191" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_190" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_189" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_188" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_187" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_186" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_185" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_184" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_183" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_182" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_181" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_180" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_179" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_178" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_177" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_176" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_175" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_174" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_173" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_172" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_171" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_170" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_169" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_168" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_167" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_166" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_165" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_164" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_163" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_162" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_161" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_160" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_159" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_158" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_157" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_156" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_155" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_154" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_153" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_152" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_151" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_150" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_149" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_148" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_147" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_146" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_145" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_144" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_143" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_142" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_141" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_140" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_139" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_138" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_137" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_136" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_135" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_134" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_133" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_132" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_131" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_130" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_129" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_128" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_127" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_126" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_125" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_124" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_123" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_122" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_121" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_120" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_119" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_118" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_117" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_116" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_115" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_114" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_113" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_112" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_111" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_110" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_109" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_108" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_107" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_106" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_105" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_104" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_103" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_102" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_101" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_100" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_99" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_98" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_97" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_96" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_95" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_94" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_93" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_92" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_91" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_90" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_89" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_88" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_87" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_86" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_85" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_84" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_83" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_82" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_81" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_80" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_79" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_78" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_77" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_76" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_75" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_74" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_73" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_72" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_71" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_70" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_69" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_68" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_67" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_66" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_65" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_64" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_63" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_62" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_61" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_60" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_59" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_58" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_57" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_56" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_55" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_54" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_53" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_52" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_51" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_50" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_49" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_48" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_47" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_46" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_45" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_44" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_43" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_42" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_41" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_40" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_39" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_38" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_37" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_36" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_35" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_34" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_33" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_32" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_31" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_30" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_29" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_28" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_27" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_26" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_25" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_24" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_23" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_22" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_21" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_20" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_19" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_18" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_17" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_16" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_15" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_14" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_13" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_12" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_11" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_10" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_9" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_8" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_7" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_6" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_5" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_4" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_3" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_2" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_1" BEL
+        "graphic_engine_inst/ram_controller_1/o_read_data_0" BEL
+        "input_decoder_inst/cnt_timeout_15" BEL
+        "input_decoder_inst/cnt_timeout_14" BEL
+        "input_decoder_inst/cnt_timeout_16" BEL
+        "input_decoder_inst/cnt_timeout_12" BEL
+        "input_decoder_inst/cnt_timeout_11" BEL
+        "input_decoder_inst/cnt_timeout_13" BEL
+        "input_decoder_inst/cnt_timeout_9" BEL
+        "input_decoder_inst/cnt_timeout_8" BEL
+        "input_decoder_inst/cnt_timeout_10" BEL
+        "input_decoder_inst/cnt_timeout_7" BEL
+        "input_decoder_inst/cnt_timeout_6" BEL
+        "input_decoder_inst/cnt_timeout_5" BEL
+        "input_decoder_inst/cnt_timeout_4" BEL
+        "input_decoder_inst/cnt_timeout_2" BEL
+        "input_decoder_inst/cnt_timeout_1" BEL
+        "input_decoder_inst/cnt_timeout_3" BEL
+        "input_decoder_inst/cnt_timeout_0" BEL
+        "input_decoder_inst/cnt_scancode_bits_3" BEL
+        "input_decoder_inst/cnt_scancode_bits_2" BEL
+        "input_decoder_inst/cnt_scancode_bits_0" BEL
+        "input_decoder_inst/cnt_scancode_bits_1" BEL
+        "input_decoder_inst/sr_scancode_10" BEL
+        "input_decoder_inst/sr_scancode_9" BEL
+        "input_decoder_inst/sr_scancode_8" BEL
+        "input_decoder_inst/sr_scancode_7" BEL
+        "input_decoder_inst/sr_scancode_6" BEL
+        "input_decoder_inst/sr_scancode_5" BEL
+        "input_decoder_inst/sr_scancode_4" BEL
+        "input_decoder_inst/sr_scancode_3" BEL
+        "input_decoder_inst/sr_scancode_2" BEL
+        "input_decoder_inst/sr_scancode_1" BEL
+        "input_decoder_inst/sr_scancode_0" BEL
+        "input_decoder_inst/sr_ps2_clk_filter_7" BEL
+        "input_decoder_inst/sr_ps2_clk_filter_6" BEL
+        "input_decoder_inst/sr_ps2_clk_filter_5" BEL
+        "input_decoder_inst/sr_ps2_clk_filter_4" BEL
+        "input_decoder_inst/sr_ps2_clk_filter_3" BEL
+        "input_decoder_inst/sr_ps2_clk_filter_2" BEL
+        "input_decoder_inst/sr_ps2_clk_filter_1" BEL
+        "input_decoder_inst/sr_ps2_clk_filter_0" BEL
+        "game_engine_inst/random_number_generator_inst/random_number_0" BEL
+        "game_engine_inst/random_number_generator_inst/random_number_1" BEL
+        "game_engine_inst/random_number_generator_inst/random_number_2" BEL
+        "game_engine_inst/random_number_generator_inst/random_number_3" BEL
+        "game_engine_inst/random_number_generator_inst/random_number_4" BEL
+        "game_engine_inst/random_number_generator_inst/random_number_5" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_8" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_7" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_6" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_5" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_4" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_3" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_2" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_1" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_0" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_9" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_8" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_7" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_6" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_5" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_4" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_3" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_2" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_1" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_pos_0" BEL
+        "game_engine_inst/ball_movement_inst/cnt_ball_x_movement_timer_3" BEL
+        "game_engine_inst/ball_movement_inst/cnt_ball_x_movement_timer_2" BEL
+        "game_engine_inst/ball_movement_inst/cnt_ball_x_movement_timer_1" BEL
+        "game_engine_inst/ball_movement_inst/cnt_ball_x_movement_timer_0" BEL
+        "game_engine_inst/ball_movement_inst/cnt_ball_y_movement_timer_3" BEL
+        "game_engine_inst/ball_movement_inst/cnt_ball_y_movement_timer_2" BEL
+        "game_engine_inst/ball_movement_inst/cnt_ball_y_movement_timer_1" BEL
+        "game_engine_inst/ball_movement_inst/cnt_ball_y_movement_timer_0" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_16" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_15" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_17" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_14" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_13" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_12" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_11" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_10" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_9" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_8" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_7" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_6" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_5" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_4" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_3" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_2" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_1" BEL
+        "game_engine_inst/event_trigger_inst/counter_paddle_0" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_15" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_14" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_13" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_12" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_11" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_10" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_9" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_8" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_7" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_6" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_5" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_4" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_3" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_2" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_1" BEL
+        "game_engine_inst/event_trigger_inst/counter_ball_0" BEL
+        "game_engine_inst/event_trigger_inst/o_ball_event" BEL
+        "game_engine_inst/event_trigger_inst/o_paddle_event" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_26" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_25" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_24" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_23" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_22" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_21" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_20" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_19" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_18" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_17" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_16" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_15" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_14" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_13" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_12" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_11" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_10" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_9" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_8" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_7" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_6" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_5" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_4" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_3" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_2" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_1" BEL
+        "game_engine_inst/game_states_inst/cnt_wait_time_0" BEL
+        "game_engine_inst/game_states_inst/cnt_serves_2" BEL
+        "game_engine_inst/game_states_inst/cnt_serves_1" BEL
+        "game_engine_inst/game_states_inst/cnt_serves_0" BEL
+        "game_engine_inst/game_states_inst/cnt_player_2_points_3" BEL
+        "game_engine_inst/game_states_inst/cnt_player_2_points_2" BEL
+        "game_engine_inst/game_states_inst/cnt_player_2_points_1" BEL
+        "game_engine_inst/game_states_inst/cnt_player_2_points_0" BEL
+        "game_engine_inst/game_states_inst/state_game_FSM_FFd1" BEL
+        "game_engine_inst/game_states_inst/cnt_player_1_points_3" BEL
+        "game_engine_inst/game_states_inst/cnt_player_1_points_2" BEL
+        "game_engine_inst/game_states_inst/cnt_player_1_points_1" BEL
+        "game_engine_inst/game_states_inst/cnt_player_1_points_0" BEL
+        "game_engine_inst/game_states_inst/state_game_FSM_FFd2" BEL
+        "game_engine_inst/game_states_inst/o_ball_free" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_8" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_7" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_6" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_5" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_4" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_3" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_2" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_0" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_8" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_7" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_6" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_5" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_4" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_3" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_2" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_0" BEL
+        "points_display_inst/cnt_anode_change_interval_9" BEL
+        "points_display_inst/cnt_anode_change_interval_8" BEL
+        "points_display_inst/cnt_anode_change_interval_7" BEL
+        "points_display_inst/cnt_anode_change_interval_6" BEL
+        "points_display_inst/cnt_anode_change_interval_5" BEL
+        "points_display_inst/cnt_anode_change_interval_4" BEL
+        "points_display_inst/cnt_anode_change_interval_3" BEL
+        "points_display_inst/cnt_anode_change_interval_2" BEL
+        "points_display_inst/cnt_anode_change_interval_1" BEL
+        "points_display_inst/cnt_anode_change_interval_0" BEL
+        "points_display_inst/cnt_shifted_bits_2" BEL
+        "points_display_inst/cnt_shifted_bits_1" BEL
+        "points_display_inst/cnt_shifted_bits_0" BEL
+        "points_display_inst/player_2_tens_3" BEL
+        "points_display_inst/player_2_tens_2" BEL
+        "points_display_inst/player_2_tens_1" BEL
+        "points_display_inst/player_2_tens_0" BEL
+        "points_display_inst/player_1_tens_3" BEL
+        "points_display_inst/player_1_tens_2" BEL
+        "points_display_inst/player_1_tens_1" BEL
+        "points_display_inst/player_1_tens_0" BEL
+        "points_display_inst/player_1_ones_3" BEL
+        "points_display_inst/player_1_ones_2" BEL
+        "points_display_inst/player_1_ones_1" BEL
+        "points_display_inst/player_1_ones_0" BEL
+        "points_display_inst/player_2_ones_3" BEL
+        "points_display_inst/player_2_ones_2" BEL
+        "points_display_inst/player_2_ones_1" BEL
+        "points_display_inst/player_2_ones_0" BEL
+        "points_display_inst/sr_number_to_convert_3" BEL
+        "points_display_inst/sr_number_to_convert_2" BEL
+        "points_display_inst/sr_number_to_convert_1" BEL
+        "points_display_inst/sr_number_to_convert_0" BEL
+        "points_display_inst/sr_anodes_3" BEL
+        "points_display_inst/sr_anodes_2" BEL
+        "points_display_inst/sr_anodes_1" BEL
+        "points_display_inst/sr_anodes_0" BEL "points_display_inst/reset_bcd"
+        BEL "points_display_inst/bcd_digit_ones_inst/sr_bcd_sliced_0" BEL
+        "points_display_inst/bcd_digit_ones_inst/sr_bcd_sliced_1" BEL
+        "points_display_inst/bcd_digit_ones_inst/sr_bcd_sliced_2" BEL
+        "points_display_inst/bcd_digit_ones_inst/sr_bcd_0" BEL
+        "points_display_inst/bcd_digit_tens_inst/sr_bcd_sliced_0" BEL
+        "points_display_inst/bcd_digit_tens_inst/sr_bcd_sliced_1" BEL
+        "points_display_inst/bcd_digit_tens_inst/sr_bcd_sliced_2" BEL
+        "points_display_inst/bcd_digit_tens_inst/sr_bcd_0" BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_y_pos_8"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_y_pos_7"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_y_pos_6"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_y_pos_5"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_y_pos_4"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_y_pos_3"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_y_pos_2"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_y_pos_1"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_y_pos_0"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_9"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_8"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_7"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_6"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_5"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_4"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_3"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_2"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_1"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_ball_x_pos_0"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_2_pos_8"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_2_pos_7"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_2_pos_6"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_2_pos_5"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_2_pos_4"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_2_pos_3"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_2_pos_2"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_2_pos_1"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_2_pos_0"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_1_pos_8"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_1_pos_7"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_1_pos_6"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_1_pos_5"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_1_pos_4"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_1_pos_3"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_1_pos_2"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_1_pos_1"
+        BEL
+        "graphic_engine_inst/render_engine_inst/position_sample_register_inst/o_player_1_pos_0"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_13"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_12"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_11"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_10"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_9"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_8"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_7"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_6"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_5"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_4"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_3"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_2"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_1"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/cur_ram_block_0"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/state_render_engine_controller_FSM_FFd2"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/state_render_engine_controller_FSM_FFd1"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/o_new_frame_ready"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/o_write_req"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/o_create_new_data"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/increment_address"
+        BEL "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_row_8"
+        BEL "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_row_7"
+        BEL "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_row_6"
+        BEL "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_row_5"
+        BEL "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_row_4"
+        BEL "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_row_3"
+        BEL "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_row_2"
+        BEL "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_row_1"
+        BEL "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_row_0"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_9"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_8"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_7"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_6"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_5"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_4"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_3"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_2"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_1"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/cnt_column_0"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/o_buffer_shift_enable"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/cnt_data_4"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/cnt_data_3"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/cnt_data_2"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/cnt_data_1"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/cnt_data_0"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_255"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_249"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_247"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_241"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_239"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_233"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_231"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_225"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_223"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_217"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_215"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_209"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_207"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_201"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_199"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_193"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_191"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_185"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_183"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_177"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_175"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_169"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_167"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_161"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_159"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_153"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_151"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_145"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_143"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_137"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_135"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_129"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_127"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_121"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_119"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_113"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_111"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_105"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_103"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_97"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_95"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_89"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_87"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_81"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_79"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_73"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_71"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_65"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_63"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_57"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_55"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_49"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_47"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_41"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_39"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_33"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_31"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_25"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_23"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_17"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_15"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_9"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_7"
+        BEL
+        "graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_1"
+        BEL "graphic_engine_inst/ram_controller_1/o_write_done" BEL
+        "input_decoder_inst/key_release_flag" BEL
+        "input_decoder_inst/ps2_clk_state" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_direction" BEL
+        "game_engine_inst/ball_movement_inst/o_point_player_1" BEL
+        "game_engine_inst/ball_movement_inst/o_point_player_2" BEL
+        "points_display_inst/state_conversion" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_we_neg" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_adv_neg" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_lb_neg" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_oe_neg" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_ce_neg" BEL
+        "graphic_engine_inst/ram_controller_1/o_ram_cre" BEL
+        "graphic_engine_inst/ram_controller_1/s_ram_clk" BEL
+        "input_decoder_inst/o_reset_key" BEL "input_decoder_inst/o_serve_key"
+        BEL "input_decoder_inst/player_2_down" BEL
+        "input_decoder_inst/player_1_down" BEL
+        "input_decoder_inst/player_2_up" BEL "input_decoder_inst/player_1_up"
+        BEL "game_engine_inst/game_states_inst/state_serve" BEL
+        "points_display_inst/input_select" BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/page"
+        BEL "graphic_engine_inst/pixel_clk_sig" BEL
+        "graphic_engine_inst/ram_controller_1/reset_clk_DFF_495" BEL
+        "input_decoder_inst/new_ps2_data" BEL
+        "game_engine_inst/game_states_inst/o_enable_movement" BEL
+        "graphic_engine_inst/render_engine_inst/render_engine_controller_inst/o_sample_positions"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/in_h_border_region"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/in_v_ball_region"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/in_v_border_region"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/in_v_paddle_2_region"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/in_h_paddle_2_region"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/in_h_ball_region"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/in_h_paddle_1_region"
+        BEL
+        "graphic_engine_inst/render_engine_inst/renderer_inst/in_v_paddle_1_region"
+        BEL "game_engine_inst/game_states_inst/o_reset_ball_and_paddles" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_velocity_3" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_velocity_2" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_velocity_1" BEL
+        "game_engine_inst/ball_movement_inst/ball_x_velocity_0" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_velocity_3" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_velocity_2" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_velocity_1" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_velocity_0" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_direction" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_3_1" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_0_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_0_1" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_1_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_0_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_4_1" BEL
+        "game_engine_inst/ball_movement_inst/ball_y_pos_2_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_1_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_2_pos_2_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_2_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_3_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_4_1" BEL
+        "game_engine_inst/paddle_movement_inst/player_1_pos_1_1" BEL
+        "clk_BUFGP/BUFG" PIN
+        "game_engine_inst_rom_inst/Mram_o_rom_data_pins<10>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

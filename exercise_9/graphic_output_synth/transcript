@@ -1,0 +1,85 @@
+# //  Questa Sim
+# //  Version 10.4c_5 linux Nov 14 2015
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# reading modelsim.ini
+# Loading project ram_controller
+# Compile of ram_controller.vhd failed with 6 errors.
+# Compile of ram_controller_tb.vhd was successful.
+# 2 compiles, 1 failed with 6 errors.
+# Compile of ram_controller.vhd failed with 4 errors.
+# Compile of ram_controller_tb.vhd was successful.
+# 2 compiles, 1 failed with 4 errors.
+# Compile of ram_controller.vhd failed with 4 errors.
+# Compile of ram_controller_tb.vhd was successful.
+# 2 compiles, 1 failed with 4 errors.
+# Compile of ram_controller.vhd failed with 3 errors.
+# Compile of ram_controller_tb.vhd was successful.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of ram_controller.vhd failed with 1 errors.
+# Compile of ram_controller_tb.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ram_controller.vhd failed with 1 errors.
+# Compile of ram_controller_tb.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of ram_controller.vhd was successful.
+# Compile of ram_controller_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+do sim_ram_controller.do
+# .
+# ./cellram_sim
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.4c_5 Lib Mapping Utility 2015.11 Nov 14 2015
+# vmap work work 
+# Modifying /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/ram_controller.mpf
+# -l log.txt -novopt -t 1ps
+# QuestaSim vlog 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:36:32 on Jun 13,2017
+# vlog -reportprogress 300 "+define+sg701" "+incdir+./cellram_sim" ./cellram_sim/cellram.v 
+# -- Compiling module cellram
+# -- Compiling module cellram_pathdelay
+# 
+# Top level modules:
+# 	cellram
+# End time: 12:36:32 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:36:32 on Jun 13,2017
+# vcom -reportprogress 300 -work work -check_synthesis ./ram_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_controller
+# -- Compiling architecture rtl of ram_controller
+# End time: 12:36:33 on Jun 13,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:36:33 on Jun 13,2017
+# vcom -reportprogress 300 -work work ./ram_controller_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_controller_tb
+# -- Compiling architecture beh of ram_controller_tb
+# -- Compiling configuration ram_controller_tb_beh_cfg
+# -- Loading entity ram_controller_tb
+# -- Loading architecture beh of ram_controller_tb
+# -- Loading package vl_types
+# -- Loading entity cellram
+# -- Loading entity ram_controller
+# End time: 12:36:34 on Jun 13,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -l log.txt -novopt -t 1ps -GMEM_BITS=16 ram_controller_tb

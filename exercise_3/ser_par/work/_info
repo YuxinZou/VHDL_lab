@@ -1,0 +1,102 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/user/Labs_user/chipw7/vhdlLab/exercise_3/variable_vs_signal
+T_opt
+!s110 1493113687
+V7XXc5o`EWSXiKTG1ABT`Y1
+04 10 3 work ser_par_tb beh 1
+=1-00101819b423-58ff1b56-e3c3f-6800
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OE;O;10.4c_5;61
+Eser_par
+Z0 w1493113652
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par
+Z5 8/user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par.vhd
+Z6 F/user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par.vhd
+l0
+L5
+Vhz^GY7CJIgz@5[8H2BnoE1
+!s100 RPjHdLHhaTRcnzGUkaXDc0
+Z7 OE;C;10.4c_5;61
+32
+Z8 !s110 1493113679
+!i10b 1
+Z9 !s108 1493113679.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par.vhd|
+Z11 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par.vhd|
+!i113 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Abehavioral
+R1
+R2
+R3
+DEx4 work 7 ser_par 0 22 hz^GY7CJIgz@5[8H2BnoE1
+l23
+L17
+VFbU[hg_fUhj=ooUCaDj5?3
+!s100 C7Cm^V=a=6YRPO[CeNYOA3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eser_par_tb
+Z14 w1491906624
+Z15 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R1
+R2
+R3
+R4
+Z16 8/user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par_tb.vhd
+Z17 F/user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par_tb.vhd
+l0
+L7
+V9j9Beih8_bb?N_7gbz2C02
+!s100 fI8CS_SoidFBDh0@^h?eW2
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par_tb.vhd|
+Z19 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par_tb.vhd|
+!i113 0
+R12
+R13
+Abeh
+R15
+R1
+R2
+R3
+DEx4 work 10 ser_par_tb 0 22 9j9Beih8_bb?N_7gbz2C02
+l38
+L12
+V5h=JLO=^bWg^=9^a^F1b93
+!s100 3eM5d;i6lmfOo<HjDLz1o3
+R7
+32
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R12
+R13

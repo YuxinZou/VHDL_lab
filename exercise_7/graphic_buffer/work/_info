@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/user/Labs_user/chipw7
+Egraphic_buffer
+Z0 w1496740656
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/user/Labs_user/chipw7/vhdlLab/exercise_7/graphic_buffer
+Z5 8graphic_buffer.vhd
+Z6 Fgraphic_buffer.vhd
+l0
+L10
+Vd@;Xjm`jbN7YJ]X4abbG=3
+!s100 ;Z?H806YRMCAc6[6Ui?682
+Z7 OE;C;10.4c_5;61
+32
+Z8 !s110 1496740706
+!i10b 1
+Z9 !s108 1496740706.000000
+Z10 !s90 -reportprogress|300|graphic_buffer.vhd|
+Z11 !s107 graphic_buffer.vhd|
+!i113 0
+Z12 tExplicit 1
+Artl
+R1
+R2
+R3
+DEx4 work 14 graphic_buffer 0 22 d@;Xjm`jbN7YJ]X4abbG=3
+32
+R8
+l43
+L37
+Vg[@S2DU]BobaUzmbDc1Ec3
+!s100 zNkY[8lV9R?BV^Zg<SLN`3
+R7
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Egraphic_buffer_tb
+Z13 w1491906624
+Z14 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R1
+R2
+R3
+R4
+Z15 8graphic_buffer_tb.vhd
+Z16 Fgraphic_buffer_tb.vhd
+l0
+L7
+VF]n[W>MD1mA3LiZgiWzj01
+!s100 EdTYTA7WE@2IhZFG=JP@83
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|graphic_buffer_tb.vhd|
+Z18 !s107 graphic_buffer_tb.vhd|
+!i113 0
+R12
+Abeh
+R14
+R1
+R2
+R3
+DEx4 work 17 graphic_buffer_tb 0 22 F]n[W>MD1mA3LiZgiWzj01
+32
+R8
+l43
+L12
+Vi2FjUo8A>@J@AmL_9G2cl2
+!s100 mZc983]zOaeiShKRL79f62
+R7
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12

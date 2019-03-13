@@ -1,0 +1,185 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+--This module controls the reloading of the graphic buffers. On each data 
+--request of one of the buffers the active buffer is changed and the inactive 
+--one is reloaded with data. This is done by sending a request to the ram 
+--controller. After the data was loaded from the RAM it is stored in the 
+--inactive. After that it also calculates the new address for the next read 
+--operation. This includes inverting the page after a frame has been completely 
+--displayed and the renderer singanlised that a new one was rendered (if no new 
+--frame is ready after the current one is displayed, the current frame will be 
+--repeated).
+
+entity graphic_buffer_controller is
+  --generics:
+  --G_H_RESOLUTION  : horizontal resolution
+  --G_V_RESOLUTION  : vertical resolution
+  generic (G_H_RESOLUTION : integer := 640;
+           G_V_RESOLUTION : integer := 480);
+
+  --ports:
+  --clk                : pixel clock
+  --reset              : synchronous reset
+  --
+  --i_data_req_reg_0   : buffer 0 requests data
+  --i_data_req_reg_1   : buffer 1 requests data
+  --i_read_done        : signalises that data was read from the RAM
+  --i_new_frame_ready  : signalises that a new frame is completely stored in 
+  --                     the RAM
+  --
+  --o_reg_select       : output for buffer selection (0 = buffer 0, 
+  --                     1 = buffer 1)
+  --o_load_reg         : load command for the buffers
+  --o_read_req         : output for a read request (goes to ram controller)
+  --o_read_address     : the address to read from
+  --o_page_switched    : output to indicate a page flip (used by renderer as 
+  --                     a signal to start rendering the next frame)
+  port (clk   : in std_logic := '0';
+        reset : in std_logic := '0';
+
+        i_data_req_reg_0  : in std_logic := '0';
+        i_data_req_reg_1  : in std_logic := '0';
+        i_read_done       : in std_logic := '0';
+        i_new_frame_ready : in std_logic := '0';
+
+        o_reg_select    : out std_logic                      := '0';
+        o_load_reg      : out std_logic                      := '0';
+        o_read_req      : out std_logic                      := '0';
+        o_read_address  : out std_logic_vector (22 downto 0) := (others => '0');
+        o_page_switched : out std_logic                      := '0');
+end graphic_buffer_controller;
+
+
+
+architecture rtl of graphic_buffer_controller is
+
+signal cnt_address : integer := 0; 
+signal start_address  : std_logic_vector (22 downto 0) := (others => '0'); 
+type graphic_buffer_controller_states is (WAITING, REG_EMPTY, LOAD_REG);
+signal current_state : graphic_buffer_controller_states :=WAITING;
+signal cout_end_flag : std_logic := '0';
+signal o_reg_select_buf : std_logic := '0';
+signal o_read_req_buf : std_logic := '0';
+
+begin
+process (clk)
+begin
+	if rising_edge(clk) then
+		if reset = '1' then
+			--o_load_reg <= '0';
+			--o_read_req <= '0';
+         		--o_page_switched <= '0';
+			current_state <= WAITING;
+		else
+			case current_state is
+				when WAITING =>
+					if(i_data_req_reg_0 = '1') then
+						--o_reg_select <= '1';
+						current_state <= REG_EMPTY;
+						
+					elsif(i_data_req_reg_1 = '1') then
+						current_state <= REG_EMPTY;
+						--o_reg_select <= '0';
+
+					else
+						
+						current_state <= WAITING;
+					end if;
+					
+				when REG_EMPTY =>
+				        
+					
+					if(cout_end_flag = '1') then
+						current_state <= LOAD_REG;
+					else
+						current_state <= REG_EMPTY;
+					end if;
+					
+				when LOAD_REG =>
+					if(i_new_frame_ready <= '1') then
+						current_state <= WAITING;
+					end if;
+					
+					
+			end case;
+		end if;
+	end if;
+end process;
+
+--process(i_data_req_reg_0,i_data_req_reg_1,i_read_done)
+--begin
+--if(i_data_req_reg_0 = '1') then
+--	o_reg_select <= '1';
+--	o_read_req <= '1';
+--elsif(i_data_req_reg_1 = '1') then
+--	o_reg_select <= '0';
+--	o_read_req <= '1';
+--end if;
+--if(i_read_done = '1') then
+--	o_read_req <= '0';
+--end if;
+--end process;
+
+--o_reg_select <= '1' when (i_data_req_reg_0 = '1' ) else
+--		--'0' when (i_data_req_reg_1 = '1' ) else
+--		'0';
+--o_read_req <= '1' when ((i_data_req_reg_0 = '1') OR (i_data_req_reg_1 = '1')) else
+--				  '0';
+process (clk)
+begin
+if rising_edge(clk) then
+	if (reset = '1') then
+		o_reg_select_buf <= '0';
+		o_read_req_buf <= '0';
+	elsif(i_data_req_reg_0 = '1') then
+		o_reg_select_buf <= '1';
+		o_read_req_buf <= '1';
+	elsif(i_data_req_reg_1 = '1') then
+		o_reg_select_buf <= '0';
+		o_read_req_buf <= '1';
+	else
+		o_reg_select_buf <= o_reg_select_buf;
+		o_read_req_buf <= o_read_req_buf;
+	end if;
+	if(i_read_done = '1') then
+		o_read_req_buf <= '0';
+	end if;
+END IF;
+END PROCESS;
+
+process (clk)
+begin
+if rising_edge(clk) then
+	if (reset = '1') then
+		cnt_address <= 0;
+		cout_end_flag <= '0';
+		start_address <= (others => '0');
+		else
+		o_reg_select_buf <= o_reg_select_buf;
+		o_read_req_buf <= o_read_req_buf;--o_read_address <= (others => '0');
+		o_page_switched <= '0';
+	else
+		o_page_switched <= '0';
+		cout_end_flag <= '0';
+	if(i_read_done = '1') then
+		if(cnt_address = ((G_H_RESOLUTION * G_V_RESOLUTION / 2)-16)) then
+			cout_end_flag <= '1';
+			cnt_address <= 0;	
+		    	if (i_new_frame_ready = '1') then 
+				start_address(18) <= not (start_address(18));
+				o_page_switched <= '1';
+		    	end if;
+		else
+			cnt_address <= cnt_address + 16;
+		end if;
+		end if;
+	end if;
+end if;
+end process;
+o_read_address <= std_logic_vector((to_unsigned(cnt_address,23))+unsigned(start_address));
+o_load_reg <= i_read_done;
+o_read_req <= o_read_req_buf;
+o_reg_select <= o_reg_select_buf;
+end rtl;

@@ -1,0 +1,21 @@
+/user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ser_par
+-- Compiling architecture behavioral of ser_par
+
+} {} {}} /user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par_tb.vhd {2 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par_tb.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity ser_par_tb
+-- Compiling architecture beh of ser_par_tb
+** Warning: /user/Labs_user/chipw7/vhdlLab/exercise_3/ser_par/ser_par_tb.vhd(68): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+
+} {} {}}

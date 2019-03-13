@@ -1,0 +1,404 @@
+# vsim -l log.txt -novopt -t 1ps ram_controller_tb -GMEM_BITS=16 
+# Start time: 12:36:34 on Jun 13,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.ram_controller_tb(beh)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram_controller_tb(beh)
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.cellram
+# Loading work.cellram
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.cellram_pathdelay
+# Loading work.cellram_pathdelay
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.ram_controller(rtl)
+# Loading work.ram_controller(rtl)
+# ===============================================================
+# 151020.000 ns  INFO: Async - Configuration Register Write
+# 151070.000 ns ERROR: Async - Page Mode Configuration Register Write is Illegal.
+# 151070.000 ns  INFO: Async - Configuration Register Write
+# 151070.000 ns ERROR: Async - Page Mode Configuration Register Write is Illegal.
+# 151070.000 ns  INFO: Async - Configuration Register Write
+# ===============================================================
+# ===============================================================
+# ===============================================================
+do sim_ram_controller.do
+# .
+# ./cellram_sim
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.4c_5 Lib Mapping Utility 2015.11 Nov 14 2015
+# vmap work work 
+# Modifying /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/ram_controller.mpf
+# -l log.txt -novopt -t 1ps
+# QuestaSim vlog 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:43:45 on Jun 13,2017
+# vlog -reportprogress 300 "+define+sg701" "+incdir+./cellram_sim" ./cellram_sim/cellram.v 
+# -- Compiling module cellram
+# -- Compiling module cellram_pathdelay
+# 
+# Top level modules:
+# 	cellram
+# End time: 12:43:45 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:43:45 on Jun 13,2017
+# vcom -reportprogress 300 -work work -check_synthesis ./ram_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_controller
+# -- Compiling architecture rtl of ram_controller
+# End time: 12:43:45 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:43:45 on Jun 13,2017
+# vcom -reportprogress 300 -work work ./ram_controller_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_controller_tb
+# -- Compiling architecture beh of ram_controller_tb
+# -- Compiling configuration ram_controller_tb_beh_cfg
+# -- Loading entity ram_controller_tb
+# -- Loading architecture beh of ram_controller_tb
+# -- Loading package vl_types
+# -- Loading entity cellram
+# -- Loading entity ram_controller
+# End time: 12:43:45 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -l log.txt -novopt -t 1ps -GMEM_BITS=16 ram_controller_tb
+# End time: 12:43:46 on Jun 13,2017, Elapsed time: 0:07:12
+# Errors: 0, Warnings: 1
+# vsim -l log.txt -novopt -t 1ps ram_controller_tb -GMEM_BITS=16 
+# Start time: 12:43:46 on Jun 13,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.ram_controller_tb(beh)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram_controller_tb(beh)
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.cellram
+# Loading work.cellram
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.cellram_pathdelay
+# Loading work.cellram_pathdelay
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.ram_controller(rtl)
+# Loading work.ram_controller(rtl)
+# ===============================================================
+# 151020.000 ns  INFO: Async - Configuration Register Write
+# 151070.000 ns ERROR: Async - Page Mode Configuration Register Write is Illegal.
+# 151070.000 ns  INFO: Async - Configuration Register Write
+# 151070.000 ns ERROR: Async - Page Mode Configuration Register Write is Illegal.
+# 151070.000 ns  INFO: Async - Configuration Register Write
+# ===============================================================
+# ===============================================================
+# ===============================================================
+do sim_ram_controller.do
+# .
+# ./cellram_sim
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.4c_5 Lib Mapping Utility 2015.11 Nov 14 2015
+# vmap work work 
+# Modifying /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/ram_controller.mpf
+# -l log.txt -novopt -t 1ps
+# QuestaSim vlog 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:54:59 on Jun 13,2017
+# vlog -reportprogress 300 "+define+sg701" "+incdir+./cellram_sim" ./cellram_sim/cellram.v 
+# -- Compiling module cellram
+# -- Compiling module cellram_pathdelay
+# 
+# Top level modules:
+# 	cellram
+# End time: 12:54:59 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:54:59 on Jun 13,2017
+# vcom -reportprogress 300 -work work -check_synthesis ./ram_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_controller
+# -- Compiling architecture rtl of ram_controller
+# End time: 12:54:59 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:54:59 on Jun 13,2017
+# vcom -reportprogress 300 -work work ./ram_controller_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_controller_tb
+# -- Compiling architecture beh of ram_controller_tb
+# -- Compiling configuration ram_controller_tb_beh_cfg
+# -- Loading entity ram_controller_tb
+# -- Loading architecture beh of ram_controller_tb
+# -- Loading package vl_types
+# -- Loading entity cellram
+# -- Loading entity ram_controller
+# End time: 12:54:59 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -l log.txt -novopt -t 1ps -GMEM_BITS=16 ram_controller_tb
+# End time: 12:55:00 on Jun 13,2017, Elapsed time: 0:11:14
+# Errors: 0, Warnings: 1
+# vsim -l log.txt -novopt -t 1ps ram_controller_tb -GMEM_BITS=16 
+# Start time: 12:55:00 on Jun 13,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.ram_controller_tb(beh)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram_controller_tb(beh)
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.cellram
+# Loading work.cellram
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.cellram_pathdelay
+# Loading work.cellram_pathdelay
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.ram_controller(rtl)
+# Loading work.ram_controller(rtl)
+# ===============================================================
+# 151020.000 ns  INFO: Async - Configuration Register Write
+# 151060.000 ns ERROR:   tCW violation on CE# by 10.000 ns
+# 151060.000 ns ERROR:   tVS violation on ADV# by 10.000 ns
+# 151060.000 ns ERROR:   tAW violation on CRE by 10.000 ns
+# 151060.000 ns ERROR:   tAW violation on ADDR by 10.000 ns
+# 151060.000 ns ERROR:   tWC violation on ADDR
+# 151060.000 ns  INFO: Async - Configuration Register Write data latched, Register Select = 000002, Data = 085c1f
+# 151060.000 ns  INFO: Register Select = BCR
+# 151060.000 ns  INFO: Burst Length = continuous
+# 151060.000 ns  INFO: Burst Wrap = Burst no wrap
+# 151060.000 ns  INFO: Drive Strength = 1/2
+# 151060.000 ns  INFO: WAIT Configuration = Asserted during delay
+# 151060.000 ns  INFO: Wait Polarity = Active HIGH
+# 151060.000 ns  INFO: Latency Counter = Code 3
+# 151060.000 ns  INFO: Initial Access Latency = Fixed
+# 151060.000 ns  INFO: Operating Mode = Synchronous burst access mode
+# ===============================================================
+# 151080.000 ns  INFO:  Sync - Write
+# 151160.000 ns  INFO:  Sync - Write, addr = 000000, Mask = 0, Data = 0000
+# 151180.000 ns  INFO:  Sync - Write, addr = 000001, Mask = 0, Data = 0001
+# 151200.000 ns  INFO:  Sync - Write, addr = 000002, Mask = 0, Data = 0002
+# 151220.000 ns  INFO:  Sync - Write, addr = 000003, Mask = 0, Data = 0003
+# 151240.000 ns  INFO:  Sync - Write, addr = 000004, Mask = 0, Data = 0004
+# 151260.000 ns  INFO:  Sync - Write, addr = 000005, Mask = 0, Data = 0005
+# 151280.000 ns  INFO:  Sync - Write, addr = 000006, Mask = 0, Data = 0006
+# 151300.000 ns  INFO:  Sync - Write, addr = 000007, Mask = 0, Data = 0007
+# 151320.000 ns  INFO:  Sync - Write, addr = 000008, Mask = 0, Data = 0008
+# 151340.000 ns  INFO:  Sync - Write, addr = 000009, Mask = 0, Data = 0009
+# 151360.000 ns  INFO:  Sync - Write, addr = 00000a, Mask = 0, Data = 000a
+# 151380.000 ns  INFO:  Sync - Write, addr = 00000b, Mask = 0, Data = 000b
+# 151400.000 ns  INFO:  Sync - Write, addr = 00000c, Mask = 0, Data = 000c
+# 151420.000 ns  INFO:  Sync - Write, addr = 00000d, Mask = 0, Data = 000d
+# 151440.000 ns  INFO:  Sync - Write, addr = 00000e, Mask = 0, Data = 000e
+# 151460.000 ns  INFO:  Sync - Write, addr = 00000f, Mask = 0, Data = 000f
+# ===============================================================
+# 151490.000 ns  INFO:  Sync - Read
+# 151550.000 ns  INFO:  Sync - Read, addr = 000000, Data = 0000
+# 151570.000 ns  INFO:  Sync - Read, addr = 000001, Data = 0001
+# 151590.000 ns  INFO:  Sync - Read, addr = 000002, Data = 0002
+# 151610.000 ns  INFO:  Sync - Read, addr = 000003, Data = 0003
+# 151630.000 ns  INFO:  Sync - Read, addr = 000004, Data = 0004
+# 151650.000 ns  INFO:  Sync - Read, addr = 000005, Data = 0005
+# 151670.000 ns  INFO:  Sync - Read, addr = 000006, Data = 0006
+# 151690.000 ns  INFO:  Sync - Read, addr = 000007, Data = 0007
+# 151710.000 ns  INFO:  Sync - Read, addr = 000008, Data = 0008
+# 151730.000 ns  INFO:  Sync - Read, addr = 000009, Data = 0009
+# 151750.000 ns  INFO:  Sync - Read, addr = 00000a, Data = 000a
+# 151770.000 ns  INFO:  Sync - Read, addr = 00000b, Data = 000b
+# 151790.000 ns  INFO:  Sync - Read, addr = 00000c, Data = 000c
+# 151810.000 ns  INFO:  Sync - Read, addr = 00000d, Data = 000d
+# 151830.000 ns  INFO:  Sync - Read, addr = 00000e, Data = 000e
+# 151850.000 ns  INFO:  Sync - Read, addr = 00000f, Data = 000f
+# 151870.000 ns  INFO:  Sync - Read, addr = 000010, Data = xxxx
+# ===============================================================
+# 151910.000 ns  INFO:  Sync - Write
+# 151990.000 ns  INFO:  Sync - Write, addr = 000010, Mask = 0, Data = 0010
+# 152010.000 ns  INFO:  Sync - Write, addr = 000011, Mask = 0, Data = 0011
+# 152030.000 ns  INFO:  Sync - Write, addr = 000012, Mask = 0, Data = 0012
+# 152050.000 ns  INFO:  Sync - Write, addr = 000013, Mask = 0, Data = 0013
+# 152070.000 ns  INFO:  Sync - Write, addr = 000014, Mask = 0, Data = 0014
+# 152090.000 ns  INFO:  Sync - Write, addr = 000015, Mask = 0, Data = 0015
+# 152110.000 ns  INFO:  Sync - Write, addr = 000016, Mask = 0, Data = 0016
+# 152130.000 ns  INFO:  Sync - Write, addr = 000017, Mask = 0, Data = 0017
+# 152150.000 ns  INFO:  Sync - Write, addr = 000018, Mask = 0, Data = 0018
+# 152170.000 ns  INFO:  Sync - Write, addr = 000019, Mask = 0, Data = 0019
+# 152190.000 ns  INFO:  Sync - Write, addr = 00001a, Mask = 0, Data = 001a
+# 152210.000 ns  INFO:  Sync - Write, addr = 00001b, Mask = 0, Data = 001b
+# 152230.000 ns  INFO:  Sync - Write, addr = 00001c, Mask = 0, Data = 001c
+# 152250.000 ns  INFO:  Sync - Write, addr = 00001d, Mask = 0, Data = 001d
+# 152270.000 ns  INFO:  Sync - Write, addr = 00001e, Mask = 0, Data = 001e
+# 152290.000 ns  INFO:  Sync - Write, addr = 00001f, Mask = 0, Data = 001f
+# ===============================================================
+# 152330.000 ns  INFO:  Sync - Read
+# 152390.000 ns  INFO:  Sync - Read, addr = 000010, Data = 0010
+# 152410.000 ns  INFO:  Sync - Read, addr = 000011, Data = 0011
+# 152430.000 ns  INFO:  Sync - Read, addr = 000012, Data = 0012
+# 152450.000 ns  INFO:  Sync - Read, addr = 000013, Data = 0013
+# 152470.000 ns  INFO:  Sync - Read, addr = 000014, Data = 0014
+# 152490.000 ns  INFO:  Sync - Read, addr = 000015, Data = 0015
+# 152510.000 ns  INFO:  Sync - Read, addr = 000016, Data = 0016
+# 152530.000 ns  INFO:  Sync - Read, addr = 000017, Data = 0017
+# 152550.000 ns  INFO:  Sync - Read, addr = 000018, Data = 0018
+# 152570.000 ns  INFO:  Sync - Read, addr = 000019, Data = 0019
+# 152590.000 ns  INFO:  Sync - Read, addr = 00001a, Data = 001a
+# 152610.000 ns  INFO:  Sync - Read, addr = 00001b, Data = 001b
+# 152630.000 ns  INFO:  Sync - Read, addr = 00001c, Data = 001c
+# 152650.000 ns  INFO:  Sync - Read, addr = 00001d, Data = 001d
+# 152670.000 ns  INFO:  Sync - Read, addr = 00001e, Data = 001e
+# 152690.000 ns  INFO:  Sync - Read, addr = 00001f, Data = 001f
+# 152710.000 ns  INFO:  Sync - Read, addr = 000020, Data = xxxx
+do sim_ram_controller.do
+# .
+# ./cellram_sim
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.4c_5 Lib Mapping Utility 2015.11 Nov 14 2015
+# vmap work work 
+# Modifying /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/ram_controller.mpf
+# -l log.txt -novopt -t 1ps
+# QuestaSim vlog 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:55:52 on Jun 13,2017
+# vlog -reportprogress 300 "+define+sg701" "+incdir+./cellram_sim" ./cellram_sim/cellram.v 
+# -- Compiling module cellram
+# -- Compiling module cellram_pathdelay
+# 
+# Top level modules:
+# 	cellram
+# End time: 12:55:52 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:55:52 on Jun 13,2017
+# vcom -reportprogress 300 -work work -check_synthesis ./ram_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_controller
+# -- Compiling architecture rtl of ram_controller
+# End time: 12:55:52 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+# Start time: 12:55:52 on Jun 13,2017
+# vcom -reportprogress 300 -work work ./ram_controller_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_controller_tb
+# -- Compiling architecture beh of ram_controller_tb
+# -- Compiling configuration ram_controller_tb_beh_cfg
+# -- Loading entity ram_controller_tb
+# -- Loading architecture beh of ram_controller_tb
+# -- Loading package vl_types
+# -- Loading entity cellram
+# -- Loading entity ram_controller
+# End time: 12:55:52 on Jun 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -l log.txt -novopt -t 1ps -GMEM_BITS=16 ram_controller_tb
+# End time: 12:55:53 on Jun 13,2017, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 1
+# vsim -l log.txt -novopt -t 1ps ram_controller_tb -GMEM_BITS=16 
+# Start time: 12:55:53 on Jun 13,2017
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Loading std.standard
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.ram_controller_tb(beh)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram_controller_tb(beh)
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.cellram
+# Loading work.cellram
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.cellram_pathdelay
+# Loading work.cellram_pathdelay
+# Refreshing /user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/work.ram_controller(rtl)
+# Loading work.ram_controller(rtl)
+# ===============================================================
+# 151020.000 ns  INFO: Async - Configuration Register Write
+# 151070.000 ns  INFO: Async - Configuration Register Write data latched, Register Select = 000002, Data = 085c1f
+# 151070.000 ns  INFO: Register Select = BCR
+# 151070.000 ns  INFO: Burst Length = continuous
+# 151070.000 ns  INFO: Burst Wrap = Burst no wrap
+# 151070.000 ns  INFO: Drive Strength = 1/2
+# 151070.000 ns  INFO: WAIT Configuration = Asserted during delay
+# 151070.000 ns  INFO: Wait Polarity = Active HIGH
+# 151070.000 ns  INFO: Latency Counter = Code 3
+# 151070.000 ns  INFO: Initial Access Latency = Fixed
+# 151070.000 ns  INFO: Operating Mode = Synchronous burst access mode
+# ===============================================================
+# 151090.000 ns  INFO:  Sync - Write
+# 151170.000 ns  INFO:  Sync - Write, addr = 000000, Mask = 0, Data = 0000
+# 151190.000 ns  INFO:  Sync - Write, addr = 000001, Mask = 0, Data = 0001
+# 151210.000 ns  INFO:  Sync - Write, addr = 000002, Mask = 0, Data = 0002
+# 151230.000 ns  INFO:  Sync - Write, addr = 000003, Mask = 0, Data = 0003
+# 151250.000 ns  INFO:  Sync - Write, addr = 000004, Mask = 0, Data = 0004
+# 151270.000 ns  INFO:  Sync - Write, addr = 000005, Mask = 0, Data = 0005
+# 151290.000 ns  INFO:  Sync - Write, addr = 000006, Mask = 0, Data = 0006
+# 151310.000 ns  INFO:  Sync - Write, addr = 000007, Mask = 0, Data = 0007
+# 151330.000 ns  INFO:  Sync - Write, addr = 000008, Mask = 0, Data = 0008
+# 151350.000 ns  INFO:  Sync - Write, addr = 000009, Mask = 0, Data = 0009
+# 151370.000 ns  INFO:  Sync - Write, addr = 00000a, Mask = 0, Data = 000a
+# 151390.000 ns  INFO:  Sync - Write, addr = 00000b, Mask = 0, Data = 000b
+# 151410.000 ns  INFO:  Sync - Write, addr = 00000c, Mask = 0, Data = 000c
+# 151430.000 ns  INFO:  Sync - Write, addr = 00000d, Mask = 0, Data = 000d
+# 151450.000 ns  INFO:  Sync - Write, addr = 00000e, Mask = 0, Data = 000e
+# 151470.000 ns  INFO:  Sync - Write, addr = 00000f, Mask = 0, Data = 000f
+# ===============================================================
+# 151500.000 ns  INFO:  Sync - Read
+# 151560.000 ns  INFO:  Sync - Read, addr = 000000, Data = 0000
+# 151580.000 ns  INFO:  Sync - Read, addr = 000001, Data = 0001
+# 151600.000 ns  INFO:  Sync - Read, addr = 000002, Data = 0002
+# 151620.000 ns  INFO:  Sync - Read, addr = 000003, Data = 0003
+# 151640.000 ns  INFO:  Sync - Read, addr = 000004, Data = 0004
+# 151660.000 ns  INFO:  Sync - Read, addr = 000005, Data = 0005
+# 151680.000 ns  INFO:  Sync - Read, addr = 000006, Data = 0006
+# 151700.000 ns  INFO:  Sync - Read, addr = 000007, Data = 0007
+# 151720.000 ns  INFO:  Sync - Read, addr = 000008, Data = 0008
+# 151740.000 ns  INFO:  Sync - Read, addr = 000009, Data = 0009
+# 151760.000 ns  INFO:  Sync - Read, addr = 00000a, Data = 000a
+# 151780.000 ns  INFO:  Sync - Read, addr = 00000b, Data = 000b
+# 151800.000 ns  INFO:  Sync - Read, addr = 00000c, Data = 000c
+# 151820.000 ns  INFO:  Sync - Read, addr = 00000d, Data = 000d
+# 151840.000 ns  INFO:  Sync - Read, addr = 00000e, Data = 000e
+# 151860.000 ns  INFO:  Sync - Read, addr = 00000f, Data = 000f
+# 151880.000 ns  INFO:  Sync - Read, addr = 000010, Data = xxxx
+# ===============================================================
+# 151920.000 ns  INFO:  Sync - Write
+# 152000.000 ns  INFO:  Sync - Write, addr = 000010, Mask = 0, Data = 0010
+# 152020.000 ns  INFO:  Sync - Write, addr = 000011, Mask = 0, Data = 0011
+# 152040.000 ns  INFO:  Sync - Write, addr = 000012, Mask = 0, Data = 0012
+# 152060.000 ns  INFO:  Sync - Write, addr = 000013, Mask = 0, Data = 0013
+# 152080.000 ns  INFO:  Sync - Write, addr = 000014, Mask = 0, Data = 0014
+# 152100.000 ns  INFO:  Sync - Write, addr = 000015, Mask = 0, Data = 0015
+# 152120.000 ns  INFO:  Sync - Write, addr = 000016, Mask = 0, Data = 0016
+# 152140.000 ns  INFO:  Sync - Write, addr = 000017, Mask = 0, Data = 0017
+# 152160.000 ns  INFO:  Sync - Write, addr = 000018, Mask = 0, Data = 0018
+# 152180.000 ns  INFO:  Sync - Write, addr = 000019, Mask = 0, Data = 0019
+# 152200.000 ns  INFO:  Sync - Write, addr = 00001a, Mask = 0, Data = 001a
+# 152220.000 ns  INFO:  Sync - Write, addr = 00001b, Mask = 0, Data = 001b
+# 152240.000 ns  INFO:  Sync - Write, addr = 00001c, Mask = 0, Data = 001c
+# 152260.000 ns  INFO:  Sync - Write, addr = 00001d, Mask = 0, Data = 001d
+# 152280.000 ns  INFO:  Sync - Write, addr = 00001e, Mask = 0, Data = 001e
+# 152300.000 ns  INFO:  Sync - Write, addr = 00001f, Mask = 0, Data = 001f
+# ===============================================================
+# 152340.000 ns  INFO:  Sync - Read
+# 152400.000 ns  INFO:  Sync - Read, addr = 000010, Data = 0010
+# 152420.000 ns  INFO:  Sync - Read, addr = 000011, Data = 0011
+# 152440.000 ns  INFO:  Sync - Read, addr = 000012, Data = 0012
+# 152460.000 ns  INFO:  Sync - Read, addr = 000013, Data = 0013
+# 152480.000 ns  INFO:  Sync - Read, addr = 000014, Data = 0014
+# 152500.000 ns  INFO:  Sync - Read, addr = 000015, Data = 0015
+# 152520.000 ns  INFO:  Sync - Read, addr = 000016, Data = 0016
+# 152540.000 ns  INFO:  Sync - Read, addr = 000017, Data = 0017
+# 152560.000 ns  INFO:  Sync - Read, addr = 000018, Data = 0018
+# 152580.000 ns  INFO:  Sync - Read, addr = 000019, Data = 0019
+# 152600.000 ns  INFO:  Sync - Read, addr = 00001a, Data = 001a
+# 152620.000 ns  INFO:  Sync - Read, addr = 00001b, Data = 001b
+# 152640.000 ns  INFO:  Sync - Read, addr = 00001c, Data = 001c
+# 152660.000 ns  INFO:  Sync - Read, addr = 00001d, Data = 001d
+# 152680.000 ns  INFO:  Sync - Read, addr = 00001e, Data = 001e
+# 152700.000 ns  INFO:  Sync - Read, addr = 00001f, Data = 001f
+# 152720.000 ns  INFO:  Sync - Read, addr = 000020, Data = xxxx
+# End time: 13:12:53 on Jun 13,2017, Elapsed time: 0:17:00
+# Errors: 0, Warnings: 1

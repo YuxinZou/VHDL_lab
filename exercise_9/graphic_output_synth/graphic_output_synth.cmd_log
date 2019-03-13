@@ -1,0 +1,83 @@
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 
+xst -intstyle ise -ifn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.xst" -ofn "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc graphic_output_synth.ucf -p xc6slx16-csg324-3 graphic_output_synth.ngc graphic_output_synth.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o graphic_output_synth_map.ncd graphic_output_synth.ngd graphic_output_synth.pcf 
+par -w -intstyle ise -ol high -mt off graphic_output_synth_map.ncd graphic_output_synth.ncd graphic_output_synth.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml graphic_output_synth.twx graphic_output_synth.ncd -o graphic_output_synth.twr graphic_output_synth.pcf -ucf graphic_output_synth.ucf 
+bitgen -intstyle ise -f graphic_output_synth.ut graphic_output_synth.ncd 

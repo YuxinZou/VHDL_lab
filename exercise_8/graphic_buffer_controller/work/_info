@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/user/Labs_user/chipw7
+Egraphic_buffer_controller
+Z0 w1496742236
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/user/Labs_user/chipw7/vhdlLab/exercise_8/graphic_buffer_controller
+Z5 8graphic_buffer_controller.vhd
+Z6 Fgraphic_buffer_controller.vhd
+l0
+L15
+V:0bGYglKNCcUcNU;7hidE3
+!s100 S]WeCTIdGBWYG0ZZGc>B83
+Z7 OE;C;10.4c_5;61
+32
+Z8 !s110 1496742240
+!i10b 1
+Z9 !s108 1496742240.000000
+Z10 !s90 -reportprogress|300|graphic_buffer_controller.vhd|
+Z11 !s107 graphic_buffer_controller.vhd|
+!i113 0
+Z12 tExplicit 1
+Artl
+R1
+R2
+R3
+DEx4 work 25 graphic_buffer_controller 0 22 :0bGYglKNCcUcNU;7hidE3
+32
+R8
+l64
+L56
+VTi^[]L;F8<JG5Eg[8PmY`2
+!s100 z287^0KE@P8RdTC`_0Q=V3
+R7
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Egraphic_buffer_controller_tb
+Z13 w1491906624
+Z14 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R1
+R2
+R3
+R4
+Z15 8graphic_buffer_controller_tb.vhd
+Z16 Fgraphic_buffer_controller_tb.vhd
+l0
+L7
+V[@^7GDdX>=oFgS<9F7VKK0
+!s100 FPMWNTgiXce?RX8e`IV`Y3
+R7
+32
+Z17 !s110 1496742241
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|graphic_buffer_controller_tb.vhd|
+Z19 !s107 graphic_buffer_controller_tb.vhd|
+!i113 0
+R12
+Abeh
+R14
+R1
+R2
+R3
+DEx4 work 28 graphic_buffer_controller_tb 0 22 [@^7GDdX>=oFgS<9F7VKK0
+32
+R17
+l51
+L12
+VV8Gg?0i<WXJ13THD><J<X0
+!s100 SI1F28IQ]`cW=;zNlMIY`1
+R7
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R12

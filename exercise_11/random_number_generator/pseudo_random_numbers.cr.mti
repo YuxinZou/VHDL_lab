@@ -1,0 +1,19 @@
+/user/Labs_user/chipw7/vhdlLab/exercise_11/random_number_generator/random_number_generator.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_11/random_number_generator/random_number_generator.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity random_number_generator
+-- Compiling architecture rtl of random_number_generator
+
+} {} {}} /user/Labs_user/chipw7/vhdlLab/exercise_11/random_number_generator/random_number_generator_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_11/random_number_generator/random_number_generator_tb.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity random_number_generator_tb
+-- Compiling architecture beh of random_number_generator_tb
+
+} {} {}}

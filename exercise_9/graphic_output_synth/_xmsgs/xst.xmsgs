@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">start_address_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">comp_graphic_buffer_controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;start_address_1&gt; &lt;start_address_2&gt; &lt;start_address_3&gt; &lt;start_address_4&gt; &lt;start_address_5&gt; &lt;start_address_6&gt; &lt;start_address_7&gt; &lt;start_address_8&gt; &lt;start_address_9&gt; &lt;start_address_10&gt; &lt;start_address_11&gt; &lt;start_address_12&gt; &lt;start_address_13&gt; &lt;start_address_14&gt; &lt;start_address_15&gt; &lt;start_address_16&gt; &lt;start_address_17&gt; &lt;start_address_19&gt; &lt;start_address_20&gt; &lt;start_address_21&gt; &lt;start_address_22&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">start_address_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">comp_graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_o_rom_data</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">start_address_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">cnt_address_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cnt_address_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cnt_address_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cnt_address_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_controller/cnt_address_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/cnt_data_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/cnt_data_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_output_synth</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_114</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_115&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_116&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_117&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_118&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_119&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_11&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_12&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_13&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_14&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_120</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_121&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_122</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_123&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_124&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_125&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_126&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_127&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_130</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_131&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_132&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_133&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_134&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_135&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_19&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_20&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_21&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_22&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_128</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_129&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_24</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_26</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_27&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_28&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_29&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_30&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_136</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_137&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_32</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_33&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_138</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_139&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_140&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_141&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_142&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_143&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_34</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_35&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_36&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_37&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_38&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_39&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_144</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_145&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_40</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_41&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_200</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_201&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_146</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_147&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_148&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_149&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_150&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_151&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_42</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_43&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_44&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_45&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_46&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_47&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_152</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_153&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_202</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_203&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_204&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_205&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_206&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_207&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_154</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_155&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_156&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_157&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_158&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_159&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_50</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_51&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_52&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_53&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_54&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_55&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_160</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_161&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_210</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_211&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_212&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_213&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_214&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_215&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_162</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_163&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_164&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_165&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_166&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_167&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_48</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_49&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_208</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_209&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_170</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_171&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_172&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_173&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_174&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_175&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_56</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_57&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_216</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_217&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_58</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_59&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_60&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_61&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_62&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_63&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_168</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_169&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_64</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_65&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_218</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_219&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_220&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_221&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_222&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_223&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_224</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_225&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_66</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_67&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_68&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_69&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_70&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_71&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_176</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_177&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_72</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_73&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_226</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_227&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_228&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_229&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_230&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_231&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_232</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_233&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_178</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_179&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_180&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_181&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_182&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_183&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_74</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_75&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_76&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_77&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_78&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_79&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_184</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_185&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_80</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_81&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_234</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_235&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_236&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_237&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_238&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_239&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_240</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_241&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_186</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_187&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_188&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_189&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_190&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_191&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_82</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_83&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_84&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_85&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_86&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_87&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_192</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_193&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_242</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_243&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_244&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_245&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_246&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_247&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_194</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_195&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_196&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_197&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_198&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_199&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_90</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_91&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_92&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_93&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_94&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_95&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_250</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_251&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_252&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_253&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_254&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_255&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_88</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_89&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_248</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_249&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_96</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_97&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_98</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_99&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_100&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_101&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_102&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_103&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_11&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_12&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_13&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_14&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_3&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_4&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_5&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_6&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_104</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_105&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_106</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_107&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_108&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_109&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_110&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_111&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_19&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_20&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_21&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_22&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_112</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_113&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_24</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_25&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_114</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_115&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_116&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_117&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_118&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_119&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_26</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_27&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_28&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_29&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_30&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_31&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_120</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_121&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_32</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_33&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_122</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_123&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_124&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_125&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_126&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_127&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_34</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_35&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_36&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_37&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_38&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_39&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_40</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_41&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_130</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_131&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_132&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_133&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_134&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_135&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_42</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_43&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_44&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_45&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_46&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_47&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_128</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_129&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_50</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_51&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_52&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_53&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_54&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_55&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_136</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_137&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_48</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_49&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_138</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_139&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_140&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_141&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_142&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_143&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_144</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_145&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_56</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_57&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_200</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_201&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_146</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_147&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_148&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_149&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_150&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_151&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_58</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_59&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_60&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_61&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_62&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_63&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_202</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_203&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_204&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_205&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_206&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_207&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_152</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_153&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_64</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_65&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_154</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_155&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_156&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_157&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_158&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_159&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_66</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_67&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_68&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_69&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_70&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_71&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_210</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_211&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_212&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_213&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_214&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_215&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_160</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_161&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_72</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_73&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_162</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_163&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_164&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_165&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_166&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_167&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_74</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_75&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_76&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_77&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_78&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_79&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_208</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_209&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_80</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_81&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_170</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_171&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_172&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_173&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_174&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_175&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_82</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_83&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_84&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_85&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_86&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_87&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_216</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_217&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_168</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_169&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_218</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_219&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_220&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_221&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_222&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_223&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_90</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_91&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_92&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_93&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_94&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_95&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_224</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_225&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_176</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_177&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_226</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_227&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_228&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_229&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_230&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_231&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_88</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_89&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_232</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_233&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_178</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_179&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_180&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_181&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_182&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_183&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_184</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_185&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_234</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_235&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_236&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_237&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_238&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_239&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_96</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_97&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_240</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_241&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_3&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_4&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_5&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_6&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_186</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_187&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_188&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_189&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_190&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_191&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_98</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_99&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_100&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_101&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_102&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_103&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_242</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_243&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_244&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_245&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_246&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_247&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_192</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_193&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_194</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_195&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_196&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_197&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_198&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_199&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_250</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_251&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_252&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_253&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_254&gt; &lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_255&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_248</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_249&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_104</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_105&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_106</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_107&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_108&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_109&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_110&gt; &lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_111&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_112</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">graphic_output_synth</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_113&gt; </arg>
+</msg>
+
+</messages>
+

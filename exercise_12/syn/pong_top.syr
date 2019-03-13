@@ -1,0 +1,1739 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> 
+Reading design: pong_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "pong_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "pong_top"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : pong_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output/graphic_output_package.vhd" into library work
+Parsing package <graphic_output_package>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd" into library work
+Parsing entity <graphic_buffer_controller>.
+Parsing architecture <rtl> of entity <graphic_buffer_controller>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_7/graphic_buffer/graphic_buffer.vhd" into library work
+Parsing entity <graphic_buffer>.
+Parsing architecture <rtl> of entity <graphic_buffer>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_6/sync_pulse_generator/sync_pulse_generator.vhd" into library work
+Parsing entity <sync_pulse_generator>.
+Parsing architecture <rtl> of entity <sync_pulse_generator>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/rom_package.vhd" into library work
+Parsing package <rom_package>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/render_engine_package.vhd" into library work
+Parsing package <render_engine_package>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/render_engine_controller.vhd" into library work
+Parsing entity <render_engine_controller>.
+Parsing architecture <rtl> of entity <render_engine_controller>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/render_buffer.vhd" into library work
+Parsing entity <render_buffer>.
+Parsing architecture <rtl> of entity <render_buffer>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/renderer.vhd" into library work
+Parsing entity <renderer>.
+Parsing architecture <rtl> of entity <renderer>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/position_sample_register.vhd" into library work
+Parsing entity <position_sample_register>.
+Parsing architecture <rtl> of entity <position_sample_register>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output/graphic_output.vhd" into library work
+Parsing entity <graphic_output>.
+Parsing architecture <rtl> of entity <graphic_output>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/rom.vhd" into library work
+Parsing entity <rom>.
+Parsing architecture <rtl> of entity <rom>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/render_engine.vhd" into library work
+Parsing entity <render_engine>.
+Parsing architecture <rtl> of entity <render_engine>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/points_display_package.vhd" into library work
+Parsing package <points_display_package>.
+Parsing package body <points_display_package>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/paddle_movement.vhd" into library work
+Parsing entity <paddle_movement>.
+Parsing architecture <rtl> of entity <paddle_movement>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/graphic_engine_package.vhd" into library work
+Parsing package <graphic_engine_package>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/game_states.vhd" into library work
+Parsing entity <game_states>.
+Parsing architecture <rtl> of entity <game_states>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/game_engine_package.vhd" into library work
+Parsing package <game_engine_package>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/bcd_digit.vhd" into library work
+Parsing entity <bcd_digit>.
+Parsing architecture <rtl> of entity <bcd_digit>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/ball_movement.vhd" into library work
+Parsing entity <ball_movement>.
+Parsing architecture <rtl> of entity <ball_movement>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_11/random_number_generator/random_number_generator.vhd" into library work
+Parsing entity <random_number_generator>.
+Parsing architecture <rtl> of entity <random_number_generator>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_11/event_trigger/event_trigger.vhd" into library work
+Parsing entity <event_trigger>.
+Parsing architecture <rtl> of entity <event_trigger>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/ram_controller.vhd" into library work
+Parsing entity <ram_controller>.
+Parsing architecture <rtl> of entity <ram_controller>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/reset_circuit.vhd" into library work
+Parsing entity <reset_circuit>.
+Parsing architecture <rtl> of entity <reset_circuit>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/pong_top_package.vhd" into library work
+Parsing package <pong_top_package>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/points_display.vhd" into library work
+Parsing entity <points_display>.
+Parsing architecture <rtl> of entity <points_display>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/graphic_engine.vhd" into library work
+Parsing entity <graphic_engine>.
+Parsing architecture <rtl> of entity <graphic_engine>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/game_engine.vhd" into library work
+Parsing entity <game_engine>.
+Parsing architecture <rtl> of entity <game_engine>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" into library work
+Parsing entity <input_decoder>.
+Parsing architecture <rtl> of entity <input_decoder>.
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 178: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 179: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 180: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 181: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 182: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 183: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 189: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 190: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 191: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 192: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 193: Case choice must be a locally static expression
+WARNING:HDLCompiler:957 - "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 194: Case choice must be a locally static expression
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_12/pong_top.vhd" into library work
+Parsing entity <pong_top>.
+Parsing architecture <rtl> of entity <pong_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <pong_top> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <input_decoder> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <game_engine> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <event_trigger> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <random_number_generator> (architecture <rtl>) from library <work>.
+
+Elaborating entity <game_states> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <paddle_movement> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <ball_movement> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <rom> (architecture <rtl>) from library <work>.
+
+Elaborating entity <points_display> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <bcd_digit> (architecture <rtl>) from library <work>.
+
+Elaborating entity <graphic_engine> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <render_engine> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <render_engine_controller> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <position_sample_register> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <renderer> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <render_buffer> (architecture <rtl>) from library <work>.
+
+Elaborating entity <ram_controller> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "/user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/ram_controller.vhd" Line 260. Case statement is complete. others clause is never selected
+
+Elaborating entity <graphic_output> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <sync_pulse_generator> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <graphic_buffer> (architecture <rtl>) from library <work>.
+
+Elaborating entity <graphic_buffer_controller> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <reset_circuit> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <pong_top>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/pong_top.vhd".
+        G_PLAYER_1_UP = "10000111000"
+        G_PLAYER_1_DOWN = "10000110100"
+        G_PLAYER_2_UP = "11010000100"
+        G_PLAYER_2_DOWN = "11001110100"
+        G_SERVE_KEY = "10001010010"
+        G_RESET_KEY = "10011101100"
+        G_H_PIXEL_NUMBER = 800
+        G_H_RESOLUTION = 640
+        G_H_FRONT_PORCH = 8
+        G_H_BACK_PORCH = 48
+        G_H_SYNC_LENGTH = 96
+        G_H_SYNC_ACTIVE = '0'
+        G_V_PIXEL_NUMBER = 525
+        G_V_RESOLUTION = 480
+        G_V_FRONT_PORCH = 2
+        G_V_BACK_PORCH = 33
+        G_V_SYNC_LENGTH = 2
+        G_V_SYNC_ACTIVE = '0'
+        G_PADDLE_EVENT_INTERVAL = 200000
+        G_BALL_EVENT_INTERVAL = 40000
+        G_BORDER_THICKNESS = 2
+        G_PADDLE_TO_BORDER_SPACE = 2
+        G_PADDLE_HEIGHT = 91
+        G_PADDLE_WIDTH = 15
+        G_PADDLE_SLOPE_LENGTH = 20
+        G_BALL_DIAMETER = 17
+        G_POINTS_TO_WIN = 15
+    Summary:
+	no macro.
+Unit <pong_top> synthesized.
+
+Synthesizing Unit <input_decoder>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd".
+        G_PLAYER_1_UP = "10000111000"
+        G_PLAYER_1_DOWN = "10000110100"
+        G_PLAYER_2_UP = "11010000100"
+        G_PLAYER_2_DOWN = "11001110100"
+        G_SERVE_KEY = "10001010010"
+        G_RESET_KEY = "10011101100"
+    Found 1-bit register for signal <ps2_clk_state>.
+    Found 1-bit register for signal <new_ps2_data>.
+    Found 11-bit register for signal <sr_scancode>.
+    Found 4-bit register for signal <cnt_scancode_bits>.
+    Found 17-bit register for signal <cnt_timeout>.
+    Found 1-bit register for signal <key_release_flag>.
+    Found 1-bit register for signal <player_1_up>.
+    Found 1-bit register for signal <player_2_up>.
+    Found 1-bit register for signal <player_1_down>.
+    Found 1-bit register for signal <player_2_down>.
+    Found 1-bit register for signal <o_serve_key>.
+    Found 1-bit register for signal <o_reset_key>.
+    Found 8-bit register for signal <sr_ps2_clk_filter>.
+    Found 4-bit adder for signal <cnt_scancode_bits[3]_GND_6_o_add_4_OUT> created at line 169.
+    Found 17-bit adder for signal <cnt_timeout[16]_GND_6_o_add_38_OUT> created at line 206.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  49 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <input_decoder> synthesized.
+
+Synthesizing Unit <game_engine>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/game_engine.vhd".
+        G_H_RESOLUTION = 640
+        G_V_RESOLUTION = 480
+        G_PADDLE_EVENT_INTERVAL = 200000
+        G_BALL_EVENT_INTERVAL = 40000
+        G_BORDER_THICKNESS = 2
+        G_PADDLE_TO_BORDER_SPACE = 2
+        G_PADDLE_HEIGHT = 91
+        G_PADDLE_WIDTH = 15
+        G_PADDLE_SLOPE_LENGTH = 20
+        G_BALL_DIAMETER = 17
+        G_PLAYER_POS_SIGNAL_RANGE = 387
+        G_BALL_X_POS_SIGNAL_RANGE = 604
+        G_BALL_Y_POS_SIGNAL_RANGE = 461
+        G_POINTS_TO_WIN = 15
+    Summary:
+	no macro.
+Unit <game_engine> synthesized.
+
+Synthesizing Unit <event_trigger>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_11/event_trigger/event_trigger.vhd".
+        G_PADDLE_EVENT_INTERVAL = 200000
+        G_BALL_EVENT_INTERVAL = 40000
+    Found 32-bit register for signal <counter_ball>.
+    Found 1-bit register for signal <o_paddle_event>.
+    Found 1-bit register for signal <o_ball_event>.
+    Found 32-bit register for signal <counter_paddle>.
+    Found 32-bit adder for signal <counter_paddle[31]_GND_9_o_add_1_OUT> created at line 47.
+    Found 32-bit adder for signal <counter_ball[31]_GND_9_o_add_4_OUT> created at line 55.
+    Found 32-bit comparator greater for signal <GND_9_o_counter_paddle[31]_LessThan_1_o> created at line 46
+    Found 32-bit comparator greater for signal <GND_9_o_counter_ball[31]_LessThan_4_o> created at line 54
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <event_trigger> synthesized.
+
+Synthesizing Unit <random_number_generator>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_11/random_number_generator/random_number_generator.vhd".
+    Found 6-bit register for signal <random_number>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <random_number_generator> synthesized.
+
+Synthesizing Unit <game_states>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/game_states.vhd".
+        G_POINTS_TO_WIN = 15
+    Found 4-bit register for signal <cnt_player_1_points>.
+    Found 4-bit register for signal <cnt_player_2_points>.
+    Found 1-bit register for signal <o_ball_free>.
+    Found 1-bit register for signal <o_enable_movement>.
+    Found 1-bit register for signal <o_reset_ball_and_paddles>.
+    Found 27-bit register for signal <cnt_wait_time>.
+    Found 1-bit register for signal <state_serve>.
+    Found 3-bit register for signal <cnt_serves>.
+    Found 2-bit register for signal <state_game>.
+    Found finite state machine <FSM_0> for signal <state_game>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | serve                                          |
+    | Power Up State     | serve                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <cnt_player_1_points[3]_GND_11_o_add_1_OUT> created at line 124.
+    Found 4-bit adder for signal <cnt_player_2_points[3]_GND_11_o_add_2_OUT> created at line 131.
+    Found 27-bit adder for signal <cnt_wait_time[26]_GND_11_o_add_12_OUT> created at line 162.
+    Found 3-bit adder for signal <cnt_serves[2]_GND_11_o_add_34_OUT> created at line 208.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <game_states> synthesized.
+
+Synthesizing Unit <paddle_movement>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/paddle_movement.vhd".
+        G_V_RESOLUTION = 480
+        G_BORDER_THICKNESS = 2
+        G_PADDLE_HEIGHT = 91
+        G_PLAYER_POS_SIGNAL_RANGE = 387
+    Found 9-bit register for signal <player_2_pos>.
+    Found 9-bit register for signal <player_1_pos>.
+    Found 9-bit adder for signal <player_1_pos[8]_GND_12_o_add_4_OUT> created at line 93.
+    Found 9-bit adder for signal <player_2_pos[8]_GND_12_o_add_12_OUT> created at line 109.
+    Found 9-bit subtractor for signal <GND_12_o_GND_12_o_sub_2_OUT<8:0>> created at line 86.
+    Found 9-bit subtractor for signal <GND_12_o_GND_12_o_sub_10_OUT<8:0>> created at line 102.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <paddle_movement> synthesized.
+
+Synthesizing Unit <ball_movement>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/ball_movement.vhd".
+        G_H_RESOLUTION = 640
+        G_V_RESOLUTION = 480
+        G_BORDER_THICKNESS = 2
+        G_PADDLE_TO_BORDER_SPACE = 2
+        G_PADDLE_HEIGHT = 91
+        G_PADDLE_WIDTH = 15
+        G_PADDLE_SLOPE_LENGTH = 20
+        G_BALL_DIAMETER = 17
+        G_PLAYER_POS_SIGNAL_RANGE = 387
+        G_BALL_X_POS_SIGNAL_RANGE = 604
+        G_BALL_Y_POS_SIGNAL_RANGE = 461
+    Found 4-bit register for signal <cnt_ball_x_movement_timer>.
+    Found 4-bit register for signal <cnt_ball_y_movement_timer>.
+    Found 10-bit register for signal <ball_x_pos>.
+    Found 9-bit register for signal <ball_y_pos>.
+    Found 1-bit register for signal <ball_x_direction>.
+    Found 1-bit register for signal <ball_y_direction>.
+    Found 4-bit register for signal <ball_x_velocity>.
+    Found 4-bit register for signal <ball_y_velocity>.
+    Found 1-bit register for signal <o_point_player_1>.
+    Found 1-bit register for signal <o_point_player_2>.
+    Found 9-bit register for signal <o_rom_address>.
+    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_10_OUT> created at line 171.
+    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_14_OUT> created at line 171.
+    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_26_OUT> created at line 197.
+    Found 11-bit subtractor for signal <GND_15_o_GND_15_o_sub_30_OUT> created at line 197.
+    Found 10-bit adder for signal <n0234> created at line 159.
+    Found 10-bit adder for signal <n0267[9:0]> created at line 171.
+    Found 10-bit adder for signal <n0238> created at line 171.
+    Found 12-bit adder for signal <n0271> created at line 171.
+    Found 10-bit adder for signal <n0233> created at line 191.
+    Found 10-bit adder for signal <n0246> created at line 191.
+    Found 10-bit adder for signal <n0236> created at line 196.
+    Found 10-bit adder for signal <n0279[9:0]> created at line 197.
+    Found 10-bit adder for signal <n0250> created at line 197.
+    Found 12-bit adder for signal <n0283> created at line 197.
+    Found 10-bit adder for signal <ball_x_pos[9]_GND_15_o_add_39_OUT> created at line 275.
+    Found 4-bit adder for signal <cnt_ball_x_movement_timer[3]_GND_15_o_add_42_OUT> created at line 282.
+    Found 9-bit adder for signal <ball_y_pos[8]_GND_15_o_add_46_OUT> created at line 290.
+    Found 4-bit adder for signal <cnt_ball_y_movement_timer[3]_GND_15_o_add_49_OUT> created at line 296.
+    Found 9-bit subtractor for signal <GND_15_o_GND_15_o_sub_34_OUT<8:0>> created at line 257.
+    Found 9-bit subtractor for signal <GND_15_o_GND_15_o_sub_36_OUT<8:0>> created at line 260.
+    Found 10-bit subtractor for signal <GND_15_o_GND_15_o_sub_41_OUT<9:0>> created at line 277.
+    Found 9-bit subtractor for signal <GND_15_o_GND_15_o_sub_48_OUT<8:0>> created at line 292.
+    Found 10-bit comparator greater for signal <BUS_0001_BUS_0002_LessThan_3_o> created at line 159
+    Found 10-bit comparator greater for signal <GND_15_o_BUS_0003_LessThan_5_o> created at line 166
+    Found 10-bit comparator greater for signal <GND_15_o_BUS_0004_LessThan_7_o> created at line 166
+    Found 11-bit comparator greater for signal <GND_15_o_GND_15_o_LessThan_11_o> created at line 171
+    Found 12-bit comparator greater for signal <BUS_0009_GND_15_o_LessThan_16_o> created at line 171
+    Found 10-bit comparator greater for signal <BUS_0010_BUS_0011_LessThan_19_o> created at line 191
+    Found 10-bit comparator greater for signal <GND_15_o_BUS_0012_LessThan_21_o> created at line 196
+    Found 10-bit comparator greater for signal <GND_15_o_BUS_0013_LessThan_23_o> created at line 196
+    Found 11-bit comparator greater for signal <GND_15_o_GND_15_o_LessThan_27_o> created at line 197
+    Found 12-bit comparator greater for signal <BUS_0018_GND_15_o_LessThan_32_o> created at line 197
+    Found 4-bit comparator equal for signal <cnt_ball_x_movement_timer[3]_ball_x_velocity[3]_equal_39_o> created at line 272
+    Found 4-bit comparator equal for signal <cnt_ball_y_movement_timer[3]_ball_y_velocity[3]_equal_46_o> created at line 287
+    Summary:
+	inferred  18 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
+	inferred  12 Comparator(s).
+	inferred  38 Multiplexer(s).
+Unit <ball_movement> synthesized.
+
+Synthesizing Unit <rom>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/rom.vhd".
+    Found 512x9-bit Read Only RAM for signal <o_rom_data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <rom> synthesized.
+
+Synthesizing Unit <points_display>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/points_display.vhd".
+        G_POINTS_TO_WIN = 15
+INFO:Xst:3210 - "/user/Labs_user/chipw7/vhdlLab/exercise_12/points_display.vhd" line 88: Output port <o_carry> of the instance <bcd_digit_tens_inst> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <input_select>.
+    Found 3-bit register for signal <cnt_shifted_bits>.
+    Found 1-bit register for signal <reset_bcd>.
+    Found 4-bit register for signal <sr_number_to_convert>.
+    Found 4-bit register for signal <player_1_tens>.
+    Found 4-bit register for signal <player_1_ones>.
+    Found 4-bit register for signal <player_2_tens>.
+    Found 4-bit register for signal <player_2_ones>.
+    Found 4-bit register for signal <sr_anodes>.
+    Found 10-bit register for signal <cnt_anode_change_interval>.
+    Found 1-bit register for signal <state_conversion>.
+    Found 3-bit adder for signal <cnt_shifted_bits[2]_GND_19_o_add_6_OUT> created at line 160.
+    Found 10-bit adder for signal <cnt_anode_change_interval[9]_GND_19_o_add_34_OUT> created at line 191.
+    Found 16x7-bit Read Only RAM for signal <player_2_ones[3]_PWR_21_o_wide_mux_45_OUT>
+    Found 16x7-bit Read Only RAM for signal <player_2_tens[3]_PWR_21_o_wide_mux_46_OUT>
+    Found 16x7-bit Read Only RAM for signal <player_1_ones[3]_PWR_21_o_wide_mux_48_OUT>
+    Found 16x7-bit Read Only RAM for signal <player_1_tens[3]_PWR_21_o_wide_mux_50_OUT>
+    Summary:
+	inferred   4 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+Unit <points_display> synthesized.
+
+Synthesizing Unit <bcd_digit>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/bcd_digit.vhd".
+    Found 4-bit register for signal <sr_bcd>.
+    Found 16x1-bit Read Only RAM for signal <o_carry>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <bcd_digit> synthesized.
+
+Synthesizing Unit <graphic_engine>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/graphic_engine.vhd".
+        G_H_PIXEL_NUMBER = 800
+        G_H_RESOLUTION = 640
+        G_H_FRONT_PORCH = 8
+        G_H_BACK_PORCH = 48
+        G_H_SYNC_LENGTH = 96
+        G_H_SYNC_ACTIVE = '0'
+        G_V_PIXEL_NUMBER = 525
+        G_V_RESOLUTION = 480
+        G_V_FRONT_PORCH = 2
+        G_V_BACK_PORCH = 33
+        G_V_SYNC_LENGTH = 2
+        G_V_SYNC_ACTIVE = '0'
+        G_BORDER_THICKNESS = 2
+        G_PADDLE_TO_BORDER_SPACE = 2
+        G_PADDLE_HEIGHT = 91
+        G_PADDLE_WIDTH = 15
+        G_BALL_DIAMETER = 17
+        G_PLAYER_POS_SIGNAL_RANGE = 387
+        G_BALL_X_POS_SIGNAL_RANGE = 604
+        G_BALL_Y_POS_SIGNAL_RANGE = 461
+    Found 1-bit register for signal <pixel_clk_sig>.
+    Found 1-bit register for signal <pixel_clk_div>.
+    Found 2-bit subtractor for signal <n0025> created at line 1308.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <graphic_engine> synthesized.
+
+Synthesizing Unit <render_engine>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/render_engine.vhd".
+        G_H_RESOLUTION = 640
+        G_V_RESOLUTION = 480
+        G_BORDER_THICKNESS = 2
+        G_PADDLE_TO_BORDER_SPACE = 2
+        G_PADDLE_HEIGHT = 91
+        G_PADDLE_WIDTH = 15
+        G_BALL_DIAMETER = 17
+        G_PLAYER_POS_SIGNAL_RANGE = 387
+        G_BALL_X_POS_SIGNAL_RANGE = 604
+        G_BALL_Y_POS_SIGNAL_RANGE = 461
+    Summary:
+	no macro.
+Unit <render_engine> synthesized.
+
+Synthesizing Unit <render_engine_controller>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/render_engine_controller.vhd".
+        G_H_RESOLUTION = 640
+        G_V_RESOLUTION = 480
+    Found 1-bit register for signal <increment_address>.
+    Found 1-bit register for signal <o_create_new_data>.
+    Found 1-bit register for signal <o_write_req>.
+    Found 1-bit register for signal <o_new_frame_ready>.
+    Found 1-bit register for signal <o_sample_positions>.
+    Found 1-bit register for signal <page>.
+    Found 14-bit register for signal <cur_ram_block>.
+    Found 2-bit register for signal <state_render_engine_controller>.
+    Found finite state machine <FSM_1> for signal <state_render_engine_controller>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | calculating                                    |
+    | Power Up State     | calculating                                    |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit adder for signal <cur_ram_block[13]_GND_25_o_add_13_OUT> created at line 190.
+    Found 1-bit 3-to-1 multiplexer for signal <state_render_engine_controller[1]_X_25_o_Mux_6_o> created at line 93.
+    Found 1-bit 3-to-1 multiplexer for signal <state_render_engine_controller[1]_X_25_o_Mux_7_o> created at line 93.
+    Found 1-bit 3-to-1 multiplexer for signal <state_render_engine_controller[1]_X_25_o_Mux_8_o> created at line 93.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <render_engine_controller> synthesized.
+
+Synthesizing Unit <position_sample_register>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/position_sample_register.vhd".
+        G_PLAYER_POS_SIGNAL_RANGE = 387
+        G_BALL_X_POS_SIGNAL_RANGE = 604
+        G_BALL_Y_POS_SIGNAL_RANGE = 461
+    Found 9-bit register for signal <o_player_2_pos>.
+    Found 10-bit register for signal <o_ball_x_pos>.
+    Found 9-bit register for signal <o_ball_y_pos>.
+    Found 9-bit register for signal <o_player_1_pos>.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+Unit <position_sample_register> synthesized.
+
+Synthesizing Unit <renderer>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/renderer.vhd".
+        G_H_RESOLUTION = 640
+        G_V_RESOLUTION = 480
+        G_BORDER_THICKNESS = 2
+        G_PADDLE_TO_BORDER_SPACE = 2
+        G_PADDLE_HEIGHT = 91
+        G_PADDLE_WIDTH = 15
+        G_BALL_DIAMETER = 17
+        G_PLAYER_POS_SIGNAL_RANGE = 387
+        G_BALL_X_POS_SIGNAL_RANGE = 604
+        G_BALL_Y_POS_SIGNAL_RANGE = 461
+    Found 9-bit register for signal <cnt_row>.
+    Found 1-bit register for signal <o_buffer_shift_enable>.
+    Found 1-bit register for signal <in_h_paddle_1_region>.
+    Found 1-bit register for signal <in_v_paddle_1_region>.
+    Found 1-bit register for signal <in_h_paddle_2_region>.
+    Found 1-bit register for signal <in_v_paddle_2_region>.
+    Found 1-bit register for signal <in_h_ball_region>.
+    Found 1-bit register for signal <in_v_ball_region>.
+    Found 1-bit register for signal <in_h_border_region>.
+    Found 1-bit register for signal <in_v_border_region>.
+    Found 10-bit register for signal <cnt_column>.
+    Found 10-bit adder for signal <n0105> created at line 129.
+    Found 10-bit adder for signal <n0107> created at line 142.
+    Found 11-bit adder for signal <n0109> created at line 149.
+    Found 10-bit adder for signal <n0111> created at line 155.
+    Found 9-bit adder for signal <cnt_row[8]_GND_27_o_add_22_OUT> created at line 187.
+    Found 10-bit adder for signal <cnt_column[9]_GND_27_o_add_24_OUT> created at line 190.
+    Found 9-bit comparator equal for signal <i_player_1_pos[8]_cnt_row[8]_equal_3_o> created at line 127
+    Found 10-bit comparator equal for signal <BUS_0001_GND_27_o_equal_5_o> created at line 129
+    Found 9-bit comparator equal for signal <i_player_2_pos[8]_cnt_row[8]_equal_8_o> created at line 140
+    Found 10-bit comparator equal for signal <BUS_0002_GND_27_o_equal_10_o> created at line 142
+    Found 10-bit comparator equal for signal <i_ball_x_pos[9]_cnt_column[9]_equal_11_o> created at line 147
+    Found 11-bit comparator equal for signal <BUS_0003_GND_27_o_equal_13_o> created at line 149
+    Found 9-bit comparator equal for signal <i_ball_y_pos[8]_cnt_row[8]_equal_14_o> created at line 153
+    Found 10-bit comparator equal for signal <BUS_0004_GND_27_o_equal_16_o> created at line 155
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <renderer> synthesized.
+
+Synthesizing Unit <render_buffer>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/render_buffer.vhd".
+    Found 5-bit register for signal <cnt_data>.
+    Found 256-bit register for signal <sr_rgb_data>.
+    Found 5-bit adder for signal <cnt_data[4]_GND_28_o_add_1_OUT> created at line 71.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 261 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <render_buffer> synthesized.
+
+Synthesizing Unit <ram_controller>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller/ram_controller.vhd".
+        G_BURST_COUNT = 16
+        G_DATA_WIDTH = 16
+    Found 1-bit register for signal <o_ram_oe_neg>.
+    Found 1-bit register for signal <o_ram_ce_neg>.
+    Found 1-bit register for signal <o_ram_we_neg>.
+    Found 1-bit register for signal <o_ram_ub_neg>.
+    Found 1-bit register for signal <o_ram_lb_neg>.
+    Found 1-bit register for signal <o_ram_adv_neg>.
+    Found 1-bit register for signal <o_ram_cre>.
+    Found 16-bit register for signal <s_ram_ctrl_state[3]_dff_372_OUT>.
+    Found 23-bit register for signal <o_ram_address>.
+    Found 1-bit register for signal <s_ram_clk>.
+    Found 1-bit register for signal <o_read_done>.
+    Found 1-bit register for signal <o_write_done>.
+    Found 256-bit register for signal <o_read_data>.
+    Found 32-bit register for signal <s_ram_counter>.
+    Found 5-bit register for signal <s_ram_ctrl_cnt>.
+    Found 1-bit register for signal <reset_clk_DFF_493>.
+    Found 1-bit register for signal <reset_clk_DFF_494>.
+    Found 1-bit register for signal <reset_clk_DFF_495>.
+    Found 1-bit register for signal <reset_clk_DFF_496>.
+    Found 1-bit register for signal <reset_clk_DFF_497>.
+    Found 1-bit register for signal <reset_clk_DFF_498>.
+    Found 1-bit register for signal <reset_clk_DFF_499>.
+    Found 1-bit register for signal <reset_clk_DFF_500>.
+    Found 1-bit register for signal <reset_clk_DFF_501>.
+    Found 1-bit register for signal <reset_clk_DFF_502>.
+    Found 1-bit register for signal <reset_clk_DFF_503>.
+    Found 1-bit register for signal <reset_clk_DFF_504>.
+    Found 1-bit register for signal <reset_clk_DFF_505>.
+    Found 1-bit register for signal <reset_clk_DFF_506>.
+    Found 1-bit register for signal <reset_clk_DFF_507>.
+    Found 1-bit register for signal <reset_clk_DFF_508>.
+    Found 4-bit register for signal <s_ram_ctrl_state>.
+    Found finite state machine <FSM_2> for signal <s_ram_ctrl_state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 31                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | first_config_state                             |
+    | Power Up State     | first_config_state                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <s_ram_counter[31]_GND_29_o_add_3_OUT> created at line 155.
+    Found 5-bit adder for signal <s_ram_ctrl_cnt[4]_GND_29_o_add_54_OUT> created at line 200.
+    Found 9-bit adder for signal <GND_29_o_s_ram_ctrl_cnt[4]_add_68_OUT> created at line 240.
+    Found 5-bit subtractor for signal <GND_29_o_GND_29_o_sub_16_OUT<4:0>> created at line 184.
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<15>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<14>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<13>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<12>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<11>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<10>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<9>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<8>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<7>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<6>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<5>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<4>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<3>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<2>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<1>> created at line 103
+    Found 1-bit tristate buffer for signal <s_ram_dq_out<0>> created at line 103
+    Found 5-bit comparator lessequal for signal <s_ram_ctrl_cnt[4]_PWR_32_o_LessThan_54_o> created at line 199
+    Found 5-bit comparator greater for signal <s_ram_ctrl_cnt[4]_GND_29_o_LessThan_342_o> created at line 241
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 358 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred 285 Multiplexer(s).
+	inferred  16 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <ram_controller> synthesized.
+
+Synthesizing Unit <graphic_output>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output/graphic_output.vhd".
+        G_H_PIXEL_NUMBER = 800
+        G_H_RESOLUTION = 640
+        G_H_FRONT_PORCH = 8
+        G_H_BACK_PORCH = 48
+        G_H_SYNC_LENGTH = 96
+        G_H_SYNC_ACTIVE = '0'
+        G_V_PIXEL_NUMBER = 525
+        G_V_RESOLUTION = 480
+        G_V_FRONT_PORCH = 2
+        G_V_BACK_PORCH = 33
+        G_V_SYNC_LENGTH = 2
+        G_V_SYNC_ACTIVE = '0'
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <graphic_output> synthesized.
+
+Synthesizing Unit <sync_pulse_generator>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_6/sync_pulse_generator/sync_pulse_generator.vhd".
+        G_H_PIXEL_NUMBER = 800
+        G_H_RESOLUTION = 640
+        G_H_FRONT_PORCH = 8
+        G_H_BACK_PORCH = 48
+        G_H_SYNC_LENGTH = 96
+        G_H_SYNC_ACTIVE = '0'
+        G_V_PIXEL_NUMBER = 525
+        G_V_RESOLUTION = 480
+        G_V_FRONT_PORCH = 2
+        G_V_BACK_PORCH = 33
+        G_V_SYNC_LENGTH = 2
+        G_V_SYNC_ACTIVE = '0'
+    Found 32-bit register for signal <cnt_v_sync>.
+    Found 32-bit register for signal <cnt_h_sync>.
+    Found 32-bit adder for signal <cnt_h_sync[31]_GND_64_o_add_9_OUT> created at line 110.
+    Found 32-bit adder for signal <cnt_v_sync[31]_GND_64_o_add_14_OUT> created at line 125.
+    Found 32-bit comparator greater for signal <cnt_h_sync[31]_GND_64_o_LessThan_1_o> created at line 72
+    Found 32-bit comparator greater for signal <GND_64_o_cnt_h_sync[31]_LessThan_2_o> created at line 72
+    Found 32-bit comparator greater for signal <cnt_v_sync[31]_GND_64_o_LessThan_3_o> created at line 84
+    Found 32-bit comparator greater for signal <GND_64_o_cnt_v_sync[31]_LessThan_4_o> created at line 84
+    Found 32-bit comparator greater for signal <cnt_h_sync[31]_GND_64_o_LessThan_5_o> created at line 96
+    Found 32-bit comparator greater for signal <GND_64_o_cnt_h_sync[31]_LessThan_6_o> created at line 96
+    Found 32-bit comparator greater for signal <cnt_v_sync[31]_GND_64_o_LessThan_7_o> created at line 96
+    Found 32-bit comparator greater for signal <GND_64_o_cnt_v_sync[31]_LessThan_8_o> created at line 96
+    Found 32-bit comparator greater for signal <GND_64_o_cnt_h_sync[31]_LessThan_9_o> created at line 109
+    Found 32-bit comparator greater for signal <GND_64_o_cnt_v_sync[31]_LessThan_13_o> created at line 123
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <sync_pulse_generator> synthesized.
+
+Synthesizing Unit <graphic_buffer>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_7/graphic_buffer/graphic_buffer.vhd".
+    Found 256-bit register for signal <i_rgb_data_reg>.
+    Found 32-bit register for signal <cnt_data>.
+    Found 1-bit register for signal <o_data_req>.
+    Found 32-bit adder for signal <cnt_data[31]_GND_65_o_add_2_OUT> created at line 61.
+    Found 32-bit comparator greater for signal <GND_65_o_cnt_data[31]_LessThan_2_o> created at line 59
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 289 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <graphic_buffer> synthesized.
+
+Synthesizing Unit <graphic_buffer_controller>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd".
+        G_H_RESOLUTION = 640
+        G_V_RESOLUTION = 480
+    Found 1-bit register for signal <o_reg_select_buf>.
+    Found 1-bit register for signal <o_read_req_buf>.
+    Found 32-bit register for signal <cnt_address>.
+    Found 23-bit register for signal <start_address>.
+    Found 1-bit register for signal <o_page_switched>.
+    Found 32-bit adder for signal <cnt_address[31]_GND_66_o_add_7_OUT> created at line 173.
+    Found 23-bit adder for signal <o_read_address> created at line 179.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <graphic_buffer_controller> synthesized.
+
+Synthesizing Unit <reset_circuit>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_12/reset_circuit.vhd".
+    Found 1-bit register for signal <o_reset>.
+    Found 10-bit register for signal <cnt_cycle_counter>.
+    Found 10-bit adder for signal <cnt_cycle_counter[9]_GND_67_o_add_1_OUT> created at line 49.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <reset_circuit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x1-bit single-port Read Only RAM                    : 2
+ 16x7-bit single-port Read Only RAM                    : 4
+ 512x9-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 50
+ 10-bit adder                                          : 14
+ 10-bit addsub                                         : 1
+ 11-bit adder                                          : 1
+ 11-bit subtractor                                     : 4
+ 12-bit adder                                          : 2
+ 14-bit adder                                          : 1
+ 17-bit adder                                          : 1
+ 2-bit subtractor                                      : 1
+ 23-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 3-bit adder                                           : 2
+ 32-bit adder                                          : 8
+ 4-bit adder                                           : 5
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 1
+ 9-bit adder                                           : 2
+ 9-bit addsub                                          : 3
+# Registers                                            : 124
+ 1-bit register                                        : 71
+ 10-bit register                                       : 5
+ 11-bit register                                       : 1
+ 14-bit register                                       : 1
+ 16-bit register                                       : 1
+ 17-bit register                                       : 1
+ 23-bit register                                       : 2
+ 256-bit register                                      : 4
+ 27-bit register                                       : 1
+ 3-bit register                                        : 2
+ 32-bit register                                       : 8
+ 4-bit register                                        : 15
+ 5-bit register                                        : 2
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 8
+# Comparators                                          : 36
+ 10-bit comparator equal                               : 4
+ 10-bit comparator greater                             : 6
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 2
+ 12-bit comparator greater                             : 2
+ 32-bit comparator greater                             : 14
+ 4-bit comparator equal                                : 2
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+ 9-bit comparator equal                                : 3
+# Multiplexers                                         : 386
+ 1-bit 2-to-1 multiplexer                              : 333
+ 1-bit 3-to-1 multiplexer                              : 3
+ 10-bit 2-to-1 multiplexer                             : 4
+ 14-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 23-bit 2-to-1 multiplexer                             : 3
+ 3-bit 2-to-1 multiplexer                              : 6
+ 32-bit 2-to-1 multiplexer                             : 6
+ 4-bit 2-to-1 multiplexer                              : 9
+ 5-bit 2-to-1 multiplexer                              : 6
+ 7-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 7
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+# FSMs                                                 : 3
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <reset_clk_DFF_494> in Unit <ram_controller_1> is equivalent to the following 15 FFs/Latches, which will be removed : <reset_clk_DFF_493> <reset_clk_DFF_495> <reset_clk_DFF_496> <reset_clk_DFF_499> <reset_clk_DFF_497> <reset_clk_DFF_498> <reset_clk_DFF_502> <reset_clk_DFF_500> <reset_clk_DFF_501> <reset_clk_DFF_505> <reset_clk_DFF_503> <reset_clk_DFF_504> <reset_clk_DFF_506> <reset_clk_DFF_507> <reset_clk_DFF_508> 
+INFO:Xst:2261 - The FF/Latch <start_address_0> in Unit <comp_graphic_buffer_controller> is equivalent to the following 21 FFs/Latches, which will be removed : <start_address_1> <start_address_2> <start_address_3> <start_address_4> <start_address_5> <start_address_6> <start_address_7> <start_address_8> <start_address_9> <start_address_10> <start_address_11> <start_address_12> <start_address_13> <start_address_14> <start_address_15> <start_address_16> <start_address_17> <start_address_19> <start_address_20> <start_address_21> <start_address_22> 
+WARNING:Xst:1293 - FF/Latch <start_address_0> has a constant value of 0 in block <comp_graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <event_trigger>.
+The following registers are absorbed into counter <counter_ball>: 1 register on signal <counter_ball>.
+The following registers are absorbed into counter <counter_paddle>: 1 register on signal <counter_paddle>.
+Unit <event_trigger> synthesized (advanced).
+
+Synthesizing (advanced) Unit <game_engine>.
+INFO:Xst:3226 - The RAM <rom_inst/Mram_o_rom_data> will be implemented as a BLOCK RAM, absorbing the following register(s): <ball_movement_inst/o_rom_address>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 512-word x 9-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(ball_movement_inst/ball_x_velocity,ball_movement_inst/ball_y_direction_ball_y_direction_MUX_247_o,ball_movement_inst/ball_y_velocity)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <rom_data_sig>  |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <game_engine> synthesized (advanced).
+
+Synthesizing (advanced) Unit <game_states>.
+The following registers are absorbed into counter <cnt_player_1_points>: 1 register on signal <cnt_player_1_points>.
+The following registers are absorbed into counter <cnt_player_2_points>: 1 register on signal <cnt_player_2_points>.
+The following registers are absorbed into counter <cnt_wait_time>: 1 register on signal <cnt_wait_time>.
+The following registers are absorbed into counter <cnt_serves>: 1 register on signal <cnt_serves>.
+Unit <game_states> synthesized (advanced).
+
+Synthesizing (advanced) Unit <graphic_buffer>.
+The following registers are absorbed into counter <cnt_data>: 1 register on signal <cnt_data>.
+Unit <graphic_buffer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <graphic_engine>.
+The following registers are absorbed into counter <pixel_clk_div_0>: 1 register on signal <pixel_clk_div_0>.
+Unit <graphic_engine> synthesized (advanced).
+
+Synthesizing (advanced) Unit <input_decoder>.
+The following registers are absorbed into counter <cnt_timeout>: 1 register on signal <cnt_timeout>.
+The following registers are absorbed into counter <cnt_scancode_bits>: 1 register on signal <cnt_scancode_bits>.
+Unit <input_decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <paddle_movement>.
+The following registers are absorbed into counter <player_1_pos>: 1 register on signal <player_1_pos>.
+The following registers are absorbed into counter <player_2_pos>: 1 register on signal <player_2_pos>.
+Unit <paddle_movement> synthesized (advanced).
+
+Synthesizing (advanced) Unit <points_display>.
+The following registers are absorbed into counter <cnt_anode_change_interval>: 1 register on signal <cnt_anode_change_interval>.
+The following registers are absorbed into counter <cnt_shifted_bits>: 1 register on signal <cnt_shifted_bits>.
+INFO:Xst:3231 - The small RAM <Mram_player_1_tens[3]_PWR_21_o_wide_mux_50_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <player_1_tens> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_player_2_tens[3]_PWR_21_o_wide_mux_46_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <player_2_tens> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_player_1_ones[3]_PWR_21_o_wide_mux_48_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <player_1_ones> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_player_2_ones[3]_PWR_21_o_wide_mux_45_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <player_2_ones> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <points_display> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ram_controller>.
+The following registers are absorbed into counter <s_ram_counter>: 1 register on signal <s_ram_counter>.
+Unit <ram_controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <render_buffer>.
+The following registers are absorbed into counter <cnt_data>: 1 register on signal <cnt_data>.
+Unit <render_buffer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <render_engine_controller>.
+The following registers are absorbed into counter <cur_ram_block>: 1 register on signal <cur_ram_block>.
+Unit <render_engine_controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <renderer>.
+The following registers are absorbed into counter <cnt_column>: 1 register on signal <cnt_column>.
+The following registers are absorbed into counter <cnt_row>: 1 register on signal <cnt_row>.
+Unit <renderer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <reset_circuit>.
+The following registers are absorbed into counter <cnt_cycle_counter>: 1 register on signal <cnt_cycle_counter>.
+Unit <reset_circuit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sync_pulse_generator>.
+The following registers are absorbed into counter <cnt_v_sync>: 1 register on signal <cnt_v_sync>.
+The following registers are absorbed into counter <cnt_h_sync>: 1 register on signal <cnt_h_sync>.
+Unit <sync_pulse_generator> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 7
+ 16x1-bit single-port distributed Read Only RAM        : 2
+ 16x7-bit single-port distributed Read Only RAM        : 4
+ 512x9-bit single-port block Read Only RAM             : 1
+# Adders/Subtractors                                   : 25
+ 10-bit adder                                          : 9
+ 10-bit addsub                                         : 1
+ 11-bit adder                                          : 3
+ 11-bit subtractor                                     : 2
+ 12-bit adder                                          : 2
+ 23-bit adder                                          : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+ 9-bit addsub                                          : 1
+# Counters                                             : 23
+ 1-bit down counter                                    : 1
+ 10-bit up counter                                     : 3
+ 14-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
+ 3-bit up counter                                      : 2
+ 32-bit up counter                                     : 7
+ 4-bit up counter                                      : 3
+ 5-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+ 9-bit updown counter                                  : 2
+# Registers                                            : 1322
+ Flip-Flops                                            : 1322
+# Comparators                                          : 36
+ 10-bit comparator equal                               : 4
+ 10-bit comparator greater                             : 6
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 2
+ 12-bit comparator greater                             : 2
+ 32-bit comparator greater                             : 14
+ 4-bit comparator equal                                : 2
+ 5-bit comparator greater                              : 1
+ 5-bit comparator lessequal                            : 1
+ 9-bit comparator equal                                : 3
+# Multiplexers                                         : 372
+ 1-bit 2-to-1 multiplexer                              : 333
+ 1-bit 3-to-1 multiplexer                              : 3
+ 10-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 23-bit 2-to-1 multiplexer                             : 3
+ 3-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 9
+ 5-bit 2-to-1 multiplexer                              : 5
+ 7-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 3
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <start_address_22> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_21> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_20> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_19> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_17> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_16> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_15> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_14> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_13> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_12> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_11> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_10> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_9> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_8> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_7> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_6> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_5> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_4> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_3> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_2> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_1> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_0> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <reset_clk_DFF_495> in Unit <ram_controller> is equivalent to the following 15 FFs/Latches, which will be removed : <reset_clk_DFF_493> <reset_clk_DFF_494> <reset_clk_DFF_496> <reset_clk_DFF_497> <reset_clk_DFF_500> <reset_clk_DFF_498> <reset_clk_DFF_499> <reset_clk_DFF_503> <reset_clk_DFF_501> <reset_clk_DFF_502> <reset_clk_DFF_506> <reset_clk_DFF_504> <reset_clk_DFF_505> <reset_clk_DFF_507> <reset_clk_DFF_508> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <game_engine_inst/game_states_inst/FSM_0> on signal <state_game[1:2]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ serve   | 00
+ playing | 01
+ waiting | 10
+ won     | 11
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <graphic_engine_inst/render_engine_inst/render_engine_controller_inst/FSM_1> on signal <state_render_engine_controller[1:2]> with user encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ calculating    | 00
+ save_buffer    | 01
+ frame_finished | 10
+----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <graphic_engine_inst/ram_controller_1/FSM_2> on signal <s_ram_ctrl_state[1:4]> with user encoding.
+--------------------------------
+ State              | Encoding
+--------------------------------
+ idle               | 0000
+ first_config_state | 0001
+ last_config_state  | 0010
+ read_init          | 0011
+ read_wait          | 0100
+ reading            | 0101
+ write_init         | 0110
+ writing            | 0111
+ write_wait         | 1000
+--------------------------------
+WARNING:Xst:1293 - FF/Latch <cnt_address_0> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_address_1> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_address_2> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_address_3> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <o_ram_lb_neg> in Unit <ram_controller> is equivalent to the following FF/Latch, which will be removed : <o_ram_ub_neg> 
+
+Optimizing unit <pong_top> ...
+
+Optimizing unit <input_decoder> ...
+
+Optimizing unit <game_engine> ...
+
+Optimizing unit <event_trigger> ...
+
+Optimizing unit <game_states> ...
+
+Optimizing unit <paddle_movement> ...
+
+Optimizing unit <points_display> ...
+
+Optimizing unit <bcd_digit> ...
+
+Optimizing unit <position_sample_register> ...
+
+Optimizing unit <render_engine_controller> ...
+
+Optimizing unit <renderer> ...
+
+Optimizing unit <render_buffer> ...
+
+Optimizing unit <graphic_output> ...
+
+Optimizing unit <sync_pulse_generator> ...
+
+Optimizing unit <graphic_buffer_controller> ...
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_20> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_21> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_22> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_23> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_24> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_25> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_26> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_27> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_28> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_29> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_30> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_31> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_5> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_6> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_7> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_8> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_9> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_10> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_11> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_12> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_13> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_14> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_15> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_16> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_17> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_18> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_19> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_20> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_21> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_22> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_23> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_24> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_10> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_11> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_12> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_13> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_14> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_15> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_16> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_17> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_18> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_19> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_20> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_21> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_22> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_23> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_24> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_25> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_26> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_27> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_28> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_29> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_30> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_31> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_10> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_11> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_12> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_13> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_14> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_15> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_16> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_17> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_18> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_19> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_15> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_16> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_17> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_18> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_19> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_20> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_21> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_22> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_23> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_24> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_25> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_26> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_27> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_28> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_29> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_30> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_31> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_25> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_26> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_27> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_28> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_29> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_30> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_31> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_5> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_6> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_7> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_8> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_9> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_10> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_11> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_12> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_13> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_14> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_18> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_19> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_20> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_21> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_22> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_23> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_24> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_25> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_26> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_27> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_28> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_29> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_30> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_31> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_paddle_31> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_30> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_29> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_28> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_27> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_26> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_25> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_24> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_23> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_22> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_21> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_20> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_19> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_18> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_17> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <game_engine_inst/event_trigger_inst/counter_ball_16> has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_217> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_216> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_167> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_166> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_165> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_164> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_163> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_162> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_223> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_222> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_221> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_220> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_219> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_218> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_169> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_168> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_225> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_224> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_175> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_174> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_173> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_172> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_171> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_170> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_231> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_230> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_229> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_228> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_227> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_226> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_177> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_176> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_233> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_232> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_183> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_182> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_181> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_180> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_179> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_178> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_185> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_184> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_241> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_240> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_191> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_190> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_189> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_188> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_187> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_186> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_193> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_192> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_239> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_238> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_237> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_236> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_235> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_234> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_247> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_246> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_245> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_244> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_243> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_242> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_249> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_248> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_199> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_198> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_197> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_196> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_195> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_194> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_255> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_254> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_253> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_252> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_251> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_250> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_1> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_0> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_7> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_6> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_5> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_4> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_3> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_2> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_9> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_8> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_15> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_14> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_13> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_12> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_11> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_10> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_17> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_16> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_23> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_22> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_21> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_20> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_19> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_18> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_25> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_24> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_31> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_30> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_29> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_28> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_27> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_26> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_33> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_32> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_41> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_40> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_39> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_38> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_37> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_36> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_35> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_34> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_47> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_46> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_45> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_44> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_43> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_42> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_49> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_48> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_55> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_54> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_53> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_52> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_51> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_50> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_57> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_56> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_63> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_62> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_61> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_60> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_59> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_58> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_65> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_64> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_71> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_70> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_69> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_68> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_67> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_66> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_73> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_72> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_81> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_80> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_79> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_78> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_77> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_76> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_75> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_74> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_87> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_86> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_85> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_84> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_83> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_82> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_89> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_88> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_95> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_94> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_93> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_92> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_91> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_90> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_97> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_96> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_103> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_102> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_101> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_100> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_99> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_98> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_105> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_104> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_111> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_110> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_109> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_108> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_107> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_106> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_113> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_112> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_121> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_120> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_119> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_118> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_117> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_116> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_115> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_114> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_127> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_126> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_125> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_124> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_123> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_122> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/ram_controller_1/o_ram_address_3> in Unit <pong_top> is equivalent to the following 3 FFs/Latches, which will be removed : <graphic_engine_inst/ram_controller_1/o_ram_address_2> <graphic_engine_inst/ram_controller_1/o_ram_address_1> <graphic_engine_inst/ram_controller_1/o_ram_address_0> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_129> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_128> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_135> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_134> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_133> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_132> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_131> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_130> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_137> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_136> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_143> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_142> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_141> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_140> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_139> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_138> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_145> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_144> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_201> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_200> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_151> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_150> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_149> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_148> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_147> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_146> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_153> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_152> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_161> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_160> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_207> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_206> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_205> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_204> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_203> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_202> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_209> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_208> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_159> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_158> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_157> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_156> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_155> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_154> 
+INFO:Xst:2261 - The FF/Latch <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_215> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_214> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_213> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_212> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_211> <graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_210> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block pong_top, actual ratio is 28.
+FlipFlop game_engine_inst/ball_movement_inst/ball_y_pos_0 has been replicated 1 time(s)
+FlipFlop game_engine_inst/ball_movement_inst/ball_y_pos_1 has been replicated 1 time(s)
+FlipFlop game_engine_inst/ball_movement_inst/ball_y_pos_2 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_1_pos_0 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_1_pos_1 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_1_pos_2 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_1_pos_3 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_1_pos_4 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_2_pos_0 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_2_pos_1 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_2_pos_2 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_2_pos_3 has been replicated 1 time(s)
+FlipFlop game_engine_inst/paddle_movement_inst/player_2_pos_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1341
+ Flip-Flops                                            : 1341
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : pong_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2585
+#      GND                         : 1
+#      INV                         : 25
+#      LUT1                        : 154
+#      LUT2                        : 129
+#      LUT3                        : 136
+#      LUT4                        : 483
+#      LUT5                        : 693
+#      LUT6                        : 322
+#      MULT_AND                    : 16
+#      MUXCY                       : 368
+#      MUXF7                       : 18
+#      VCC                         : 1
+#      XORCY                       : 239
+# FlipFlops/Latches                : 1341
+#      FD                          : 38
+#      FDC                         : 10
+#      FDCE                        : 10
+#      FDE                         : 148
+#      FDR                         : 122
+#      FDRE                        : 1003
+#      FDS                         : 10
+# RAMS                             : 1
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 78
+#      IBUF                        : 3
+#      IOBUF                       : 16
+#      OBUF                        : 59
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1341  out of  18224     7%  
+ Number of Slice LUTs:                 1942  out of   9112    21%  
+    Number used as Logic:              1942  out of   9112    21%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2084
+   Number with an unused Flip Flop:     743  out of   2084    35%  
+   Number with an unused LUT:           142  out of   2084     6%  
+   Number of fully used LUT-FF pairs:  1199  out of   2084    57%  
+   Number of unique control sets:        45
+
+IO Utilization: 
+ Number of IOs:                          79
+ Number of bonded IOBs:                  79  out of    232    34%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 766   |
+graphic_engine_inst/pixel_clk_sig  | BUFG                   | 576   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.104ns (Maximum Frequency: 123.400MHz)
+   Minimum input arrival time before clock: 4.227ns
+   Maximum output required time after clock: 9.121ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.104ns (frequency: 123.400MHz)
+  Total number of paths / destination ports: 65218 / 1925
+-------------------------------------------------------------------------
+Delay:               8.104ns (Levels of Logic = 9)
+  Source:            game_engine_inst/ball_movement_inst/ball_y_pos_5 (FF)
+  Destination:       game_engine_inst/ball_movement_inst/ball_y_direction (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: game_engine_inst/ball_movement_inst/ball_y_pos_5 to game_engine_inst/ball_movement_inst/ball_y_direction
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.447   1.210  game_engine_inst/ball_movement_inst/ball_y_pos_5 (game_engine_inst/ball_movement_inst/ball_y_pos_5)
+     LUT6:I3->O            4   0.205   0.684  game_engine_inst/ball_movement_inst/Madd_n0236_cy<5>11 (game_engine_inst/ball_movement_inst/Madd_n0236_cy<5>)
+     LUT2:I1->O            4   0.205   0.931  game_engine_inst/ball_movement_inst/Madd_n0236_xor<6>11 (game_engine_inst/ball_movement_inst/n0236<6>)
+     LUT4:I0->O            1   0.203   0.000  game_engine_inst/ball_movement_inst/Mcompar_GND_15_o_BUS_0012_LessThan_21_o_lut<3> (game_engine_inst/ball_movement_inst/Mcompar_GND_15_o_BUS_0012_LessThan_21_o_lut<3>)
+     MUXCY:S->O            1   0.172   0.000  game_engine_inst/ball_movement_inst/Mcompar_GND_15_o_BUS_0012_LessThan_21_o_cy<3> (game_engine_inst/ball_movement_inst/Mcompar_GND_15_o_BUS_0012_LessThan_21_o_cy<3>)
+     MUXCY:CI->O          24   0.213   1.173  game_engine_inst/ball_movement_inst/Mcompar_GND_15_o_BUS_0012_LessThan_21_o_cy<4> (game_engine_inst/ball_movement_inst/Mcompar_GND_15_o_BUS_0012_LessThan_21_o_cy<4>)
+     LUT2:I1->O            1   0.205   0.580  game_engine_inst/ball_movement_inst/GND_15_o_GND_15_o_AND_14_o1 (game_engine_inst/ball_movement_inst/GND_15_o_GND_15_o_AND_14_o)
+     LUT6:I5->O            1   0.205   0.580  game_engine_inst/ball_movement_inst/_n0502_inv11_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0_SW0 (N337)
+     LUT6:I5->O            1   0.205   0.580  game_engine_inst/ball_movement_inst/_n0502_inv11 (game_engine_inst/ball_movement_inst/_n0502_inv1)
+     LUT6:I5->O            1   0.205   0.000  game_engine_inst/ball_movement_inst/ball_y_direction_rstpot (game_engine_inst/ball_movement_inst/ball_y_direction_rstpot)
+     FDR:D                     0.102          game_engine_inst/ball_movement_inst/ball_y_direction
+    ----------------------------------------
+    Total                      8.104ns (2.367ns logic, 5.737ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'graphic_engine_inst/pixel_clk_sig'
+  Clock period: 6.752ns (frequency: 148.098MHz)
+  Total number of paths / destination ports: 70330 / 1108
+-------------------------------------------------------------------------
+Delay:               6.752ns (Levels of Logic = 9)
+  Source:            graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_0 (FF)
+  Destination:       graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_0 (FF)
+  Source Clock:      graphic_engine_inst/pixel_clk_sig rising
+  Destination Clock: graphic_engine_inst/pixel_clk_sig rising
+
+  Data Path: graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_0 to graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.447   0.961  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_0 (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_0)
+     LUT5:I0->O            1   0.203   0.000  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_lut<0> (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<0> (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<1> (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<2> (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<3> (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<4> (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<5> (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<5>)
+     MUXCY:CI->O         264   0.213   2.068  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/Mcompar_GND_65_o_cnt_data[31]_LessThan_2_o_cy<6> (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/GND_65_o_cnt_data[31]_LessThan_2_o_inv)
+     LUT4:I3->O          256   0.205   2.066  graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/_n0045_inv1 (graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/_n0045_inv)
+     FDRE:CE                   0.322          graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_0
+    ----------------------------------------
+    Total                      6.752ns (1.657ns logic, 5.095ns route)
+                                       (24.5% logic, 75.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 329 / 329
+-------------------------------------------------------------------------
+Offset:              4.227ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       points_display_inst/player_2_tens_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to points_display_inst/player_2_tens_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            35   1.222   1.679  reset_IBUF (reset_IBUF)
+     LUT6:I1->O            8   0.203   0.802  points_display_inst/_n0151_inv1 (points_display_inst/_n0151_inv)
+     FDE:CE                    0.322          points_display_inst/player_2_ones_0
+    ----------------------------------------
+    Total                      4.227ns (1.747ns logic, 2.480ns route)
+                                       (41.3% logic, 58.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 408 / 75
+-------------------------------------------------------------------------
+Offset:              8.839ns (Levels of Logic = 3)
+  Source:            reset_circuit_inst/o_reset (FF)
+  Destination:       o_red<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: reset_circuit_inst/o_reset to o_red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q            767   0.447   2.496  reset_circuit_inst/o_reset (reset_circuit_inst/o_reset)
+     LUT5:I0->O          522   0.203   2.340  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mmux_o_in_active_region_reg11 (graphic_engine_inst/graphic_output_inst/shift_enable)
+     LUT4:I0->O            1   0.203   0.579  graphic_engine_inst/graphic_output_inst/Mmux_o_blue11 (o_blue_0_OBUF)
+     OBUF:I->O                 2.571          o_blue_0_OBUF (o_blue<0>)
+    ----------------------------------------
+    Total                      8.839ns (3.424ns logic, 5.415ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'graphic_engine_inst/pixel_clk_sig'
+  Total number of paths / destination ports: 532 / 10
+-------------------------------------------------------------------------
+Offset:              9.121ns (Levels of Logic = 10)
+  Source:            graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_5 (FF)
+  Destination:       o_red<2> (PAD)
+  Source Clock:      graphic_engine_inst/pixel_clk_sig rising
+
+  Data Path: graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_5 to o_red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            10   0.447   1.201  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_5 (graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_5)
+     LUT5:I0->O            1   0.203   0.000  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_lut<1> (graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<1> (graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<2> (graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<3> (graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<4> (graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<5> (graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<5>)
+     MUXCY:CI->O           4   0.213   0.912  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<6> (graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_64_o_cnt_v_sync[31]_LessThan_8_o_cy<6>)
+     LUT5:I2->O          522   0.205   2.340  graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/Mmux_o_in_active_region_reg11 (graphic_engine_inst/graphic_output_inst/shift_enable)
+     LUT4:I0->O            1   0.203   0.579  graphic_engine_inst/graphic_output_inst/Mmux_o_blue11 (o_blue_0_OBUF)
+     OBUF:I->O                 2.571          o_blue_0_OBUF (o_blue<0>)
+    ----------------------------------------
+    Total                      9.121ns (4.090ns logic, 5.031ns route)
+                                       (44.8% logic, 55.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+clk                              |    8.104|         |         |         |
+graphic_engine_inst/pixel_clk_sig|    4.057|         |         |         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock graphic_engine_inst/pixel_clk_sig
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+clk                              |    6.458|         |         |         |
+graphic_engine_inst/pixel_clk_sig|    6.752|         |         |         |
+---------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 18.02 secs
+ 
+--> 
+
+
+Total memory usage is 522424 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  167 (   0 filtered)
+Number of infos    :   76 (   0 filtered)
+

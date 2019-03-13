@@ -1,0 +1,37 @@
+/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity seq_logic
+-- Compiling architecture rtl of seq_logic
+
+} {} {}} /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/reg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/reg.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity reg
+-- Compiling architecture rtl of reg
+
+} {} {}} /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/comb_logic.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/comb_logic.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity comb_logic
+-- Compiling architecture rtl of comb_logic
+
+} {} {}} /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic_tb.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic_tb.vhd
+QuestaSim vcom 10.4c_5 Compiler 2015.11 Nov 14 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity seq_logic_tb
+-- Compiling architecture beh of seq_logic_tb
+
+} {} {}}

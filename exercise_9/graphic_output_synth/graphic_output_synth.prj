@@ -1,0 +1,8 @@
+vhdl work "../graphic_output/graphic_output_package.vhd"
+vhdl work "../../exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd"
+vhdl work "../../exercise_7/graphic_buffer/graphic_buffer.vhd"
+vhdl work "../../exercise_6/sync_pulse_generator/sync_pulse_generator.vhd"
+vhdl work "rom.vhd"
+vhdl work "pixel_clk_generator.vhd"
+vhdl work "../graphic_output/graphic_output.vhd"
+vhdl work "graphic_output_synth.vhd"

@@ -1,0 +1,47 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jun 27 12:38:36 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "o_player_1_up" LOCATE = SITE "U16" LEVEL 1;
+COMP "o_blue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "o_blue<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "reset" LOCATE = SITE "T10" LEVEL 1;
+COMP "o_red<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "o_red<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "o_red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "o_h_sync" LOCATE = SITE "N6" LEVEL 1;
+COMP "o_v_sync" LOCATE = SITE "P7" LEVEL 1;
+COMP "o_green<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "o_green<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "o_green<2>" LOCATE = SITE "V6" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "pixel_clk_generator_inst/i" BEL "lineNr_0" BEL
+        "lineNr_1" BEL "lineNr_2" BEL "cnt_3" BEL "cnt_1" BEL "cnt_2" BEL
+        "cnt_new_frame_ready_interval_0" BEL "cnt_4" BEL
+        "cnt_new_frame_ready_interval_1" BEL "cnt_new_frame_ready_interval_2"
+        BEL "cnt_new_frame_ready_interval_3" BEL
+        "cnt_new_frame_ready_interval_4" BEL "cnt_new_frame_ready_interval_7"
+        BEL "cnt_new_frame_ready_interval_5" BEL
+        "cnt_new_frame_ready_interval_6" BEL "cnt_new_frame_ready_interval_10"
+        BEL "cnt_new_frame_ready_interval_8" BEL
+        "cnt_new_frame_ready_interval_9" BEL "cnt_new_frame_ready_interval_13"
+        BEL "cnt_new_frame_ready_interval_11" BEL
+        "cnt_new_frame_ready_interval_12" BEL
+        "cnt_new_frame_ready_interval_16" BEL
+        "cnt_new_frame_ready_interval_14" BEL
+        "cnt_new_frame_ready_interval_15" BEL
+        "cnt_new_frame_ready_interval_19" BEL
+        "cnt_new_frame_ready_interval_17" BEL
+        "cnt_new_frame_ready_interval_18" BEL
+        "cnt_new_frame_ready_interval_22" BEL
+        "cnt_new_frame_ready_interval_20" BEL
+        "cnt_new_frame_ready_interval_21" BEL
+        "cnt_new_frame_ready_interval_25" BEL
+        "cnt_new_frame_ready_interval_23" BEL
+        "cnt_new_frame_ready_interval_24" BEL "cnt_0" BEL "led" BEL
+        "read_done_sig" BEL "pixel_clk_generator_inst/pixel_clk" BEL
+        "new_frame_ready_sig" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

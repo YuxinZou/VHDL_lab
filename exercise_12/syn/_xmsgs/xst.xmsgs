@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 178: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 179: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 180: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 181: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 182: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 183: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 189: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 190: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 191: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 192: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 193: Case choice must be a locally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="957" delta="new" >"/user/Labs_user/chipw7/vhdlLab/exercise_11/input_decoder/input_decoder.vhd" Line 194: Case choice must be a locally static expression
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/user/Labs_user/chipw7/vhdlLab/exercise_12/points_display.vhd</arg>&quot; line <arg fmt="%s" index="2">88</arg>: Output port &lt;<arg fmt="%s" index="3">o_carry</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">bcd_digit_tens_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">reset_clk_DFF_494</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ram_controller_1</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reset_clk_DFF_493&gt; &lt;reset_clk_DFF_495&gt; &lt;reset_clk_DFF_496&gt; &lt;reset_clk_DFF_499&gt; &lt;reset_clk_DFF_497&gt; &lt;reset_clk_DFF_498&gt; &lt;reset_clk_DFF_502&gt; &lt;reset_clk_DFF_500&gt; &lt;reset_clk_DFF_501&gt; &lt;reset_clk_DFF_505&gt; &lt;reset_clk_DFF_503&gt; &lt;reset_clk_DFF_504&gt; &lt;reset_clk_DFF_506&gt; &lt;reset_clk_DFF_507&gt; &lt;reset_clk_DFF_508&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">start_address_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">comp_graphic_buffer_controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">21 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;start_address_1&gt; &lt;start_address_2&gt; &lt;start_address_3&gt; &lt;start_address_4&gt; &lt;start_address_5&gt; &lt;start_address_6&gt; &lt;start_address_7&gt; &lt;start_address_8&gt; &lt;start_address_9&gt; &lt;start_address_10&gt; &lt;start_address_11&gt; &lt;start_address_12&gt; &lt;start_address_13&gt; &lt;start_address_14&gt; &lt;start_address_15&gt; &lt;start_address_16&gt; &lt;start_address_17&gt; &lt;start_address_19&gt; &lt;start_address_20&gt; &lt;start_address_21&gt; &lt;start_address_22&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">start_address_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">comp_graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="3226" delta="new" >The RAM &lt;<arg fmt="%s" index="1">rom_inst/Mram_o_rom_data</arg>&gt; will be implemented as a BLOCK RAM, absorbing the following register(s):</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_player_1_tens[3]_PWR_21_o_wide_mux_50_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_player_2_tens[3]_PWR_21_o_wide_mux_46_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_player_1_ones[3]_PWR_21_o_wide_mux_48_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="info" file="Xst" num="3231" delta="new" >The small RAM &lt;<arg fmt="%s" index="1">Mram_player_2_ones[3]_PWR_21_o_wide_mux_45_OUT</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">start_address_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_4</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">start_address_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">reset_clk_DFF_495</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ram_controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;reset_clk_DFF_493&gt; &lt;reset_clk_DFF_494&gt; &lt;reset_clk_DFF_496&gt; &lt;reset_clk_DFF_497&gt; &lt;reset_clk_DFF_500&gt; &lt;reset_clk_DFF_498&gt; &lt;reset_clk_DFF_499&gt; &lt;reset_clk_DFF_503&gt; &lt;reset_clk_DFF_501&gt; &lt;reset_clk_DFF_502&gt; &lt;reset_clk_DFF_506&gt; &lt;reset_clk_DFF_504&gt; &lt;reset_clk_DFF_505&gt; &lt;reset_clk_DFF_507&gt; &lt;reset_clk_DFF_508&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">cnt_address_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cnt_address_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cnt_address_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">cnt_address_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">graphic_buffer_controller</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">o_ram_lb_neg</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ram_controller</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;o_ram_ub_neg&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_15</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_0/cnt_data_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_5</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_8</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_9</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_10</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_11</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_12</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_13</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/graphic_output_inst/comp_graphic_buffer_1/cnt_data_14</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_paddle_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_28</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_27</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_26</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">game_engine_inst/event_trigger_inst/counter_ball_16</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">pong_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_217</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_216&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_167</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_166&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_165&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_164&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_163&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_162&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_223</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_222&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_221&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_220&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_219&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_218&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_169</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_168&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_225</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_224&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_175</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_174&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_173&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_172&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_171&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_170&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_231</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_230&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_229&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_228&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_227&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_226&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_177</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_176&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_233</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_232&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_183</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_182&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_181&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_180&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_179&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_178&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_185</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_184&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_241</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_240&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_191</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_190&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_189&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_188&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_187&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_186&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_193</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_192&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_239</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_238&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_237&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_236&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_235&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_234&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_247</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_246&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_245&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_244&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_243&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_242&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_249</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_248&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_199</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_198&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_197&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_196&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_195&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_194&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_255</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_254&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_253&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_252&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_251&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_250&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_6&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_5&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_4&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_3&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_14&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_13&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_12&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_11&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_22&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_21&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_20&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_19&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_25</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_24&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_30&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_29&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_28&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_27&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_26&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_33</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_32&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_41</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_40&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_39</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_38&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_37&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_36&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_35&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_34&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_47</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_46&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_45&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_44&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_43&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_42&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_49</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_48&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_55</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_54&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_53&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_52&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_51&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_50&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_57</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_56&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_63</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_62&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_61&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_60&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_59&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_58&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_65</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_64&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_71</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_70&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_69&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_68&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_67&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_66&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_73</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_72&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_81</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_80&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_79</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_78&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_77&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_76&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_75&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_74&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_87</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_86&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_85&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_84&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_83&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_82&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_89</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_88&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_95</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_94&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_93&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_92&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_91&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_90&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_97</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_96&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_103</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_102&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_101&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_100&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_99&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_98&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_105</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_104&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_111</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_110&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_109&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_108&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_107&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_106&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_113</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_112&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_121</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_120&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_119</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_118&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_117&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_116&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_115&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_114&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_127</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_126&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_125&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_124&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_123&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_122&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/ram_controller_1/o_ram_address_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/ram_controller_1/o_ram_address_2&gt; &lt;graphic_engine_inst/ram_controller_1/o_ram_address_1&gt; &lt;graphic_engine_inst/ram_controller_1/o_ram_address_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_129</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_128&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_135</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_134&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_133&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_132&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_131&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_130&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_137</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_136&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_143</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_142&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_141&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_140&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_139&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_138&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_145</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_144&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_201</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_200&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_151</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_150&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_149&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_148&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_147&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_146&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_153</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_152&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_161</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_160&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_207</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_206&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_205&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_204&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_203&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_202&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_209</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_208&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_159</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_158&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_157&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_156&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_155&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_154&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_215</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pong_top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">5 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_214&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_213&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_212&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_211&gt; &lt;graphic_engine_inst/render_engine_inst/render_buffer_inst/sr_rgb_data_210&gt; </arg>
+</msg>
+
+</messages>
+

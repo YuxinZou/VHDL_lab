@@ -1,0 +1,992 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: graphic_output_synth.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "graphic_output_synth.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "graphic_output_synth"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : graphic_output_synth
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output/graphic_output_package.vhd" into library work
+Parsing package <graphic_output_package>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd" into library work
+Parsing entity <graphic_buffer_controller>.
+Parsing architecture <rtl> of entity <graphic_buffer_controller>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_7/graphic_buffer/graphic_buffer.vhd" into library work
+Parsing entity <graphic_buffer>.
+Parsing architecture <rtl> of entity <graphic_buffer>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_6/sync_pulse_generator/sync_pulse_generator.vhd" into library work
+Parsing entity <sync_pulse_generator>.
+Parsing architecture <rtl> of entity <sync_pulse_generator>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/rom.vhd" into library work
+Parsing entity <rom>.
+Parsing architecture <Behavioral> of entity <rom>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/pixel_clk_generator.vhd" into library work
+Parsing entity <pixel_clk_generator>.
+Parsing architecture <rtl> of entity <pixel_clk_generator>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output/graphic_output.vhd" into library work
+Parsing entity <graphic_output>.
+Parsing architecture <rtl> of entity <graphic_output>.
+Parsing VHDL file "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.vhd" into library work
+Parsing entity <graphic_output_synth>.
+Parsing architecture <rtl> of entity <graphic_output_synth>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <graphic_output_synth> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <pixel_clk_generator> (architecture <rtl>) from library <work>.
+
+Elaborating entity <graphic_output> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <sync_pulse_generator> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <graphic_buffer> (architecture <rtl>) from library <work>.
+
+Elaborating entity <graphic_buffer_controller> (architecture <rtl>) with generics from library <work>.
+
+Elaborating entity <rom> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <graphic_output_synth>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/graphic_output_synth.vhd".
+        G_H_PIXEL_NUMBER = 800
+        G_H_RESOLUTION = 640
+        G_H_FRONT_PORCH = 8
+        G_H_BACK_PORCH = 48
+        G_H_SYNC_LENGTH = 96
+        G_H_SYNC_ACTIVE = '0'
+        G_V_PIXEL_NUMBER = 525
+        G_V_RESOLUTION = 480
+        G_V_FRONT_PORCH = 2
+        G_V_BACK_PORCH = 33
+        G_V_SYNC_LENGTH = 2
+        G_V_SYNC_ACTIVE = '0'
+    Found 5-bit register for signal <cnt>.
+    Found 1-bit register for signal <read_done_sig>.
+    Found 26-bit register for signal <cnt_new_frame_ready_interval>.
+    Found 1-bit register for signal <new_frame_ready_sig>.
+    Found 1-bit register for signal <o_player_1_up>.
+    Found 3-bit register for signal <lineNr>.
+    Found 5-bit adder for signal <cnt[4]_GND_4_o_add_1_OUT> created at line 176.
+    Found 3-bit adder for signal <lineNr[2]_GND_4_o_add_2_OUT> created at line 179.
+    Found 26-bit adder for signal <cnt_new_frame_ready_interval[25]_GND_4_o_add_15_OUT> created at line 208.
+    Found 5-bit comparator greater for signal <cnt[4]_PWR_4_o_LessThan_1_o> created at line 175
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  64 Multiplexer(s).
+Unit <graphic_output_synth> synthesized.
+
+Synthesizing Unit <pixel_clk_generator>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/pixel_clk_generator.vhd".
+    Found 1-bit register for signal <pixel_clk>.
+    Found 1-bit register for signal <i>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <pixel_clk_generator> synthesized.
+
+Synthesizing Unit <graphic_output>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output/graphic_output.vhd".
+        G_H_PIXEL_NUMBER = 800
+        G_H_RESOLUTION = 640
+        G_H_FRONT_PORCH = 8
+        G_H_BACK_PORCH = 48
+        G_H_SYNC_LENGTH = 96
+        G_H_SYNC_ACTIVE = '0'
+        G_V_PIXEL_NUMBER = 525
+        G_V_RESOLUTION = 480
+        G_V_FRONT_PORCH = 2
+        G_V_BACK_PORCH = 33
+        G_V_SYNC_LENGTH = 2
+        G_V_SYNC_ACTIVE = '0'
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <graphic_output> synthesized.
+
+Synthesizing Unit <sync_pulse_generator>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_6/sync_pulse_generator/sync_pulse_generator.vhd".
+        G_H_PIXEL_NUMBER = 800
+        G_H_RESOLUTION = 640
+        G_H_FRONT_PORCH = 8
+        G_H_BACK_PORCH = 48
+        G_H_SYNC_LENGTH = 96
+        G_H_SYNC_ACTIVE = '0'
+        G_V_PIXEL_NUMBER = 525
+        G_V_RESOLUTION = 480
+        G_V_FRONT_PORCH = 2
+        G_V_BACK_PORCH = 33
+        G_V_SYNC_LENGTH = 2
+        G_V_SYNC_ACTIVE = '0'
+    Found 32-bit register for signal <cnt_v_sync>.
+    Found 32-bit register for signal <cnt_h_sync>.
+    Found 32-bit adder for signal <cnt_h_sync[31]_GND_8_o_add_9_OUT> created at line 110.
+    Found 32-bit adder for signal <cnt_v_sync[31]_GND_8_o_add_14_OUT> created at line 125.
+    Found 32-bit comparator greater for signal <cnt_h_sync[31]_GND_8_o_LessThan_1_o> created at line 72
+    Found 32-bit comparator greater for signal <GND_8_o_cnt_h_sync[31]_LessThan_2_o> created at line 72
+    Found 32-bit comparator greater for signal <cnt_v_sync[31]_GND_8_o_LessThan_3_o> created at line 84
+    Found 32-bit comparator greater for signal <GND_8_o_cnt_v_sync[31]_LessThan_4_o> created at line 84
+    Found 32-bit comparator greater for signal <cnt_h_sync[31]_GND_8_o_LessThan_5_o> created at line 96
+    Found 32-bit comparator greater for signal <GND_8_o_cnt_h_sync[31]_LessThan_6_o> created at line 96
+    Found 32-bit comparator greater for signal <cnt_v_sync[31]_GND_8_o_LessThan_7_o> created at line 96
+    Found 32-bit comparator greater for signal <GND_8_o_cnt_v_sync[31]_LessThan_8_o> created at line 96
+    Found 32-bit comparator greater for signal <GND_8_o_cnt_h_sync[31]_LessThan_9_o> created at line 109
+    Found 32-bit comparator greater for signal <GND_8_o_cnt_v_sync[31]_LessThan_13_o> created at line 123
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <sync_pulse_generator> synthesized.
+
+Synthesizing Unit <graphic_buffer>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_7/graphic_buffer/graphic_buffer.vhd".
+    Found 256-bit register for signal <i_rgb_data_reg>.
+    Found 32-bit register for signal <cnt_data>.
+    Found 1-bit register for signal <o_data_req>.
+    Found 32-bit adder for signal <cnt_data[31]_GND_9_o_add_2_OUT> created at line 61.
+    Found 32-bit comparator greater for signal <GND_9_o_cnt_data[31]_LessThan_2_o> created at line 59
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 289 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <graphic_buffer> synthesized.
+
+Synthesizing Unit <graphic_buffer_controller>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_8/graphic_buffer_controller/graphic_buffer_controller.vhd".
+        G_H_RESOLUTION = 640
+        G_V_RESOLUTION = 480
+    Found 1-bit register for signal <o_reg_select_buf>.
+    Found 1-bit register for signal <o_read_req_buf>.
+    Found 32-bit register for signal <cnt_address>.
+    Found 23-bit register for signal <start_address>.
+    Found 1-bit register for signal <o_page_switched>.
+    Found 32-bit adder for signal <cnt_address[31]_GND_10_o_add_7_OUT> created at line 173.
+    Found 23-bit adder for signal <o_read_address> created at line 179.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <graphic_buffer_controller> synthesized.
+
+Synthesizing Unit <rom>.
+    Related source file is "/user/Labs_user/chipw7/vhdlLab/exercise_9/graphic_output_synth/rom.vhd".
+    Found 8x32-bit Read Only RAM for signal <o_rom_data>
+    Summary:
+	inferred   1 RAM(s).
+Unit <rom> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x32-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 9
+ 23-bit adder                                          : 1
+ 26-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 5
+ 5-bit adder                                           : 1
+# Registers                                            : 21
+ 1-bit register                                        : 10
+ 23-bit register                                       : 1
+ 256-bit register                                      : 2
+ 26-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 5
+ 5-bit register                                        : 1
+# Comparators                                          : 13
+ 32-bit comparator greater                             : 12
+ 5-bit comparator greater                              : 1
+# Multiplexers                                         : 81
+ 1-bit 2-to-1 multiplexer                              : 9
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 2
+ 8-bit 2-to-1 multiplexer                              : 64
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <start_address_0> in Unit <comp_graphic_buffer_controller> is equivalent to the following 21 FFs/Latches, which will be removed : <start_address_1> <start_address_2> <start_address_3> <start_address_4> <start_address_5> <start_address_6> <start_address_7> <start_address_8> <start_address_9> <start_address_10> <start_address_11> <start_address_12> <start_address_13> <start_address_14> <start_address_15> <start_address_16> <start_address_17> <start_address_19> <start_address_20> <start_address_21> <start_address_22> 
+WARNING:Xst:1293 - FF/Latch <start_address_0> has a constant value of 0 in block <comp_graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <graphic_buffer>.
+The following registers are absorbed into counter <cnt_data>: 1 register on signal <cnt_data>.
+Unit <graphic_buffer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <graphic_buffer_controller>.
+The following registers are absorbed into accumulator <cnt_address>: 1 register on signal <cnt_address>.
+Unit <graphic_buffer_controller> synthesized (advanced).
+
+Synthesizing (advanced) Unit <graphic_output_synth>.
+The following registers are absorbed into counter <lineNr>: 1 register on signal <lineNr>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <cnt_new_frame_ready_interval>: 1 register on signal <cnt_new_frame_ready_interval>.
+Unit <graphic_output_synth> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rom>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_o_rom_data> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 32-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <i_rom_address> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <o_rom_data>    |          |
+    -----------------------------------------------------------------------
+Unit <rom> synthesized (advanced).
+
+Synthesizing (advanced) Unit <sync_pulse_generator>.
+The following registers are absorbed into counter <cnt_v_sync>: 1 register on signal <cnt_v_sync>.
+The following registers are absorbed into counter <cnt_h_sync>: 1 register on signal <cnt_h_sync>.
+Unit <sync_pulse_generator> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x32-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 1
+ 23-bit adder                                          : 1
+# Counters                                             : 7
+ 26-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 4
+ 5-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 32-bit up accumulator                                 : 1
+# Registers                                            : 545
+ Flip-Flops                                            : 545
+# Comparators                                          : 13
+ 32-bit comparator greater                             : 12
+ 5-bit comparator greater                              : 1
+# Multiplexers                                         : 77
+ 1-bit 2-to-1 multiplexer                              : 7
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <start_address_22> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_21> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_20> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_19> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_17> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_16> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_15> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_14> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_13> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_12> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_11> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_10> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_9> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_8> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_7> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_6> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_5> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_4> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_3> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_2> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_1> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <start_address_0> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <cnt_address_1> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_address_2> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_address_3> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <cnt_address_0> has a constant value of 0 in block <graphic_buffer_controller>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <graphic_output_synth> ...
+
+Optimizing unit <graphic_output> ...
+
+Optimizing unit <sync_pulse_generator> ...
+
+Optimizing unit <graphic_buffer_controller> ...
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_10> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_8> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_9> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_11> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_12> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_15> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_13> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_14> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_16> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_17> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_20> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_18> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_19> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_21> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_22> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_23> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_24> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_20> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_18> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_19> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_21> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_22> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_25> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_23> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_24> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_26> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_27> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_28> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_29> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_30> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_controller/cnt_address_31> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_5> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_6> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_7> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_16> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_17> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_20> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_18> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_19> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_21> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_22> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_25> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_23> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_24> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_26> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_27> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_28> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_29> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_30> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_31> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_31> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_25> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_26> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_29> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_27> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_28> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_1/cnt_data_30> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_6> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_5> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_7> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_8> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_9> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_10> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_11> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_12> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_14> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_13> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <graphic_output_inst/comp_graphic_buffer_0/cnt_data_15> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_18> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_17> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_16> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_15> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_14> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_13> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_12> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_11> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_10> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_21> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_22> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_23> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_24> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_25> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_26> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_27> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_28> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_29> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_30> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_31> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_20> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_19> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_18> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_17> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_16> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_15> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_14> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_13> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_12> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_11> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_10> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_31> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_30> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_29> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_28> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_27> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_26> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_25> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_24> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_23> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_22> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_21> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_20> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <graphic_output_inst/comp_sync_pulse_generator/cnt_v_sync_19> has a constant value of 0 in block <graphic_output_synth>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_114> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_115> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_116> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_117> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_118> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_119> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_10> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_11> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_12> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_13> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_14> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_15> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_120> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_121> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_122> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_123> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_124> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_125> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_126> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_127> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_130> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_131> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_132> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_133> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_134> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_135> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_16> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_17> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_18> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_19> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_20> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_21> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_22> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_23> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_128> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_129> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_24> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_25> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_26> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_27> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_28> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_29> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_30> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_31> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_136> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_137> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_32> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_33> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_138> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_139> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_140> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_141> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_142> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_143> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_34> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_35> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_36> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_37> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_38> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_39> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_144> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_145> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_40> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_41> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_200> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_201> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_146> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_147> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_148> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_149> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_150> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_151> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_42> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_43> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_44> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_45> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_46> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_47> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_152> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_153> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_202> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_203> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_204> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_205> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_206> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_207> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_154> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_155> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_156> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_157> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_158> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_159> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_50> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_51> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_52> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_53> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_54> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_55> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_160> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_161> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_210> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_211> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_212> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_213> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_214> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_215> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_162> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_163> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_164> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_165> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_166> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_167> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_48> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_49> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_208> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_209> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_170> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_171> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_172> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_173> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_174> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_175> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_56> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_57> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_216> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_217> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_58> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_59> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_60> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_61> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_62> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_63> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_168> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_169> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_64> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_65> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_218> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_219> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_220> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_221> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_222> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_223> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_224> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_225> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_66> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_67> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_68> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_69> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_70> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_71> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_176> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_177> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_72> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_73> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_226> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_227> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_228> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_229> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_230> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_231> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_232> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_233> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_178> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_179> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_180> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_181> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_182> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_183> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_74> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_75> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_76> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_77> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_78> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_79> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_184> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_185> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_80> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_81> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_234> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_235> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_236> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_237> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_238> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_239> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_240> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_241> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_186> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_187> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_188> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_189> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_190> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_191> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_82> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_83> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_84> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_85> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_86> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_87> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_192> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_193> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_242> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_243> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_244> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_245> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_246> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_247> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_194> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_195> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_196> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_197> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_198> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_199> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_90> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_91> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_92> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_93> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_94> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_95> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_250> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_251> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_252> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_253> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_254> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_255> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_88> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_89> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_248> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_249> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_96> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_97> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_98> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_99> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_100> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_101> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_102> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_103> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_10> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_11> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_12> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_13> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_14> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_15> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_0> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_1> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_2> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_3> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_4> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_5> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_6> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_7> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_104> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_105> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_16> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_17> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_106> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_107> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_108> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_109> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_110> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_111> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_18> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_19> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_20> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_21> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_22> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_23> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_112> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_113> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_8> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_9> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_24> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_25> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_114> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_115> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_116> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_117> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_118> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_119> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_26> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_27> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_28> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_29> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_30> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_31> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_120> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_121> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_32> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_33> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_122> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_123> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_124> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_125> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_126> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_127> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_34> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_35> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_36> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_37> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_38> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_39> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_40> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_41> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_130> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_131> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_132> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_133> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_134> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_135> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_42> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_43> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_44> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_45> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_46> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_47> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_128> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_129> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_50> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_51> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_52> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_53> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_54> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_55> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_136> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_137> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_48> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_49> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_138> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_139> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_140> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_141> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_142> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_143> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_144> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_145> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_56> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_57> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_200> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_201> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_146> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_147> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_148> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_149> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_150> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_151> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_58> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_59> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_60> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_61> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_62> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_63> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_202> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_203> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_204> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_205> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_206> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_207> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_152> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_153> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_64> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_65> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_154> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_155> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_156> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_157> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_158> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_159> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_66> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_67> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_68> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_69> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_70> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_71> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_210> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_211> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_212> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_213> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_214> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_215> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_160> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_161> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_72> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_73> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_162> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_163> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_164> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_165> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_166> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_167> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_74> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_75> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_76> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_77> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_78> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_79> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_208> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_209> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_80> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_81> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_170> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_171> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_172> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_173> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_174> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_175> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_82> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_83> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_84> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_85> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_86> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_87> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_216> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_217> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_168> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_169> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_218> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_219> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_220> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_221> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_222> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_223> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_90> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_91> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_92> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_93> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_94> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_95> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_224> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_225> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_176> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_177> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_226> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_227> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_228> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_229> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_230> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_231> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_88> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_89> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_232> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_233> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_0> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_1> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_178> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_179> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_180> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_181> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_182> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_183> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_184> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_185> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_234> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_235> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_236> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_237> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_238> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_239> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_96> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_97> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_240> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_241> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_2> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_3> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_4> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_5> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_6> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_7> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_186> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_187> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_188> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_189> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_190> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_191> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_98> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_99> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_100> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_101> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_102> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_103> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_242> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_243> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_244> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_245> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_246> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_247> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_192> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_193> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_194> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_195> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_196> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_197> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_198> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_199> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_250> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_251> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_252> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_253> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_254> <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_255> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_8> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_9> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_248> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_1/i_rgb_data_reg_249> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_104> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_105> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_106> in Unit <graphic_output_synth> is equivalent to the following 5 FFs/Latches, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_107> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_108> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_109> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_110> <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_111> 
+INFO:Xst:2261 - The FF/Latch <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_112> in Unit <graphic_output_synth> is equivalent to the following FF/Latch, which will be removed : <graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_113> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block graphic_output_synth, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 217
+ Flip-Flops                                            : 217
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : graphic_output_synth.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 524
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 46
+#      LUT2                        : 20
+#      LUT3                        : 32
+#      LUT4                        : 12
+#      LUT5                        : 69
+#      LUT6                        : 121
+#      MUXCY                       : 143
+#      VCC                         : 1
+#      XORCY                       : 70
+# FlipFlops/Latches                : 217
+#      FD                          : 17
+#      FDC                         : 10
+#      FDCE                        : 10
+#      FDR                         : 130
+#      FDRE                        : 48
+#      FDS                         : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             217  out of  18224     1%  
+ Number of Slice LUTs:                  309  out of   9112     3%  
+    Number used as Logic:               309  out of   9112     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    309
+   Number with an unused Flip Flop:      92  out of    309    29%  
+   Number with an unused LUT:             0  out of    309     0%  
+   Number of fully used LUT-FF pairs:   217  out of    309    70%  
+   Number of unique control sets:         9
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 39    |
+pixel_clk_generator_inst/pixel_clk | BUFG                   | 178   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.655ns (Maximum Frequency: 176.836MHz)
+   Minimum input arrival time before clock: 5.919ns
+   Maximum output required time after clock: 8.103ns
+   Maximum combinational path delay: 8.258ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.451ns (frequency: 224.648MHz)
+  Total number of paths / destination ports: 1189 / 104
+-------------------------------------------------------------------------
+Delay:               4.451ns (Levels of Logic = 2)
+  Source:            cnt_new_frame_ready_interval_1 (FF)
+  Destination:       cnt_new_frame_ready_interval_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cnt_new_frame_ready_interval_1 to cnt_new_frame_ready_interval_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.447   0.981  cnt_new_frame_ready_interval_1 (cnt_new_frame_ready_interval_1)
+     LUT6:I0->O            2   0.203   0.981  Mcount_cnt_new_frame_ready_interval_val2614 (Mcount_cnt_new_frame_ready_interval_val2614)
+     LUT6:I0->O           26   0.203   1.206  Mcount_cnt_new_frame_ready_interval_val262 (Mcount_cnt_new_frame_ready_interval_val)
+     FDRE:R                    0.430          cnt_new_frame_ready_interval_0
+    ----------------------------------------
+    Total                      4.451ns (1.283ns logic, 3.168ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pixel_clk_generator_inst/pixel_clk'
+  Clock period: 5.655ns (frequency: 176.836MHz)
+  Total number of paths / destination ports: 20059 / 202
+-------------------------------------------------------------------------
+Delay:               5.655ns (Levels of Logic = 10)
+  Source:            graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_5 (FF)
+  Destination:       graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_0 (FF)
+  Source Clock:      pixel_clk_generator_inst/pixel_clk rising
+  Destination Clock: pixel_clk_generator_inst/pixel_clk rising
+
+  Data Path: graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_5 to graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.447   1.130  graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_5 (graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_5)
+     LUT5:I1->O            1   0.203   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_lut<0> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<0> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<1> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<2> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<3> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<4> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<4>)
+     MUXCY:CI->O          11   0.213   0.987  graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<5> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_cnt_h_sync[31]_GND_8_o_LessThan_5_o_cy<5>)
+     LUT3:I1->O            4   0.203   0.684  graphic_output_inst/comp_sync_pulse_generator/Mmux_o_in_active_region_reg11_SW0 (N2)
+     LUT6:I5->O           17   0.205   1.028  graphic_output_inst/comp_graphic_buffer_0/_n0048_inv1 (graphic_output_inst/comp_graphic_buffer_0/_n0048_inv)
+     LUT5:I4->O            1   0.205   0.000  graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_2_rstpot (graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_2_rstpot)
+     FDR:D                     0.102          graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_2
+    ----------------------------------------
+    Total                      5.655ns (1.826ns logic, 3.829ns route)
+                                       (32.3% logic, 67.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 37 / 37
+-------------------------------------------------------------------------
+Offset:              5.104ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       cnt_new_frame_ready_interval_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to cnt_new_frame_ready_interval_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           186   1.222   2.041  reset_IBUF (reset_IBUF)
+     LUT6:I5->O           26   0.205   1.206  Mcount_cnt_new_frame_ready_interval_val262 (Mcount_cnt_new_frame_ready_interval_val)
+     FDRE:R                    0.430          cnt_new_frame_ready_interval_0
+    ----------------------------------------
+    Total                      5.104ns (1.857ns logic, 3.247ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pixel_clk_generator_inst/pixel_clk'
+  Total number of paths / destination ports: 448 / 308
+-------------------------------------------------------------------------
+Offset:              5.919ns (Levels of Logic = 4)
+  Source:            reset (PAD)
+  Destination:       graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_0 (FF)
+  Destination Clock: pixel_clk_generator_inst/pixel_clk rising
+
+  Data Path: reset to graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           186   1.222   2.269  reset_IBUF (reset_IBUF)
+     LUT3:I0->O            4   0.205   0.684  graphic_output_inst/comp_sync_pulse_generator/Mmux_o_in_active_region_reg11_SW0 (N2)
+     LUT6:I5->O           17   0.205   1.028  graphic_output_inst/comp_graphic_buffer_0/_n0048_inv1 (graphic_output_inst/comp_graphic_buffer_0/_n0048_inv)
+     LUT5:I4->O            1   0.205   0.000  graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_2_rstpot (graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_2_rstpot)
+     FDR:D                     0.102          graphic_output_inst/comp_graphic_buffer_0/i_rgb_data_reg_2
+    ----------------------------------------
+    Total                      5.919ns (1.939ns logic, 3.980ns route)
+                                       (32.8% logic, 67.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pixel_clk_generator_inst/pixel_clk'
+  Total number of paths / destination ports: 532 / 10
+-------------------------------------------------------------------------
+Offset:              8.103ns (Levels of Logic = 10)
+  Source:            graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_5 (FF)
+  Destination:       o_red<2> (PAD)
+  Source Clock:      pixel_clk_generator_inst/pixel_clk rising
+
+  Data Path: graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_5 to o_red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.447   1.227  graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_5 (graphic_output_inst/comp_sync_pulse_generator/cnt_h_sync_5)
+     LUT5:I0->O            1   0.203   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_lut<0> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<0> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<1> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<2> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<3> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<4> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<4>)
+     MUXCY:CI->O          11   0.213   1.111  graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<5> (graphic_output_inst/comp_sync_pulse_generator/Mcompar_GND_8_o_cnt_h_sync[31]_LessThan_6_o_cy<5>)
+     LUT5:I2->O            4   0.205   0.931  graphic_output_inst/comp_sync_pulse_generator/Mmux_o_in_active_region_reg11 (graphic_output_inst/shift_enable)
+     LUT4:I0->O            6   0.203   0.744  graphic_output_inst/Mmux_o_green11 (o_green_0_OBUF)
+     OBUF:I->O                 2.571          o_green_0_OBUF (o_green<0>)
+    ----------------------------------------
+    Total                      8.103ns (4.090ns logic, 4.013ns route)
+                                       (50.5% logic, 49.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            led (FF)
+  Destination:       o_player_1_up (PAD)
+  Source Clock:      clk rising
+
+  Data Path: led to o_player_1_up
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  led (led)
+     OBUF:I->O                 2.571          o_player_1_up_OBUF (o_player_1_up)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Delay:               8.258ns (Levels of Logic = 4)
+  Source:            reset (PAD)
+  Destination:       o_red<2> (PAD)
+
+  Data Path: reset to o_red<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           186   1.222   2.385  reset_IBUF (reset_IBUF)
+     LUT5:I0->O            4   0.203   0.931  graphic_output_inst/comp_sync_pulse_generator/Mmux_o_in_active_region_reg11 (graphic_output_inst/shift_enable)
+     LUT4:I0->O            6   0.203   0.744  graphic_output_inst/Mmux_o_green11 (o_green_0_OBUF)
+     OBUF:I->O                 2.571          o_green_0_OBUF (o_green<0>)
+    ----------------------------------------
+    Total                      8.258ns (4.199ns logic, 4.059ns route)
+                                       (50.8% logic, 49.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+clk                               |    4.451|         |         |         |
+pixel_clk_generator_inst/pixel_clk|    2.613|         |         |         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock pixel_clk_generator_inst/pixel_clk
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+clk                               |    3.693|         |         |         |
+pixel_clk_generator_inst/pixel_clk|    5.655|         |         |         |
+----------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.31 secs
+ 
+--> 
+
+
+Total memory usage is 498432 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  139 (   0 filtered)
+Number of infos    :  130 (   0 filtered)
+

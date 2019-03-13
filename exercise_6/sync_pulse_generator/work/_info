@@ -1,0 +1,131 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/user/Labs_user/chipw7/vhdlLab/exercise_6/sync_pulse_generator
+Esync_pulse_generator
+Z1 w1493720528
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8sync_pulse_generator.vhd
+Z6 Fsync_pulse_generator.vhd
+l0
+L16
+V_IJo6HZfNMCckWTjgn5Ue2
+!s100 DGfbzSfa_P2<[l>]I^0?S1
+Z7 OE;C;10.4c_5;61
+32
+Z8 !s110 1493720726
+!i10b 1
+Z9 !s108 1493720726.000000
+Z10 !s90 -reportprogress|300|sync_pulse_generator.vhd|
+Z11 !s107 sync_pulse_generator.vhd|
+!i113 0
+Z12 tExplicit 1
+Artl
+R2
+R3
+R4
+DEx4 work 20 sync_pulse_generator 0 22 _IJo6HZfNMCckWTjgn5Ue2
+32
+R8
+l63
+L55
+Vb4Dj5Kn7P=MH@5hKaPz?]1
+!s100 9Lal]_lVD8Db5l5dBdCL10
+R7
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+Esync_pulse_generator_full_tb
+Z13 w1491906624
+Z14 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R2
+R3
+R4
+R0
+Z15 8sync_pulse_generator_full_tb.vhd
+Z16 Fsync_pulse_generator_full_tb.vhd
+l0
+L13
+VcQHDQ[h8^oe_zHU6W;`TH2
+!s100 jAD8l48Ykd9JRib>_3Y110
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|sync_pulse_generator_full_tb.vhd|
+Z18 !s107 sync_pulse_generator_full_tb.vhd|
+!i113 0
+R12
+Abeh
+R14
+R2
+R3
+R4
+DEx4 work 28 sync_pulse_generator_full_tb 0 22 cQHDQ[h8^oe_zHU6W;`TH2
+32
+R8
+l61
+L18
+VL>ZTa_3;LHDBD;g>5CPd60
+!s100 kz;81A:FAY`3?Jg3NTA5o2
+R7
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+Esync_pulse_generator_small_tb
+R13
+R14
+R2
+R3
+R4
+R0
+Z19 8sync_pulse_generator_small_tb.vhd
+Z20 Fsync_pulse_generator_small_tb.vhd
+l0
+L13
+VjoHjbYZ@E^9YRRN7]@SAB3
+!s100 j@gZ9[97_EKz3LWO[S8Xc3
+R7
+32
+Z21 !s110 1493720530
+!i10b 1
+Z22 !s108 1493720530.000000
+Z23 !s90 -reportprogress|300|sync_pulse_generator_small_tb.vhd|
+Z24 !s107 sync_pulse_generator_small_tb.vhd|
+!i113 0
+R12
+Abeh
+R14
+R2
+R3
+R4
+DEx4 work 29 sync_pulse_generator_small_tb 0 22 joHjbYZ@E^9YRRN7]@SAB3
+32
+R21
+l61
+L18
+VdlJW9bZ[@Y;D4H@K3>=nC2
+!s100 bk8i7bCzFT<KbI4;_]R482
+R7
+!i10b 1
+R22
+R23
+R24
+!i113 0
+R12

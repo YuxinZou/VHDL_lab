@@ -1,0 +1,174 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/user/Labs_user/chipw7/vhdlLab/exercise_2
+Ecomb_logic
+Z0 w1492503409
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2
+Z5 8/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/comb_logic.vhd
+Z6 F/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/comb_logic.vhd
+l0
+L5
+V;YDUDFHfE:1_0g27>53O61
+!s100 SPhRRc;=nm?cZV8EChZ8N2
+Z7 OE;C;10.4c_5;61
+32
+Z8 !s110 1492508098
+!i10b 1
+Z9 !s108 1492508098.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/comb_logic.vhd|
+Z11 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/comb_logic.vhd|
+!i113 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Artl
+R1
+R2
+R3
+DEx4 work 10 comb_logic 0 22 ;YDUDFHfE:1_0g27>53O61
+32
+R8
+l17
+L13
+VWf5^hKmS`RgDhOX<@3ljL3
+!s100 5h?2Q8>zOFgjPZUY[_:J81
+R7
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ereg
+Z14 w1492504534
+R1
+R2
+R3
+R4
+Z15 8/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/reg.vhd
+Z16 F/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/reg.vhd
+l0
+L5
+VeAc]8LR4`E<0f6kF7JM<a0
+!s100 gJDQNdGOOAFHo7CYLjlLR2
+R7
+32
+Z17 !s110 1492508099
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/reg.vhd|
+Z19 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic_2/reg.vhd|
+!i113 0
+R12
+R13
+Artl
+R1
+R2
+R3
+DEx4 work 3 reg 0 22 eAc]8LR4`E<0f6kF7JM<a0
+32
+R17
+l21
+L16
+VLG@D2ae7fPG]YPVMEhkJK0
+!s100 RE37254E8JHAd1W:Y0mDT2
+R7
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R12
+R13
+Eseq_logic
+Z20 w1492508087
+R1
+R2
+R3
+R4
+Z21 8/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic.vhd
+Z22 F/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic.vhd
+l0
+L5
+VWzQ`6;^8dKn@=zL9@ZS?P1
+!s100 <dESNFocP]e35<EJ8VZPa1
+R7
+32
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic.vhd|
+Z24 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic.vhd|
+!i113 0
+R12
+R13
+Artl
+R1
+R2
+R3
+DEx4 work 9 seq_logic 0 22 WzQ`6;^8dKn@=zL9@ZS?P1
+32
+R8
+l37
+L17
+VYa?UdX_74;H@AlD;FOEQL0
+!s100 EKl5@aeNAPgFHUHII=TP12
+R7
+!i10b 1
+R9
+R23
+R24
+!i113 0
+R12
+R13
+Eseq_logic_tb
+Z25 w1491906624
+R1
+R2
+R3
+R4
+Z26 8/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic_tb.vhd
+Z27 F/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic_tb.vhd
+l0
+L5
+VOS1G1Lgo3o@YiU>kW7k?11
+!s100 kRAiR]MC`N?gR?cJCgQY23
+R7
+32
+R8
+!i10b 1
+R9
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|/user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic_tb.vhd|
+Z29 !s107 /user/Labs_user/chipw7/vhdlLab/exercise_2/seq_logic/seq_logic_tb.vhd|
+!i113 0
+R12
+R13
+Abeh
+R1
+R2
+R3
+DEx4 work 12 seq_logic_tb 0 22 OS1G1Lgo3o@YiU>kW7k?11
+32
+R8
+l30
+L10
+VJQcl];8Z?nUHk4]hLRiI;3
+!s100 kM4FEeT[BcEVmT6W_ELai0
+R7
+!i10b 1
+R9
+R28
+R29
+!i113 0
+R12
+R13

@@ -1,0 +1,159 @@
+m255
+K3
+z0
+13
+cModel Technology
+d/user/Labs_user/chipw1/students/exercise_10/ram_controller
+vcellram
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 XnePa`fFCRlk=4LJ;fDA^2
+ILI<1_1DAOhDK41l74lHLS3
+Z1 d/user/Labs_user/chipw7/vhdlLab/exercise_10/ram_controller
+Z2 w1491906623
+Z3 8./cellram_sim/cellram.v
+Z4 F./cellram_sim/cellram.v
+Z5 F./cellram_sim/cellram_parameters.vh
+L0 91
+Z6 OE;L;10.4c_5;61
+Z7 !s108 1497351352.000000
+Z8 !s107 ./cellram_sim/cellram_parameters.vh|./cellram_sim/cellram.v|
+Z9 !s90 -reportprogress|300|+define+sg701|+incdir+./cellram_sim|./cellram_sim/cellram.v|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 +define+sg701 +incdir+./cellram_sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vcellram_pathdelay
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 Qnec:@]E?]1QC^XZ7S?;_0
+I4U[<=ThmOHF42[MHo:ZBI3
+R1
+R2
+R3
+R4
+R5
+L0 1314
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R11
+Eram_controller
+Z12 w1497351338
+Z13 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z14 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z15 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R1
+Z16 8./ram_controller.vhd
+Z17 F./ram_controller.vhd
+l0
+L14
+V_VET]Q7G7?jNeNAXh6bDF0
+!s100 W?gj?aklFYYTdYjzG7>V[2
+Z18 OE;C;10.4c_5;61
+32
+Z19 !s110 1497351341
+!i10b 1
+R7
+Z20 !s90 -reportprogress|300|-work|work|-check_synthesis|./ram_controller.vhd|
+Z21 !s107 ./ram_controller.vhd|
+!i113 0
+Z22 o-work work -check_synthesis
+Z23 tExplicit 1
+Artl
+R13
+R14
+R15
+Z24 DEx4 work 14 ram_controller 0 22 _VET]Q7G7?jNeNAXh6bDF0
+32
+R19
+l91
+L67
+VWAMS9M;G_JWS3362:^^S;3
+!s100 5OSSlU<4X]>QV1Ra>VS=C0
+R18
+!i10b 1
+R7
+R20
+R21
+!i113 0
+R22
+R23
+Eram_controller_tb
+R2
+R13
+R14
+R15
+R1
+Z25 8./ram_controller_tb.vhd
+Z26 F./ram_controller_tb.vhd
+l0
+L28
+VDnFe?0Rg;1>F[TUQ@jl<D3
+!s100 S5@Rdc4HVRgoKzO[_<n^E0
+R18
+32
+R19
+!i10b 1
+R7
+Z27 !s90 -reportprogress|300|-work|work|./ram_controller_tb.vhd|
+Z28 !s107 ./ram_controller_tb.vhd|
+!i113 0
+Z29 o-work work
+R23
+Abeh
+R13
+R14
+R15
+Z30 DEx4 work 17 ram_controller_tb 0 22 DnFe?0Rg;1>F[TUQ@jl<D3
+32
+R19
+l108
+L34
+Vdm;:5<2bMB_[]i^I5Pi650
+!s100 ?]m8i[hgZD[jlNfa2cX<h3
+R18
+!i10b 1
+R7
+R27
+R28
+!i113 0
+R29
+R23
+Cram_controller_tb_beh_cfg
+eram_controller_tb
+abeh
+DPx7 verilog 8 vl_types 0 22 bmGnzhS4n>6F^Dki9hX>O3
+R24
+DEx4 work 7 cellram 0 22 Dg1SIo80bB@j0V0VzS_@n1
+DAx4 work 17 ram_controller_tb 3 beh 22 dm;:5<2bMB_[]i^I5Pi650
+R13
+R14
+R15
+R30
+R2
+R1
+R25
+R26
+l0
+L223
+V<PeHOa_87JX0WL?DU?4gR2
+!s100 FeiO=XX2Fcc<=ZnF]f@KJ0
+R18
+32
+R19
+!i10b 1
+R7
+R27
+R28
+!i113 0
+R29
+R23
